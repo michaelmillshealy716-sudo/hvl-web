@@ -1,1 +1,1 @@
-{"ticker": "BRK.B", "status": "APPROVED"}
+{"targets": [{"ticker": "TSLA", "catalyst": "Sudden Flame Simulation", "iv_percentile": 98, "action": "SCOUT_DEPLOYED"}]}
