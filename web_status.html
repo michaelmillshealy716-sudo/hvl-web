@@ -1,12 +1,109 @@
 
-    <div style="padding: 20px; border: 1px solid #39ff14; background: rgba(0,0,0,0.9); box-shadow: 0 0 15px #bc13fe; border-radius: 5px; font-family: monospace;">
-        <h3 style="color: #bc13fe; margin: 0 0 10px 0;">VERITAS V2.2 ENGINE | TJX</h3>
-        <p style="margin: 5px 0; color: #fff;">STATUS: <span style="color: #39ff14;">SIGNAL_DETECTED</span></p>
-        <p style="margin: 5px 0; color: #fff;">VERITAS_SCORE: <span style="color: #39ff14;">17.35%</span></p>
-        <hr style="border: 0; border-top: 1px solid #555; margin: 15px 0;">
-        <p style="margin: 5px 0; color: #fff;">DELTA: <span style="color: #39ff14;">0.768</span> | GAMMA: <span style="color: #39ff14;">0.048</span></p>
-        <hr style="border: 0; border-top: 1px solid #555; margin: 15px 0;">
-        <p style="margin: 5px 0; color: #fff;">SIGNAL: <span style="color: #bc13fe; font-weight: bold;">FORCE SELL</span></p>
-        <p style="font-size: 0.8em; color: #888; margin-top: 15px;">SYNC: 05:57:48</p>
-    </div>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>HVL COMMAND CENTER</title>
+        <style>
+            body { background-color: #000; color: #fff; font-family: 'Courier New', monospace; margin: 0; padding: 20px; }
+            .container { max-width: 1200px; margin: 0 auto; }
+            header { border-bottom: 2px solid #bc13fe; padding-bottom: 20px; margin-bottom: 30px; }
+            h1 { color: #bc13fe; margin: 0; letter-spacing: 2px; }
+            h2 { color: #39ff14; font-size: 1em; margin: 5px 0; }
+            .signal-card { 
+                background: rgba(20, 20, 20, 0.9); 
+                border: 1px solid #333; 
+                margin-bottom: 15px; 
+                padding: 15px; 
+                border-radius: 4px;
+                box-shadow: 0 0 10px rgba(188, 19, 254, 0.1);
+            }
+            .signal-header { display: flex; justify-content: space-between; align-items: center; }
+            .ticker { font-size: 1.5em; font-weight: bold; color: #bc13fe; }
+            .veritas-score { color: #39ff14; font-weight: bold; }
+            .signal-type { font-weight: bold; text-transform: uppercase; color: #fff; }
+            .greeks { font-size: 0.9em; color: #888; margin-top: 10px; }
+            footer { color: #444; font-size: 0.8em; margin-top: 50px; text-align: center; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>HEALY VECTOR LABS</h1>
+                <h2>VERITAS V2.2 // AUTONOMOUS_DETECTION_MATRIX</h2>
+                <p style="font-size: 0.8em; color: #666;">LAST_SYNC: 10:06:49 // JACKSONVILLE_NODE</p>
+            </header>
+            
+            <div id="signal-stack">
+    
+                <div class="signal-card">
+                    <div class="signal-header">
+                        <span class="ticker">RIVN</span>
+                        <span class="signal-type" style="color: #ff3131">FORCE SELL</span>
+                    </div>
+                    <p style="margin: 10px 0;">VERITAS_SCORE: <span class="veritas-score">41.23%</span></p>
+                    <div class="greeks">
+                        DELTA: 0.62 | GAMMA: 0.045 | TIME: 10:06:49
+                    </div>
+                </div>
+        
+                <div class="signal-card">
+                    <div class="signal-header">
+                        <span class="ticker">AMGN</span>
+                        <span class="signal-type" style="color: #ff3131">FORCE SELL</span>
+                    </div>
+                    <p style="margin: 10px 0;">VERITAS_SCORE: <span class="veritas-score">7.0%</span></p>
+                    <div class="greeks">
+                        DELTA: 0.606 | GAMMA: 0.045 | TIME: 10:05:17
+                    </div>
+                </div>
+        
+                <div class="signal-card">
+                    <div class="signal-header">
+                        <span class="ticker">BKNG</span>
+                        <span class="signal-type" style="color: #ff3131">HIGH CONVICTION - GO</span>
+                    </div>
+                    <p style="margin: 10px 0;">VERITAS_SCORE: <span class="veritas-score">0.85%</span></p>
+                    <div class="greeks">
+                        DELTA: 0.797 | GAMMA: 0.045 | TIME: 10:05:05
+                    </div>
+                </div>
+        
+                <div class="signal-card">
+                    <div class="signal-header">
+                        <span class="ticker">TXN</span>
+                        <span class="signal-type" style="color: #ff3131">FORCE SELL</span>
+                    </div>
+                    <p style="margin: 10px 0;">VERITAS_SCORE: <span class="veritas-score">2.41%</span></p>
+                    <div class="greeks">
+                        DELTA: 0.785 | GAMMA: 0.045 | TIME: 10:04:34
+                    </div>
+                </div>
+        
+                <div class="signal-card">
+                    <div class="signal-header">
+                        <span class="ticker">ORCL</span>
+                        <span class="signal-type" style="color: #ff3131">HIGH CONVICTION - GO</span>
+                    </div>
+                    <p style="margin: 10px 0;">VERITAS_SCORE: <span class="veritas-score">10.82%</span></p>
+                    <div class="greeks">
+                        DELTA: 0.601 | GAMMA: 0.045 | TIME: 10:04:01
+                    </div>
+                </div>
+        
+                <div class="signal-card">
+                    <div class="signal-header">
+                        <span class="ticker">AAPL</span>
+                        <span class="signal-type" style="color: #ff3131">FORCE SELL</span>
+                    </div>
+                    <p style="margin: 10px 0;">VERITAS_SCORE: <span class="veritas-score">4.39%</span></p>
+                    <div class="greeks">
+                        DELTA: 0.659 | GAMMA: 0.045 | TIME: 10:03:17
+                    </div>
+                </div>
+        
+            </div>
+            <footer>HEALY VECTOR LABS &copy; 2026 // DIFFERENT SPECIES ONLY</footer>
+        </div>
+    </body>
+    </html>
     
