@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HEALY VECTOR LABS</title>
+    <style>
+        body {
+            background-color: #050505;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+            margin: 0;
+        }
+        /* Flickering Neon Green for Company Name */
+        .neon-green-flicker {
+            color: #39ff14;
+            font-size: 3.8rem;
+            font-weight: 900;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0 0 10px 0;
+            text-shadow: 
+                0 0 5px #39ff14, 
+                0 0 10px #39ff14, 
+                0 0 20px #39ff14, 
+                0 0 40px #39ff14;
+            animation: flicker 3s infinite alternate;
+        }
+        @keyframes flicker {
+            0%, 18%, 22%, 25%, 53%, 57%, 100% {
+                text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 40px #39ff14;
+                opacity: 1;
+            }
+            20%, 24%, 55% {
+                text-shadow: none;
+                opacity: 0.4;
+            }
+        }
+        /* Electric Purple Subheader */
+        .electric-purple {
+            color: #bf00ff;
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: 6px;
+            margin: 0 0 40px 0;
+            text-shadow: 0 0 10px #bf00ff, 0 0 20px #bf00ff;
+            border-bottom: 2px solid #bf00ff;
+            padding-bottom: 15px;
+            width: 80%;
+            max-width: 800px;
+        }
+        /* Matrix Box */
+        .matrix-box {
+            border: 2px solid #39ff14;
+            box-shadow: 0 0 20px rgba(57, 255, 20, 0.15);
+            padding: 30px;
+            width: 90%;
+            max-width: 900px;
+            background: rgba(0, 0, 0, 0.85);
+        }
+        .sys-text { color: #39ff14; font-weight: bold; font-size: 1.1rem; }
+        table { width: 100%; border-collapse: collapse; margin-top: 25px; }
+        th { color: #39ff14; text-align: left; border-bottom: 2px solid #bf00ff; padding: 15px; font-size: 1.2rem; }
+        td { padding: 15px; border-bottom: 1px rgba(191, 0, 255, 0.2) solid; font-size: 1.3rem; font-weight: bold; }
+        
+        /* Tickers in Purple, Money in Green */
+        .ticker-purple { color: #bf00ff; text-shadow: 0 0 10px #bf00ff; }
+        .money-green { color: #39ff14; text-shadow: 0 0 10px #39ff14; }
+    </style>
+</head>
+<body>
+    <h1 class="neon-green-flicker">HEALY VECTOR LABS</h1>
+    <div class="electric-purple">PROJECT DAGOR BRAGOLLACH</div>
+
+    <div class="matrix-box">
+        <p class="sys-text">> INITIALIZING HVL-SCOUT DATA STREAM...</p>
+        <p class="sys-text">> ENTROPY MODEL: $E(t) = E_0 e^{-2t}$</p>
+        <table id="target-table">
+            <thead>
+                <tr>
+                    <th>TARGET TICKER</th>
+                    <th>CONVICTION STATUS</th>
+                    <th>CAPITAL / METRICS</th>
+                </tr>
+            </thead>
+            <tbody id="target-data">
+                </tbody>
+        </table>
+    </div>
+
+    <script>
+        async function fetchTargets() {
+            try {
+                const response = await fetch('certified_targets.json');
+                const data = await response.json();
+                const tableBody = document.getElementById('target-data');
+                tableBody.innerHTML = ''; 
+
+                data.targets.forEach(target => {
+                    const row = `<tr>
+                        <td class="ticker-purple">${target.ticker}</td>
+                        <td class="money-green">EXECUTE</td>
+                        <td class="money-green">${target.rsi} / $${target.v_score}</td>
+                    </tr>`;
+                    tableBody.innerHTML += row;
+                });
+            } catch (e) {
+                console.error("Waiting for Node [2] output...");
+            }
+        }
+        fetchTargets();
+        setInterval(fetchTargets, 60000);
+    </script>
+</body>
+</html>
+
