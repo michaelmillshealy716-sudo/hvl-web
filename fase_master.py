@@ -1,192 +1,240 @@
-import os
+import json
+import subprocess
 import time
+import sys
+import os
 import numpy as np
-import requests
-from datetime import datetime
-from dotenv import load_dotenv
+import robin_stocks.robinhood as rh
+from datetime import datetime, timedelta
+import logging
 
-# --- CREDENTIALS ---
-load_dotenv(override=True)
-ALPACA_KEY = os.environ.get("ALPACA_API_KEY", "").strip()
-ALPACA_SECRET = os.environ.get("ALPACA_API_SECRET", "").strip()
+logging.getLogger("urllib3").setLevel(logging.CRITICAL)
 
-# --- ANSI COLORS ---
-PERI, FUCHSIA, GOLD, ORANGE = "\033[38;5;147m", "\033[38;5;201m", "\033[38;5;220m", "\033[38;5;208m"
-GREEN, RED, RESET, FLASH, BOLD = "\033[92m", "\033[91m", "\033[0m", "\033[5m", "\033[1m"
+class C:
+    G = "\033[92m"
+    R = "\033[91m"
+    Y = "\033[93m"
+    B = "\033[94m"
+    CYAN = "\033[96m"
+    M = "\033[35m"
+    BBLD = "\033[1m"
+    END = "\033[0m"
 
-# --- EXPANDED ASSET LOAD ---
-CRYPTO = ["ADA/USD", "BTC/USD", "ETH/USD"]
-STOCKS = ["TSLA", "NVDA", "AAPL", "META", "AMD", "SOFI", "MSTR", "TSLL", "XOM", "MO", "USO", "AMC", "GPRO"]
-ALL_TICKERS = CRYPTO + STOCKS
+# THE THREE BULLET RULE
+MAX_BULLETS = 3
+ACTIVE_TRADES = {}
 
-# --- TRACKERS ---
-price_history = {t: [0.0] * 50 for t in ALL_TICKERS}
-potential_pos = {t: 0 for t in ALL_TICKERS}
-potential_neg = {t: 0 for t in ALL_TICKERS}
-compression_cycles = {t: 0 for t in ALL_TICKERS}
-post_drop_brew = {t: False for t in ALL_TICKERS}
-initialized = set()
-pulse_count = 0
-integral_reset_counter = 0
+# [!!!] NOTE: Paste your entire "Purged Matrix" of 100+ tickers here. 
+# I have added WTI as requested.
+STOCKS = [
+    "AAPL", "MSFT", "GOOGL", "AMZN", "META", "TSLA", "NVDA", "AMD", "GME", "AMC", "WTI"
+    # <-- PASTE YOUR FULL MATRIX HERE -->
+]
 
-def get_quantum_state(prices):
-    active_prices = [p for p in prices if p > 0]
-    if len(active_prices) < 2: return 0.0, 0.0, 0.0
-    prices_arr = np.array(active_prices)
-    returns = np.diff(prices_arr) / prices_arr[:-1]
-    
-    psi = np.mean(np.abs(returns)) * 10000
-    delta = ((prices_arr[-1] - prices_arr[0]) / prices_arr[0]) * 100
-    phi = psi / max(0.01, abs(delta))
-    return psi, delta, phi
-
-def fetch_prices():
-    headers = {"APCA-API-KEY-ID": ALPACA_KEY, "APCA-API-SECRET-KEY": ALPACA_SECRET}
-    prices = {}
+def rh_login():
     try:
-        c_res = requests.get(f"https://data.alpaca.markets/v1beta3/crypto/us/latest/trades?symbols={','.join(CRYPTO)}", headers=headers, timeout=5)
-        if c_res.status_code == 200:
-            for t, d in c_res.json().get('trades', {}).items(): prices[t] = d['p']
-        s_res = requests.get(f"https://data.alpaca.markets/v2/stocks/trades/latest?symbols={','.join(STOCKS)}&feed=iex", headers=headers, timeout=5)
-        if s_res.status_code == 200:
-            for t, d in s_res.json().get('trades', {}).items(): prices[t] = d['p']
-        return prices
-    except: return {}
-
-def veritas_bridge(ticker, price, price_history_array):
-    """
-    VERITAS TRUTH FILTER: 3rd-Order Taylor Series Expansion
-    Projects the t+1 price action using local derivatives.
-    """
-    if len(price_history_array) < 4:
-        return False # Insufficient data for 3rd-order calculation
-        
-    p = np.array(price_history_array)
-    
-    # Kinematics of the Price Action
-    v = p[-1] - p[-2] # 1st Derivative (Velocity)
-    a = (p[-1] - p[-2]) - (p[-2] - p[-3]) # 2nd Derivative (Acceleration)
-    j = ((p[-1] - p[-2]) - (p[-2] - p[-3])) - ((p[-2] - p[-3]) - (p[-3] - p[-4])) # 3rd Deriv (Jerk)
-    
-    # Taylor Series Projection for t+1 (dt = 1)
-    p_next = p[-1] + v + (0.5 * a) + (0.1667 * j)
-    
-    # The Logic Gate
-    if p_next > p[-1]:
-        return True # Mathematical trajectory is positive. Clear to engage.
-    return False # False breakout detected. Hold fire.
-
-def execute_strike(ticker, price):
-    """
-    THE MUSCLE: Alpaca API Live Order Routing
-    """
-    print(f"\n{FLASH}{BOLD}{GOLD}>>> EXECUTING VERITAS STRIKE: {ticker} @ ${price} <<<{RESET}")
-    
-    # Format ticker for Alpaca API (e.g., "BTC/USD" -> "BTCUSD")
-    alpaca_sym = ticker.replace("/", "")
-    
-    url = "https://paper-api.alpaca.markets/v2/orders" # Set to paper for final Sunday prototype
-    headers = {
-        "APCA-API-KEY-ID": ALPACA_KEY,
-        "APCA-API-SECRET-KEY": ALPACA_SECRET,
-        "accept": "application/json",
-        "content-type": "application/json"
-    }
-    
-    payload = {
-        "symbol": alpaca_sym,
-        "qty": "0.01", # Adjust position sizing here
-        "side": "buy",
-        "type": "market",
-        "time_in_force": "gtc"
-    }
-    
-    try:
-        response = requests.post(url, json=payload, headers=headers)
-        if response.status_code == 200:
-            print(f"{GREEN}[+] ALIGNMENT SECURED: Market Order Filled for {ticker}.{RESET}\n")
-        else:
-            print(f"{RED}[-] STRIKE REJECTED: {response.text}{RESET}\n")
+        print(f"{C.CYAN}[*] INITIATING BRULE ROBINHOOD HANDSHAKE...{C.END}")
+        # ENTER YOUR PASSWORD BELOW
+        rh.login("michaelmillshealy716@gmail.com", "YOUR_PASSWORD_HERE", expiresIn=86400)
+        profile = rh.account.load_account_profile()
+        print(f"{C.G}[+] AUTH SUCCESSFUL. WALLET SECURED. BP: ${profile.get('buying_power', '0.00')}{C.END}")
     except Exception as e:
-        print(f"{RED}[-] API BRIDGE OFFLINE: {e}{RESET}\n")
+        print(f"{C.R}[!] AUTH FAIL: {e}{C.END}")
+        sys.exit(1)
+
+def get_wallet():
+    try:
+        profile = rh.account.load_account_profile()
+        return float(profile['buying_power'])
+    except Exception:
+        return 0.0
+
+def get_kinematics(prices):
+    if len(prices) < 4: return 0.0, 0.0, 0.0
+    p = np.array(prices[-4:], dtype=float)
+    v = np.gradient(p)
+    a = np.gradient(v)
+    return v[-1], a[-1], p[-1]
+
+def find_cheap_option(ticker, opt_type):
+    try:
+        chains = rh.options.get_chains(ticker)
+        if not chains or not chains.get('expiration_dates'):
+            return None
+            
+        # --- THE 0DTE GUILLOTINE ---
+        # Strip out contracts expiring today or tomorrow to avoid forced liquidations
+        valid_expirations = []
+        for exp in chains['expiration_dates']:
+            exp_date = datetime.strptime(exp, "%Y-%m-%d")
+            dte = (exp_date - datetime.now()).days
+            if dte >= 2:
+                valid_expirations.append(exp)
+                
+        if not valid_expirations: return None
+        front_month = valid_expirations[0]
+
+        valid_options = rh.options.find_options_by_expiration(
+            ticker, expirationDate=front_month, optionType=opt_type.lower()
+        )
+        
+        valid = [o for o in valid_options if o['ask_price'] and 0.03 <= float(o['ask_price']) <= 0.20]
+        if not valid:
+            return None
+            
+        valid.sort(key=lambda x: float(x['volume'] or 0), reverse=True)
+        return valid[0]
+    except Exception:
+        return None
+
+def manage_positions():
+    """FULLY AUTOMATED LIMIT AUTO-SELL (PURE TAKE-PROFIT ONLY)"""
+    if not ACTIVE_TRADES: return
+    
+    for ticker, data in list(ACTIVE_TRADES.items()):
+        opt = data['option']
+        opt_type = data['type'].lower()
+        entry_premium = float(data['entry_premium'])
+        try:
+            # Pull the live price of the specific option contract
+            market_data = rh.options.get_option_market_data(ticker, opt['expiration_date'], opt['strike_price'], opt_type)
+            if not market_data: continue
+            
+            # --- BRACKET JSON PARSING FIX ---
+            # Extract dictionary from Robinhood's nested list response
+            option_info = market_data[0]
+            if isinstance(option_info, list):
+                option_info = option_info[0]
+                
+            current_bid = float(option_info.get('bid_price', 0))
+            if current_bid == 0: continue 
+            
+            profit_pct = ((current_bid - entry_premium) / entry_premium) * 100
+            
+            # --- THE FRICTIONLESS EXECUTION TRIGGER ---
+            if profit_pct >= 18.5:
+                print(f"\n{C.G}[$$$] AUTO-SELL FIRED: +{profit_pct:.2f}% PROFIT TARGET SECURED ON {ticker}{C.END}")
+                rh.orders.order_sell_option_limit("close", "credit", round(current_bid, 2), ticker, 1, opt['expiration_date'], opt['strike_price'], opt_type)
+                del ACTIVE_TRADES[ticker]
+        except Exception as e:
+            print(f"{C.Y}[!] Bracket manager ping failed for {ticker}: {e}{C.END}")
+            continue
+
+def hunt_best_deal():
+    cands = []
+    scores = []
+    wallet = get_wallet()
+    
+    old_stderr = sys.stderr
+    sys.stderr = open(os.devnull, 'w')
+    try:
+        print(f"\r{C.B}[*] SCANNING {len(STOCKS)} TICKERS | BP: ${wallet:.2f}{C.END}   ", end="")
+        for t in STOCKS:
+            t = t.strip().upper()
+            if t in ACTIVE_TRADES: continue
+            try:
+                h = rh.stocks.get_stock_historicals(t, interval='5minute', span='week', bounds='regular')
+                if not h: continue
+                px = [float(x['close_price']) for x in h]
+                v, a, p = get_kinematics(px)
+                
+                cands.append({'ticker': t, 'score': a, 'v': v, 'price': px[-1]})
+                scores.append(a)
+            except Exception:
+                continue
+    finally:
+        sys.stderr = old_stderr
+        
+    if not cands: return None
+    
+    mu = np.mean(scores)
+    sigma = np.std(scores)
+    
+    for c in cands:
+        c['Z'] = (c['score'] - mu) / sigma if sigma > 0 else 0
+        
+    cands.sort(key=lambda x: abs(x['Z']), reverse=True)
+    
+    for c in cands:
+        # Prevent engine from hunting if wallet cannot afford minimum $0.03 contract
+        if wallet < 3.00: 
+            return None
+
+        # --- THE VOLATILITY CLAUSE & MEME DAMPENER ---
+        high_iv_assets = ["GME", "AMC", "WTI", "TSLA", "SPCE", "MSTR"]
+        
+        # Require higher acceleration standard deviation for high-noise stocks
+        z_threshold = 2.50 if c['ticker'] in high_iv_assets else 1.84
+        
+        if abs(c['Z']) > z_threshold:
+            opt_type = 'call' if c['v'] > 0 else 'put'
+            
+            # --- FREIGHT TRAIN OVERRIDE ---
+            # Never step in front of high-volatility momentum. Disable Put buying on Meme/Energy stocks.
+            if opt_type == 'put' and c['ticker'] in high_iv_assets:
+                continue
+                
+            target_opt = find_cheap_option(c['ticker'], opt_type)
+            if target_opt:
+                print(f"\n{C.G}{C.BBLD}[♛] KING CROWNED: {c['ticker']} | Z: {c['Z']:.2f} | PX: ${c['price']:.2f}{C.END}")
+                return {'ticker': c['ticker'], 'type': opt_type, 'price': c['price'], 'option': target_opt}
+    return None
+
+def execute_trade(target):
+    opt = target['option']
+    print(f"\n{C.G}[+] SECURED CONTRACT: {target['ticker']} {target['type'].upper()} | Strike: ${opt['strike_price']} | Premium: ${opt['ask_price']}{C.END}")
+    
+    # --- LIVE TRIGGER ARMED ---
+    try:
+        rh.orders.order_buy_option_limit("open", "debit", opt['ask_price'], target['ticker'], 1, opt['expiration_date'], opt['strike_price'], target['type'])
+        print(f"{C.G}[$$$] LIVE ORDER EXECUTED ON ROBINHOOD.{C.END}")
+    except Exception as e:
+        print(f"{C.R}[!] FAILED TO EXECUTE LIVE ORDER: {e}{C.END}")
+        return
+
+    # Store all option data for the Auto-Sell Bracket
+    ACTIVE_TRADES[target['ticker']] = {
+        "entry_price": target['price'],
+        "entry_premium": float(opt['ask_price']),
+        "option": opt,
+        "type": target['type'],
+        "timestamp": datetime.now()
+    }
+    print(f"{C.CYAN}[+] PURE TAKE-PROFIT BRACKET LOCKED (18.5%).{C.END}")
+
+def sync_to_web(target):
+    payload = {
+        "ticker": target['ticker'], "type": target['type'], "price": target['price'],
+        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    }
+    with open("certified_targets.json", "w") as f:
+        json.dump(payload, f, indent=4)
+    try:
+        subprocess.run(["git", "add", "certified_targets.json"], check=True)
+        subprocess.run(["git", "commit", "-m", f"web-sync: {target['ticker']}"], capture_output=True)
+        subprocess.run(["git", "push"], capture_output=True)
+        print(f"{C.G}[*] WEB SYNC UPDATED: {target['ticker']} IS LIVE.{C.END}")
+    except Exception as e:
+        print(f"{C.Y}[!] WEB SYNC DELAYED: {e}{C.END}")
 
 if __name__ == "__main__":
-    while True:
-        data = fetch_prices()
-        if not data:
-            time.sleep(1)
-            continue
-            
-        pulse_count += 1
-        integral_reset_counter += 1
-        
-        # --- UI Refresh ---
-        print(f"\033[2J\033[H", end="")
-        print(f"{PERI}FASE MASTER v7.0.0 - VERITAS INJECTED | {datetime.now().strftime('%H:%M:%S')} | PREDATOR MODE | PULSE: {pulse_count}{RESET}")
-        print("-" * 110)
-        
-        if integral_reset_counter > 500:
-            print(f"{BOLD}{FUCHSIA}*** SYSTEM RESET: INDEFINITE INTEGRAL BIAS CLEARED ***{RESET}")
-            integral_reset_counter = 0
-            
-        for t in ALL_TICKERS:
-            raw_p = data.get(t)
-            if not raw_p: continue
-            
-            if t not in initialized or raw_p != price_history[t][-1]:
-                price_history[t].append(raw_p)
-                price_history[t].pop(0)
-                initialized.add(t)
-                
-            psi, delta, phi = get_quantum_state(price_history[t])
-            
-            # --- DUAL-POLARITY HIERARCHY ---
-            if psi > 5.0:
-                potential_pos[t] += 1; potential_neg[t] = 0
-            elif psi < -5.0:
-                potential_neg[t] += 1; potential_pos[t] = 0
+    rh_login()
+    print(f"{C.BBLD}{C.Y}[!] HEALY VECTOR LABS: PURE TAKE-PROFIT ENGINE ENGAGED{C.END}")
+    try:
+        while True:
+            # THE 3 BULLET RULE ENFORCEMENT
+            if len(ACTIVE_TRADES) >= MAX_BULLETS:
+                print(f"\r{C.Y}[!] MAX BULLETS SECURED ({MAX_BULLETS}/{MAX_BULLETS}). TACTICAL RELOAD: MONITORING BRACKETS ONLY.{C.END}", end="")
             else:
-                potential_pos[t] = 0; potential_neg[t] = 0
-                
-            m_pos, m_neg = potential_pos[t], potential_neg[t]
-            clean_status = "STABLE"
-            status = "STABLE"
+                target = hunt_best_deal()
+                if target:
+                    execute_trade(target)
+                    sync_to_web(target)
             
-            if m_neg > 10: post_drop_brew[t] = True
-            if m_pos > 10: post_drop_brew[t] = False
+            manage_positions()
+            time.sleep(2)  # Tightened loop for 0-latency bracket monitoring
             
-            if m_pos > m_neg:
-                f_t_col = FUCHSIA if m_pos > 25 else GREEN
-                status = f"{FLASH}SINGULARITY{RESET}" if m_pos > 25 else "BREWING"
-            elif m_neg > m_pos:
-                f_t_col = RED
-                status = "DROP BREW" if m_neg > 25 else "STABLE"
-            else:
-                f_t_col = PERI
-                status = "STABLE"
-                
-            # --- COMPRESSION LOGIC (VERITAS RECALIBRATED) ---
-            if phi > 15.0 and abs(delta) < 0.55 and psi > 2.0:
-                compression_cycles[t] += 1
-                status = f"{FLASH}{BOLD}COMPRESS [{compression_cycles[t]}]{RESET}"
-                clean_status = "COMPRESSION"
-            elif abs(delta) > 1.2 or (m_pos == 50 and delta > 0.7):
-                compression_cycles[t] = 0
-                status = f"{GOLD}COILED [{compression_cycles[t]}]{RESET}"
-                clean_status = "COILED"
-            elif compression_cycles[t] > 0:
-                status = f"{GOLD}COILED [{compression_cycles[t]}]{RESET}"
-                clean_status = "COILED"
-                
-            # --- STRIKE EXECUTION ---
-            if clean_status == "COMPRESSION" and compression_cycles[t] >= 10 and post_drop_brew[t]:
-                if veritas_bridge(t, raw_p, price_history[t]):
-                    execute_strike(t, raw_p)
-                    
-            d_sign = GREEN if delta >= 0 else RED
-            f_val = m_pos if m_pos > m_neg else -m_neg
-            
-            print(f"{t:<8} | $ {raw_p:>10.4f} | Psi: {psi:>8.4f} | Delta: {d_sign}{delta:>7.2f}%{RESET} | Phi: {phi:>7.2f} | {f_t_col}{status:<18}{RESET}")
-            
-        time.sleep(1)
+    except KeyboardInterrupt:
+        print(f"\n{C.R}[!!!] EMERGENCY BRAKE PULLED. ENGINE SHUTTING DOWN.{C.END}")
+        sys.exit(0)
 
