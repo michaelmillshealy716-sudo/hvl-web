@@ -1,6 +1,6 @@
 {
-    "ticker": "AXP",
-    "type": "put",
-    "price": 320.8,
-    "timestamp": "2026-05-06 12:13:49"
+    "ticker": "ETN",
+    "type": "call",
+    "price": 418.97,
+    "timestamp": "2026-05-06 12:15:32"
 }
