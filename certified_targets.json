@@ -1,6 +1,6 @@
 {
     "ticker": "KLAC",
-    "type": "PUT",
-    "price": 1797.84,
-    "timestamp": "2026-05-06 11:54:32"
+    "type": "CALL",
+    "price": 1802.14,
+    "timestamp": "2026-05-06 11:56:39"
 }
