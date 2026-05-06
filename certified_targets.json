@@ -1,1 +1,6 @@
-{"targets": [{"ticker": "TSLA", "catalyst": "Sudden Flame Simulation", "iv_percentile": 98, "action": "SCOUT_DEPLOYED"}]}
+{
+    "ticker": "KLAC",
+    "type": "PUT",
+    "price": 1797.84,
+    "timestamp": "2026-05-06 11:54:32"
+}
