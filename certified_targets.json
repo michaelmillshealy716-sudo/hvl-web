@@ -1,6 +1,6 @@
 {
     "ticker": "NVR",
-    "type": "CALL",
-    "price": 6135.825,
-    "timestamp": "2026-05-06 12:03:55"
+    "type": "PUT",
+    "price": 6118.0,
+    "timestamp": "2026-05-06 12:05:38"
 }
