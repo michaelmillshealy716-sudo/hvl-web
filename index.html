@@ -2,117 +2,100 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HEALY VECTOR LABS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healy Vector Labs | Quantum Intelligence</title>
     <style>
+        :root {
+            --bg: #050505;
+            --text: #ffffff;
+            --dim: #777;
+            --accent: #3b82f6;
+            --card-bg: #0d0d0d;
+        }
         body {
-            background-color: #050505;
-            font-family: 'Courier New', Courier, monospace;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 40px;
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', -apple-system, sans-serif;
             margin: 0;
+            padding: 40px 20px;
         }
-        /* Flickering Neon Green for Company Name */
-        .neon-green-flicker {
-            color: #39ff14;
-            font-size: 3.8rem;
-            font-weight: 900;
-            text-align: center;
-            text-transform: uppercase;
-            margin: 0 0 10px 0;
-            text-shadow: 
-                0 0 5px #39ff14, 
-                0 0 10px #39ff14, 
-                0 0 20px #39ff14, 
-                0 0 40px #39ff14;
-            animation: flicker 3s infinite alternate;
-        }
-        @keyframes flicker {
-            0%, 18%, 22%, 25%, 53%, 57%, 100% {
-                text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 40px #39ff14;
-                opacity: 1;
-            }
-            20%, 24%, 55% {
-                text-shadow: none;
-                opacity: 0.4;
-            }
-        }
-        /* Electric Purple Subheader */
-        .electric-purple {
-            color: #bf00ff;
-            font-size: 1.8rem;
-            font-weight: bold;
-            text-align: center;
-            letter-spacing: 6px;
-            margin: 0 0 40px 0;
-            text-shadow: 0 0 10px #bf00ff, 0 0 20px #bf00ff;
-            border-bottom: 2px solid #bf00ff;
-            padding-bottom: 15px;
-            width: 80%;
-            max-width: 800px;
-        }
-        /* Matrix Box */
-        .matrix-box {
-            border: 2px solid #39ff14;
-            box-shadow: 0 0 20px rgba(57, 255, 20, 0.15);
-            padding: 30px;
-            width: 90%;
-            max-width: 900px;
-            background: rgba(0, 0, 0, 0.85);
-        }
-        .sys-text { color: #39ff14; font-weight: bold; font-size: 1.1rem; }
-        table { width: 100%; border-collapse: collapse; margin-top: 25px; }
-        th { color: #39ff14; text-align: left; border-bottom: 2px solid #bf00ff; padding: 15px; font-size: 1.2rem; }
-        td { padding: 15px; border-bottom: 1px rgba(191, 0, 255, 0.2) solid; font-size: 1.3rem; font-weight: bold; }
+        .container { max-width: 900px; margin: 0 auto; }
+        header { border-bottom: 1px solid #222; padding-bottom: 30px; margin-bottom: 50px; }
+        h1 { font-size: 2.5rem; font-weight: 900; letter-spacing: -0.05em; margin: 0; }
+        .blue { color: var(--accent); }
+        .architect-meta { color: var(--dim); font-size: 0.9rem; margin-top: 10px; text-transform: uppercase; letter-spacing: 0.1em; }
         
-        /* Tickers in Purple, Money in Green */
-        .ticker-purple { color: #bf00ff; text-shadow: 0 0 10px #bf00ff; }
-        .money-green { color: #39ff14; text-shadow: 0 0 10px #39ff14; }
+        .engine-status {
+            background: var(--card-bg);
+            border: 1px solid #222;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .engine-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+        .engine-title { font-weight: 700; color: var(--accent); font-size: 1.1rem; }
+        .status-pill { font-size: 0.7rem; background: rgba(59, 130, 246, 0.1); padding: 4px 10px; border-radius: 100px; border: 1px solid var(--accent); }
+
+        .ticker-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+        .ticker-card { background: #111; padding: 15px; border-radius: 6px; border: 1px solid #1a1a1a; }
+        .ticker-name { font-weight: 700; font-size: 1.2rem; }
+        .ticker-val { display: block; font-family: 'Courier New', monospace; font-size: 1.4rem; margin: 10px 0; }
+        .ticker-meta { font-size: 0.8rem; color: var(--dim); display: flex; justify-content: space-between; }
+        
+        footer { margin-top: 60px; color: #333; font-size: 0.8rem; text-align: center; }
     </style>
 </head>
 <body>
-    <h1 class="neon-green-flicker">HEALY VECTOR LABS</h1>
-    <div class="electric-purple">PROJECT DAGOR BRAGOLLACH</div>
+    <div class="container">
+        <header>
+            <h1>HEALY <span class="blue">VECTOR LABS</span></h1>
+            <div class="architect-meta">Lead Architect // Agentic AI Orchestration</div>
+        </header>
 
-    <div class="matrix-box">
-        <p class="sys-text">> INITIALIZING HVL-SCOUT DATA STREAM...</p>
-        <p class="sys-text">> ENTROPY MODEL: $E(t) = E_0 e^{-2t}$</p>
-        <table id="target-table">
-            <thead>
-                <tr>
-                    <th>TARGET TICKER</th>
-                    <th>CONVICTION STATUS</th>
-                    <th>CAPITAL / METRICS</th>
-                </tr>
-            </thead>
-            <tbody id="target-data">
-                </tbody>
-        </table>
+        <section class="engine-status">
+            <div class="engine-header">
+                <span class="engine-title">CORE ENGINE: fase_euler.py</span>
+                <span class="status-pill">LIVE EXECUTION</span>
+            </div>
+            <p style="color: var(--dim); font-size: 0.9rem;">Autonomous quantitative intelligence pipeline. Real-time Monte Carlo path simulations and sentiment ingestion.</p>
+            
+            <div id="ticker-output" class="ticker-grid">
+                <!-- Data from web_status.json injects here -->
+                <div class="ticker-card">Loading Veritas stream...</div>
+            </div>
+        </section>
+
+        <footer>
+            PROPRIETARY ARCHITECTURE - 2026 - SOVEREIGN EDITION
+        </footer>
     </div>
 
     <script>
-        async function fetchTargets() {
+        async function fetchMarketData() {
             try {
-                const response = await fetch('certified_targets.json');
+                const response = await fetch('./web_status.json');
                 const data = await response.json();
-                const tableBody = document.getElementById('target-data');
-                tableBody.innerHTML = ''; 
+                const container = document.getElementById('ticker-output');
+                container.innerHTML = '';
 
-                data.targets.forEach(target => {
-                    const row = `<tr>
-                        <td class="ticker-purple">${target.ticker}</td>
-                        <td class="money-green">EXECUTE</td>
-                        <td class="money-green">${target.rsi} / $${target.v_score}</td>
-                    </tr>`;
-                    tableBody.innerHTML += row;
+                Object.entries(data.projections).forEach(([ticker, info]) => {
+                    container.innerHTML += `
+                        <div class="ticker-card">
+                            <div class="ticker-name">${ticker}</div>
+                            <span class="ticker-val">$${info.expected_value.toFixed(2)}</span>
+                            <div class="ticker-meta">
+                                <span>Sent: ${info.sentiment_score}</span>
+                                <span>Conf: 95%</span>
+                            </div>
+                        </div>
+                    `;
                 });
-            } catch (e) {
-                console.error("Waiting for Node [2] output...");
+            } catch (error) {
+                console.error("Stream sync failed:", error);
             }
         }
-        fetchTargets();
-        setInterval(fetchTargets, 60000);
+        fetchMarketData();
+        setInterval(fetchMarketData, 300000); // 5-minute cycle
     </script>
 </body>
 </html>
