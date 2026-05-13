@@ -6,7 +6,7 @@ from datetime import datetime
 class EdgarRaven:
     """
     The EDGAR Ingestion Pipeline.
-    Pulls corporate filings (8-Ks, 10-Ks) and derives sentiment.
+    Polls corporate filings (8-Ks, 10-Ks) and derives sentiment.
     """
     def __init__(self, user_agent="Healy Vector Labs - FASE Data Pipeline"):
         self.user_agent = user_agent
@@ -64,9 +64,9 @@ class FASEStochasticEngine:
 if __name__ == "__main__":
     # Core Configuration
     tickers = ["TSLA", "F", "XOM", "PFE", "CL=F"]
-    n_sims = 1000
+    N_sims = 1000
     output_file = "web_status.json"
-    
+
     # Base prices for realistic Monte Carlo starting points
     base_prices = {
         "TSLA": 175.50,
@@ -79,58 +79,54 @@ if __name__ == "__main__":
     print("[SYSTEM] Initializing FASE Pipeline for continuous web deployment...")
     edgar = EdgarRaven()
 
-    while True:
-        current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        print(f"\n[SYSTEM] {'='*40}")
-        print(f"[SYSTEM] Commencing Execution Cycle: {current_time}")
-        print(f"[SYSTEM] {'='*40}")
-        
-        web_data = {
-            "last_updated": current_time,
-            "projections": {}
+    current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    print("-" * 45)
+    print(f"[SYSTEM] Commencing Execution Cycle: {current_time}")
+    print("-" * 45)
+
+    web_data = {
+        "last_updated": current_time,
+        "projections": {}
+    }
+
+    for target_ticker in tickers:
+        print("-" * 45)
+        # 1. Initialize the EDGAR Ingestion Pipeline
+        live_sentiment = edgar.get_ticker_sentiment(target_ticker)
+
+        # 2. Initialize the FASE Core
+        current_price = base_prices.get(target_ticker, 100.0)
+        engine = FASEStochasticEngine(x0=current_price, T=1.0, dt=0.01)
+        final_states = []
+
+        print(f"[FASE] Running {N_sims}-path Monte Carlo on {target_ticker}...")
+        print(f"[FASE] Ingested Sentiment Score: {live_sentiment}")
+
+        # 3. Execute Simulations using EDGAR data
+        for _ in range(N_sims):
+            _, path = engine.simulate_sentiment_path(base_mu=0.1, sigma=0.3, sentiment_score=live_sentiment)
+            final_states.append(path[-1])
+
+        expected_value = np.mean(final_states)
+        ci_low, ci_high = np.percentile(final_states, [2.5, 97.5])
+
+        print(f"[VERITAS] {target_ticker} Expected Value (1yr): ${expected_value:.2f}")
+        print(f"[VERITAS] 95% Confidence Interval: [${ci_low:.2f}, ${ci_high:.2f}]")
+
+        # Store data for frontend routing
+        web_data["projections"][target_ticker] = {
+            "expected_value": round(expected_value, 2),
+            "ci_low": round(ci_low, 2),
+            "ci_high": round(ci_high, 2),
+            "sentiment_score": live_sentiment
         }
 
-        for target_ticker in tickers:
-            print("-" * 45)
-            # 1. Initialize the EDGAR Ingestion Pipeline
-            live_sentiment = edgar.get_ticker_sentiment(target_ticker)
-            
-            # 2. Initialize the FASE Core
-            current_price = base_prices.get(target_ticker, 100.0)
-            engine = FASEStochasticEngine(x0=current_price, T=1.0, dt=0.01)
-            final_states = []
+    # 4. Export payload to JSON for website consumption
+    with open(output_file, 'w') as f:
+        json.dump(web_data, f, indent=4)
 
-            print(f"[FASE] Running {n_sims}-path Monte Carlo on {target_ticker}...")
-            print(f"[FASE] Ingested Sentiment Score: {live_sentiment}")
-
-            # 3. Execute Simulations using EDGAR data
-            for _ in range(n_sims):
-                _, path = engine.simulate_sentiment_path(base_mu=0.1, sigma=0.3, sentiment_score=live_sentiment)
-                final_states.append(path[-1])
-
-            expected_value = np.mean(final_states)
-            ci_low, ci_high = np.percentile(final_states, [2.5, 97.5])
-
-            print(f"[VERITAS] {target_ticker} Expected Value (1yr): ${expected_value:.2f}")
-            print(f"[VERITAS] 95% Confidence Interval: [${ci_low:.2f}, ${ci_high:.2f}]")
-
-            # Store data for frontend routing
-            web_data["projections"][target_ticker] = {
-                "expected_value": round(expected_value, 2),
-                "ci_low": round(ci_low, 2),
-                "ci_high": round(ci_high, 2),
-                "sentiment_score": live_sentiment
-            }
-
-        # 4. Export payload to JSON for website consumption
-        with open(output_file, 'w') as f:
-            json.dump(web_data, f, indent=4)
-
-        print("-" * 45)
-        print(f"[SYSTEM] FASE Pipeline execution complete.")
-        print(f"[SYSTEM] Live state exported to {output_file}.")
-        print(f"[SYSTEM] Entering 300-second standby cycle to preserve node capacity...")
-        
-        # 5-minute standby
-        time.sleep(300)
+    print("-" * 45)
+    print("[SYSTEM] FASE Pipeline execution complete.")
+    print(f"[SYSTEM] Live state exported to {output_file}.")
+    print("[SYSTEM] Execution finished. Handing back to sync loop.")
 
