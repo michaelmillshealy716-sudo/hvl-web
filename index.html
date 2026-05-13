@@ -1,82 +1,109 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healy Vector Labs | Sovereign Quant Stack</title>
-    <style>
-        :root { --bg: #050505; --text: #ffffff; --dim: #777; --accent: #3b82f6; }
-        body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; margin: 0; padding: 40px 20px; }
-        .container { max-width: 900px; margin: 0 auto; }
-        header { border-bottom: 1px solid #222; padding-bottom: 20px; margin-bottom: 40px; }
-        h1 { font-size: 2.5rem; font-weight: 900; letter-spacing: -0.05em; margin: 0; }
-        .blue { color: var(--accent); }
-        .meta { color: var(--dim); font-size: 0.8rem; letter-spacing: 0.1em; margin-top: 8px; text-transform: uppercase; }
-        .section-label { color: var(--accent); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; margin-bottom: 15px; display: block; letter-spacing: 0.05em;}
-        .card { background: #0d0d0d; border: 1px solid #222; padding: 25px; border-radius: 8px; margin-bottom: 30px; }
-        .ticker-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
-        .ticker { background: #111; padding: 15px; border-radius: 6px; border: 1px solid #1a1a1a; }
-        .ticker-name { font-weight: 700; font-size: 1.1rem; margin-bottom: 5px; }
-        .ticker-val { font-family: monospace; font-size: 1.3rem; color: var(--accent); }
-        .ticker-sent { font-size: 0.75rem; color: var(--dim); margin-top: 5px; display: block; }
-        .stack-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-        .engine-item { font-family: monospace; font-size: 0.85rem; color: var(--dim); padding: 10px 0; border-bottom: 1px solid #1a1a1a; }
-        .engine-item span { color: var(--text); font-weight: bold; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>HEALY <span class="blue">VECTOR LABS</span></h1>
-            <div class="meta">LEAD ARCHITECT // AGENTIC AI ORCHESTRATION</div>
-        </header>
-        <span class="section-label">Core Live Stream</span>
-        <div class="card">
-            <div id="ticker-output" class="ticker-grid">
-                <div class="ticker" style="color: var(--dim);">Connecting to Veritas engine...</div>
-            </div>
-        </div>
-        <span class="section-label">Sovereign Stack Architecture</span>
-        <div class="card stack-grid">
-            <div>
-                <div class="engine-item">ENGINE: <span>fase_euler.py</span></div>
-                <div class="engine-item">ENGINE: <span>fase_master.py</span></div>
-                <div class="engine-item">ENGINE: <span>brule_engine.py</span></div>
-            </div>
-            <div>
-                <div class="engine-item">CORE: <span>veritas_core.py</span></div>
-                <div class="engine-item">CORE: <span>haptic_predator.py</span></div>
-                <div class="engine-item">CORE: <span>hvl_protect.py</span></div>
-            </div>
-        </div>
-        <footer style="color:#333; font-size:0.7rem; text-align:center; margin-top:60px; font-weight: bold;">
-            PROPRIETARY ARCHITECTURE // 2026 // SOVEREIGN EDITION
-        </footer>
-    </div>
-    <script>
-        async function fetchMarketData() {
-            try {
-                // FORCE CACHE BYPASS
-                const res = await fetch('./web_status.json?t=' + Date.now());
-                const data = await res.json();
-                const container = document.getElementById('ticker-output');
-                if (data.projections) {
-                    container.innerHTML = '';
-                    Object.entries(data.projections).forEach(([symbol, info]) => {
-                        container.innerHTML += `
-                        <div class="ticker">
-                            <div class="ticker-name">${symbol}</div>
-                            <div class="ticker-val">$${info.expected_value.toFixed(2)}</div>
-                            <div class="ticker-sent">Sentiment: ${info.sentiment_score}</div>
-                        </div>`;
-                    });
-                }
-            } catch (e) { 
-                console.error("Sync error", e);
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>HVL COMMAND CENTER</title>
+        <style>
+            body { background-color: #000; color: #fff; font-family: 'Courier New', monospace; margin: 0; padding: 20px; }
+            .container { max-width: 1200px; margin: 0 auto; }
+            header { border-bottom: 2px solid #bc13fe; padding-bottom: 20px; margin-bottom: 30px; }
+            h1 { color: #bc13fe; margin: 0; letter-spacing: 2px; }
+            h2 { color: #39ff14; font-size: 1em; margin: 5px 0; }
+            .signal-card { 
+                background: rgba(20, 20, 20, 0.9); 
+                border: 1px solid #333; 
+                margin-bottom: 15px; 
+                padding: 15px; 
+                border-radius: 4px;
+                box-shadow: 0 0 10px rgba(188, 19, 254, 0.1);
             }
-        }
-        fetchMarketData();
-        setInterval(fetchMarketData, 30000);
-    </script>
-</body>
-</html>
+            .signal-header { display: flex; justify-content: space-between; align-items: center; }
+            .ticker { font-size: 1.5em; font-weight: bold; color: #bc13fe; }
+            .veritas-score { color: #39ff14; font-weight: bold; }
+            .signal-type { font-weight: bold; text-transform: uppercase; color: #fff; }
+            .greeks { font-size: 0.9em; color: #888; margin-top: 10px; }
+            footer { color: #444; font-size: 0.8em; margin-top: 50px; text-align: center; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>HEALY VECTOR LABS</h1>
+                <h2>VERITAS V2.2 // AUTONOMOUS_DETECTION_MATRIX</h2>
+                <p style="font-size: 0.8em; color: #666;">LAST_SYNC: 10:06:49 // JACKSONVILLE_NODE</p>
+            </header>
+            
+            <div id="signal-stack">
+    
+                <div class="signal-card">
+                    <div class="signal-header">
+                        <span class="ticker">RIVN</span>
+                        <span class="signal-type" style="color: #ff3131">FORCE SELL</span>
+                    </div>
+                    <p style="margin: 10px 0;">VERITAS_SCORE: <span class="veritas-score">41.23%</span></p>
+                    <div class="greeks">
+                        DELTA: 0.62 | GAMMA: 0.045 | TIME: 10:06:49
+                    </div>
+                </div>
+        
+                <div class="signal-card">
+                    <div class="signal-header">
+                        <span class="ticker">AMGN</span>
+                        <span class="signal-type" style="color: #ff3131">FORCE SELL</span>
+                    </div>
+                    <p style="margin: 10px 0;">VERITAS_SCORE: <span class="veritas-score">7.0%</span></p>
+                    <div class="greeks">
+                        DELTA: 0.606 | GAMMA: 0.045 | TIME: 10:05:17
+                    </div>
+                </div>
+        
+                <div class="signal-card">
+                    <div class="signal-header">
+                        <span class="ticker">BKNG</span>
+                        <span class="signal-type" style="color: #ff3131">HIGH CONVICTION - GO</span>
+                    </div>
+                    <p style="margin: 10px 0;">VERITAS_SCORE: <span class="veritas-score">0.85%</span></p>
+                    <div class="greeks">
+                        DELTA: 0.797 | GAMMA: 0.045 | TIME: 10:05:05
+                    </div>
+                </div>
+        
+                <div class="signal-card">
+                    <div class="signal-header">
+                        <span class="ticker">TXN</span>
+                        <span class="signal-type" style="color: #ff3131">FORCE SELL</span>
+                    </div>
+                    <p style="margin: 10px 0;">VERITAS_SCORE: <span class="veritas-score">2.41%</span></p>
+                    <div class="greeks">
+                        DELTA: 0.785 | GAMMA: 0.045 | TIME: 10:04:34
+                    </div>
+                </div>
+        
+                <div class="signal-card">
+                    <div class="signal-header">
+                        <span class="ticker">ORCL</span>
+                        <span class="signal-type" style="color: #ff3131">HIGH CONVICTION - GO</span>
+                    </div>
+                    <p style="margin: 10px 0;">VERITAS_SCORE: <span class="veritas-score">10.82%</span></p>
+                    <div class="greeks">
+                        DELTA: 0.601 | GAMMA: 0.045 | TIME: 10:04:01
+                    </div>
+                </div>
+        
+                <div class="signal-card">
+                    <div class="signal-header">
+                        <span class="ticker">AAPL</span>
+                        <span class="signal-type" style="color: #ff3131">FORCE SELL</span>
+                    </div>
+                    <p style="margin: 10px 0;">VERITAS_SCORE: <span class="veritas-score">4.39%</span></p>
+                    <div class="greeks">
+                        DELTA: 0.659 | GAMMA: 0.045 | TIME: 10:03:17
+                    </div>
+                </div>
+        
+            </div>
+            <footer>HEALY VECTOR LABS &copy; 2026 // DIFFERENT SPECIES ONLY</footer>
+        </div>
+    </body>
+    </html>
+    
