@@ -63,7 +63,8 @@
     <script>
         async function fetchMarketData() {
             try {
-                const res = await fetch('./web_status.json');
+                // The cache-buster forces the browser to pull the latest engine data every time
+                const res = await fetch('./web_status.json?nocache=' + new Date().getTime());
                 const data = await res.json();
                 const container = document.getElementById('ticker-output');
                 
