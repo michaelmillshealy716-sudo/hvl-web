@@ -58,9 +58,9 @@
                     const row = `<tr>
                         <td style="color:#a0f">${ticker}</td>
                         <td class="ev">$${stats.expected_value || '0.00'}</td>
-                        <td class="sentiment">${stats.sentiment || '0.0'}</td>
+                        <td class="sentiment">${stats.sentiment || stats.sentiment_score || '0.0'}</td>
                         <td style="color:#555">[${stats.conf_low || '?'} - ${stats.conf_high || '?'}]</td>
-                        <td>${stats.veritas_score || '0'}%</td>
+                        <td>${stats.veritas_score || stats.score || '0'}%</td>
                     </tr>`;
                     body.innerHTML += row;
                 }
