@@ -36,9 +36,9 @@
                 body.innerHTML = '';
                 for (const [ticker, stats] of Object.entries(source)) {
                     if (typeof stats !== 'object' || stats === null) continue;
-                    const low = stats.conf_low || stats["95_low"] || stats.low || '0.00';
-                    const high = stats.conf_high || stats["95_high"] || stats.high || '0.00';
-                    const score = stats.veritas_score || stats.score || stats.conviction || '0.0';
+                    const low = stats.conf_low || stats.low || stats["95_low"] || stats["95_low"] || stats.low || '0.00';
+                    const high = stats.conf_high || stats.high || stats["95_high"] || stats["95_high"] || stats.high || '0.00';
+                    const score = stats.veritas_score || stats.score || (stats.sentiment * 100).toFixed(1) || stats.score || stats.conviction || '0.0';
                     body.innerHTML += `<tr>
                         <td class="ticker">${ticker}</td>
                         <td style="font-weight:bold">$${stats.expected_value || stats.EV || '0.00'}</td>
