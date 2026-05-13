@@ -3,99 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healy Vector Labs | Quantum Intelligence</title>
+    <title>Healy Vector Labs | Sovereign Quant Stack</title>
     <style>
-        :root {
-            --bg: #050505;
-            --text: #ffffff;
-            --dim: #777;
-            --accent: #3b82f6;
-            --card-bg: #0d0d0d;
-        }
-        body {
-            background-color: var(--bg);
-            color: var(--text);
-            font-family: 'Inter', -apple-system, sans-serif;
-            margin: 0;
-            padding: 40px 20px;
-        }
+        :root { --bg: #050505; --text: #ffffff; --dim: #777; --accent: #3b82f6; }
+        body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; margin: 0; padding: 40px 20px; }
         .container { max-width: 900px; margin: 0 auto; }
-        header { border-bottom: 1px solid #222; padding-bottom: 30px; margin-bottom: 50px; }
+        header { border-bottom: 1px solid #222; padding-bottom: 20px; margin-bottom: 40px; }
         h1 { font-size: 2.5rem; font-weight: 900; letter-spacing: -0.05em; margin: 0; }
         .blue { color: var(--accent); }
-        .architect-meta { color: var(--dim); font-size: 0.9rem; margin-top: 10px; text-transform: uppercase; letter-spacing: 0.1em; }
+        .meta { color: var(--dim); font-size: 0.8rem; letter-spacing: 0.1em; margin-top: 8px; text-transform: uppercase; }
         
-        .engine-status {
-            background: var(--card-bg);
-            border: 1px solid #222;
-            padding: 25px;
-            border-radius: 8px;
-            margin-bottom: 30px;
-        }
-        .engine-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
-        .engine-title { font-weight: 700; color: var(--accent); font-size: 1.1rem; }
-        .status-pill { font-size: 0.7rem; background: rgba(59, 130, 246, 0.1); padding: 4px 10px; border-radius: 100px; border: 1px solid var(--accent); }
+        .section-label { color: var(--accent); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; margin-bottom: 15px; display: block; letter-spacing: 0.05em;}
+        .card { background: #0d0d0d; border: 1px solid #222; padding: 25px; border-radius: 8px; margin-bottom: 30px; }
+        
+        .ticker-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+        .ticker { background: #111; padding: 15px; border-radius: 6px; border: 1px solid #1a1a1a; }
+        .ticker-name { font-weight: 700; font-size: 1.1rem; margin-bottom: 5px; }
+        .ticker-val { font-family: monospace; font-size: 1.3rem; color: var(--accent); }
+        .ticker-sent { font-size: 0.75rem; color: var(--dim); margin-top: 5px; display: block; }
 
-        .ticker-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
-        .ticker-card { background: #111; padding: 15px; border-radius: 6px; border: 1px solid #1a1a1a; }
-        .ticker-name { font-weight: 700; font-size: 1.2rem; }
-        .ticker-val { display: block; font-family: 'Courier New', monospace; font-size: 1.4rem; margin: 10px 0; }
-        .ticker-meta { font-size: 0.8rem; color: var(--dim); display: flex; justify-content: space-between; }
-        
-        footer { margin-top: 60px; color: #333; font-size: 0.8rem; text-align: center; }
+        .stack-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .engine-item { font-family: monospace; font-size: 0.85rem; color: var(--dim); padding: 10px 0; border-bottom: 1px solid #1a1a1a; }
+        .engine-item span { color: var(--text); font-weight: bold; }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
             <h1>HEALY <span class="blue">VECTOR LABS</span></h1>
-            <div class="architect-meta">Lead Architect // Agentic AI Orchestration</div>
+            <div class="meta">LEAD ARCHITECT // AGENTIC AI ORCHESTRATION</div>
         </header>
 
-        <section class="engine-status">
-            <div class="engine-header">
-                <span class="engine-title">CORE ENGINE: fase_euler.py</span>
-                <span class="status-pill">LIVE EXECUTION</span>
-            </div>
-            <p style="color: var(--dim); font-size: 0.9rem;">Autonomous quantitative intelligence pipeline. Real-time Monte Carlo path simulations and sentiment ingestion.</p>
-            
+        <span class="section-label">Core Live Stream</span>
+        <div class="card">
             <div id="ticker-output" class="ticker-grid">
-                <!-- Data from web_status.json injects here -->
-                <div class="ticker-card">Loading Veritas stream...</div>
+                <div class="ticker" style="color: var(--dim);">Connecting to Veritas engine...</div>
             </div>
-        </section>
+        </div>
 
-        <footer>
-            PROPRIETARY ARCHITECTURE - 2026 - SOVEREIGN EDITION
+        <span class="section-label">Sovereign Stack Architecture</span>
+        <div class="card stack-grid">
+            <div>
+                <div class="engine-item">ENGINE: <span>fase_euler.py</span></div>
+                <div class="engine-item">ENGINE: <span>fase_master.py</span></div>
+                <div class="engine-item">ENGINE: <span>brule_engine.py</span></div>
+            </div>
+            <div>
+                <div class="engine-item">CORE: <span>veritas_core.py</span></div>
+                <div class="engine-item">CORE: <span>haptic_predator.py</span></div>
+                <div class="engine-item">CORE: <span>hvl_protect.py</span></div>
+            </div>
+        </div>
+
+        <footer style="color:#333; font-size:0.7rem; text-align:center; margin-top:60px; font-weight: bold;">
+            PROPRIETARY ARCHITECTURE // 2026 // SOVEREIGN EDITION
         </footer>
     </div>
 
     <script>
         async function fetchMarketData() {
             try {
-                const response = await fetch('./web_status.json');
-                const data = await response.json();
+                const res = await fetch('./web_status.json');
+                const data = await res.json();
                 const container = document.getElementById('ticker-output');
-                container.innerHTML = '';
-
-                Object.entries(data.projections).forEach(([ticker, info]) => {
-                    container.innerHTML += `
-                        <div class="ticker-card">
-                            <div class="ticker-name">${ticker}</div>
-                            <span class="ticker-val">$${info.expected_value.toFixed(2)}</span>
-                            <div class="ticker-meta">
-                                <span>Sent: ${info.sentiment_score}</span>
-                                <span>Conf: 95%</span>
-                            </div>
-                        </div>
-                    `;
-                });
-            } catch (error) {
-                console.error("Stream sync failed:", error);
+                
+                if (data.projections) {
+                    container.innerHTML = ''; // Clear loading text
+                    Object.entries(data.projections).forEach(([symbol, info]) => {
+                        container.innerHTML += `
+                        <div class="ticker">
+                            <div class="ticker-name">${symbol}</div>
+                            <div class="ticker-val">$${info.expected_value.toFixed(2)}</div>
+                            <div class="ticker-sent">Sentiment: ${info.sentiment_score}</div>
+                        </div>`;
+                    });
+                }
+            } catch (e) { 
+                console.error("Stream offline", e);
+                document.getElementById('ticker-output').innerHTML = '<div class="ticker" style="color: #ff4444;">Stream standby.</div>';
             }
         }
+        
+        // Initial fetch and 5-minute loop
         fetchMarketData();
-        setInterval(fetchMarketData, 300000); // 5-minute cycle
+        setInterval(fetchMarketData, 300000);
     </script>
 </body>
 </html>
