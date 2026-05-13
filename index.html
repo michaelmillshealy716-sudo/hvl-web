@@ -18,11 +18,11 @@
 <body>
     <div class="header">
         <h1>HEALY VECTOR LABS</h1>
-        <div>VERITAS V2.2 // STOCHASTIC_DETECTION_MATRIX</div>
+        <div id="status-line">VERITAS V2.2 // STOCHASTIC_DETECTION_MATRIX</div>
         <div id="sync-time" style="color: #555; font-size: 0.8em;"></div>
     </div>
 
-    <table class="matrix-table" id="matrix">
+    <table class="matrix-table">
         <thead>
             <tr>
                 <th>Ticker</th>
@@ -32,34 +32,39 @@
                 <th>Veritas Score</th>
             </tr>
         </thead>
-        <tbody id="matrix-body">
-            <!-- Data Injected Here -->
-        </tbody>
+        <tbody id="matrix-body"></tbody>
     </table>
 
-    <div class="node-info">
-        PROPRIETARY ARCHITECTURE // 2026 // JACKSONVILLE_NODE_SVRGN
-    </div>
+    <div class="node-info">PROPRIETARY ARCHITECTURE // 2026 // JACKSONVILLE_NODE_SVRGN</div>
 
     <script>
         async function updateMatrix() {
-            const response = await fetch('web_status.json?t=' + Date.now());
-            const data = await response.json();
-            const body = document.getElementById('matrix-body');
-            document.getElementById('sync-time').innerText = "LAST_SYNC: " + new Date().toLocaleTimeString() + " // JAX_NODE";
-            
-            body.innerHTML = '';
-            for (const [ticker, stats] of Object.entries(data)) {
-                if (ticker === 'metadata') continue;
-                const row = `<tr>
-                    <td style="color:#a0f">${ticker}</td>
-                    <td class="ev">$${stats.expected_value}</td>
-                    <td class="sentiment">${stats.sentiment}</td>
-                    <td style="color:#555">[${stats.conf_low} - ${stats.conf_high}]</td>
-                    <td>${stats.veritas_score}%</td>
-                </tr>`;
-                body.innerHTML += row;
-            }
+            try {
+                const response = await fetch('web_status.json?t=' + Date.now());
+                const data = await response.json();
+                const body = document.getElementById('matrix-body');
+                
+                // Extract actual projections, skipping metadata root keys
+                const source = data.PROJECTIONS || data.projections || data;
+                const lastUpdated = data.LAST_UPDATED || data.last_updated || "SYNC_ACTIVE";
+                
+                document.getElementById('sync-time').innerText = "LAST_SYNC: " + lastUpdated + " // JAX_NODE";
+                body.innerHTML = '';
+
+                for (const [ticker, stats] of Object.entries(source)) {
+                    // Only process objects (tickers), skip metadata strings
+                    if (typeof stats !== 'object' || stats === null) continue;
+
+                    const row = `<tr>
+                        <td style="color:#a0f">${ticker}</td>
+                        <td class="ev">$${stats.expected_value || '0.00'}</td>
+                        <td class="sentiment">${stats.sentiment || '0.0'}</td>
+                        <td style="color:#555">[${stats.conf_low || '?'} - ${stats.conf_high || '?'}]</td>
+                        <td>${stats.veritas_score || '0'}%</td>
+                    </tr>`;
+                    body.innerHTML += row;
+                }
+            } catch (e) { console.error("Matrix Sync Error", e); }
         }
         updateMatrix();
         setInterval(updateMatrix, 30000);
