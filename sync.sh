@@ -1,71 +1,67 @@
 #!/bin/bash
 while true; do
-    # 1. RUN ENGINE (Assuming your python script updates web_status.json)
+    # 1. RUN ENGINE (Assuming it updates web_status.json)
     # python3 veritas_engine.py 
 
-    # 2. GENERATE INSTITUTIONAL UI
+    # 2. GENERATE GOD-MODE UI
     cat << 'INNER_EOF' > index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HEALY VECTOR LABS // INSTITUTIONAL</title>
     <style>
-        :root { --bg: #ffffff; --text: #1a1a1a; --accent: #2c3e50; --border: #e1e4e8; --muted: #6a737d; }
-        body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; padding: 40px; }
-        .header { border-bottom: 1px solid var(--border); margin-bottom: 30px; padding-bottom: 20px; display: flex; justify-content: space-between; align-items: flex-end; }
-        h1 { margin: 0; font-size: 1.2rem; letter-spacing: 2px; font-weight: 600; }
-        .subtitle { color: var(--muted); font-size: 0.7rem; letter-spacing: 1px; }
-        .matrix-table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 0.85rem; }
-        .matrix-table th { text-align: left; padding: 12px; border-bottom: 2px solid var(--accent); color: var(--accent); text-transform: uppercase; }
+        :root { --bg: #ffffff; --text: #1a1a1a; --accent: #2c3e50; --border: #e1e4e8; }
+        body { background: var(--bg); color: var(--text); font-family: -apple-system, sans-serif; padding: 40px; }
+        .header { border-bottom: 1px solid var(--border); margin-bottom: 30px; padding-bottom: 20px; }
+        h1 { margin: 0; font-size: 1.1rem; letter-spacing: 2px; }
+        .matrix-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+        .matrix-table th { text-align: left; padding: 12px; border-bottom: 2px solid var(--accent); color: var(--accent); text-transform: uppercase; letter-spacing: 1px; }
         .matrix-table td { padding: 12px; border-bottom: 1px solid var(--border); }
-        .ticker { font-weight: 700; color: var(--accent); }
     </style>
 </head>
 <body>
-    <div class="header">
-        <div><h1>HEALY VECTOR LABS</h1><div class="subtitle">VERITAS V2.2 // STOCHASTIC_MATRIX</div></div>
-        <div id="sync-time" class="subtitle"></div>
-    </div>
+    <div class="header"><h1>HEALY VECTOR LABS</h1><div id="sync-time" style="font-size:0.7rem; color:#666;"></div></div>
     <table class="matrix-table">
         <thead><tr><th>Asset</th><th>Exp. Value (1Y)</th><th>Sentiment</th><th>95% Confidence</th><th>Veritas Score</th></tr></thead>
         <tbody id="matrix-body"></tbody>
     </table>
     <script>
-        async function updateMatrix() {
-            try {
-                const response = await fetch('web_status.json?t=' + Date.now());
-                const data = await response.json();
-                const body = document.getElementById('matrix-body');
-                const source = data.PROJECTIONS || data.projections || data;
-                document.getElementById('sync-time').innerText = "LAST_UPDATE: " + (data.LAST_UPDATED || new Date().toLocaleTimeString());
-                body.innerHTML = '';
-                for (const [ticker, stats] of Object.entries(source)) {
-                    if (typeof stats !== 'object' || stats === null) continue;
-                    const low = stats.conf_low || stats.low || stats["95_low"] || stats["95_low"] || stats.low || '0.00';
-                    const high = stats.conf_high || stats.high || stats["95_high"] || stats["95_high"] || stats.high || '0.00';
-                    const score = stats.veritas_score || stats.score || (stats.sentiment * 100).toFixed(1) || stats.score || stats.conviction || '0.0';
-                    body.innerHTML += `<tr>
-                        <td class="ticker">${ticker}</td>
-                        <td style="font-weight:bold">$${stats.expected_value || stats.EV || '0.00'}</td>
-                        <td style="color: #2980b9">${stats.sentiment || stats.sentiment_score || '0.0'}</td>
-                        <td style="color: #666">$${low} — $${high}</td>
-                        <td style="font-weight:bold">${score}%</td>
-                    </tr>`;
-                }
-            } catch (e) { console.error(e); }
+        async function update() {
+            const res = await fetch('web_status.json?t=' + Date.now());
+            const data = await res.json();
+            const body = document.getElementById('matrix-body');
+            const source = data.PROJECTIONS || data.projections || data;
+            document.getElementById('sync-time').innerText = "LAST_SYNC: " + (data.LAST_UPDATED || new Date().toLocaleTimeString());
+            body.innerHTML = '';
+            for (const [ticker, stats] of Object.entries(source)) {
+                if (!stats || typeof stats !== 'object') continue;
+                
+                // Aggressive data hunter for confidence and scores
+                const ev = stats.expected_value || stats.EV || '0.00';
+                const sent = stats.sentiment || stats.sentiment_score || '0.0';
+                const low = stats.conf_low || stats.low || stats['95_low'] || '0.00';
+                const high = stats.conf_high || stats.high || stats['95_high'] || '0.00';
+                const score = stats.veritas_score || stats.score || (stats.sentiment ? (stats.sentiment * 100).toFixed(1) : '0.0');
+
+                body.innerHTML += `<tr>
+                    <td style="font-weight:700">${ticker}</td>
+                    <td style="font-weight:bold">$${ev}</td>
+                    <td style="color:#2980b9">${sent}</td>
+                    <td style="color:#666">$${low} — $${high}</td>
+                    <td style="font-weight:bold">${score}%</td>
+                </tr>`;
+            }
         }
-        updateMatrix();
-        setInterval(updateMatrix, 30000);
+        update(); setInterval(update, 30000);
     </script>
 </body>
 </html>
 INNER_EOF
 
-    # 3. PUSH TELEMETRY
+    # 3. SYNC TO CLOUD
     git add index.html web_status.json
-    git commit -m "live: stochastic update $(date +'%Y-%m-%d %H:%M:%S')"
+    git commit -m "live: stochastic update $(date +'%H:%M:%S')"
     git push origin main
     echo "[SLEEP] Standby for 5 minutes..."
     sleep 300
