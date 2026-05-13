@@ -21,7 +21,6 @@
         <div id="status-line">VERITAS V2.2 // STOCHASTIC_DETECTION_MATRIX</div>
         <div id="sync-time" style="color: #555; font-size: 0.8em;"></div>
     </div>
-
     <table class="matrix-table">
         <thead>
             <tr>
@@ -34,37 +33,35 @@
         </thead>
         <tbody id="matrix-body"></tbody>
     </table>
-
     <div class="node-info">PROPRIETARY ARCHITECTURE // 2026 // JACKSONVILLE_NODE_SVRGN</div>
-
     <script>
         async function updateMatrix() {
             try {
                 const response = await fetch('web_status.json?t=' + Date.now());
                 const data = await response.json();
                 const body = document.getElementById('matrix-body');
-                
-                // Extract actual projections, skipping metadata root keys
                 const source = data.PROJECTIONS || data.projections || data;
-                const lastUpdated = data.LAST_UPDATED || data.last_updated || "SYNC_ACTIVE";
-                
-                document.getElementById('sync-time').innerText = "LAST_SYNC: " + lastUpdated + " // JAX_NODE";
                 body.innerHTML = '';
-
                 for (const [ticker, stats] of Object.entries(source)) {
-                    // Only process objects (tickers), skip metadata strings
                     if (typeof stats !== 'object' || stats === null) continue;
+                    
+                    // Direct mapping for the specific fields generated in image_64.png
+                    const ev = stats.expected_value || stats.EV || '0.00';
+                    const sent = stats.sentiment || stats.sentiment_score || '0.0';
+                    const low = stats.conf_low || stats["95_low"] || stats.low || '?';
+                    const high = stats.conf_high || stats["95_high"] || stats.high || '?';
+                    const score = stats.veritas_score || stats.score || stats.conviction || '0';
 
                     const row = `<tr>
                         <td style="color:#a0f">${ticker}</td>
-                        <td class="ev">$${stats.expected_value || '0.00'}</td>
-                        <td class="sentiment">${stats.sentiment || stats.sentiment_score || '0.0'}</td>
-                        <td style="color:#555">[${stats.conf_low || stats["95_low"] || '?'} - ${stats.conf_high || stats["95_high"] || '?'}]</td>
-                        <td>${stats.veritas_score || stats.score || stats.conviction || stats.score || '0'}%</td>
+                        <td class="ev">$${ev}</td>
+                        <td class="sentiment">${sent}</td>
+                        <td style="color:#555">[${low} - ${high}]</td>
+                        <td>${score}%</td>
                     </tr>`;
                     body.innerHTML += row;
                 }
-            } catch (e) { console.error("Matrix Sync Error", e); }
+            } catch (e) { console.error("Sync Error", e); }
         }
         updateMatrix();
         setInterval(updateMatrix, 30000);
