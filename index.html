@@ -8,13 +8,14 @@
         body { background: var(--bg); color: var(--text); font-family: "Inter", sans-serif; padding: 50px; line-height: 1.5; }
         .header { border-bottom: 2px solid var(--text); margin-bottom: 40px; padding-bottom: 15px; display: flex; justify-content: space-between; align-items: baseline; }
         h1 { margin: 0; font-size: 1.4rem; letter-spacing: 3px; font-weight: 800; text-transform: uppercase; }
-        table { width: 100%; border-collapse: collapse; margin-bottom: 60px; font-variant-numeric: tabular-nums; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 60px; }
         th { text-align: left; padding: 15px; border-bottom: 2px solid var(--text); font-size: 0.7rem; font-weight: 900; text-transform: uppercase; letter-spacing: 2px; }
         td { padding: 18px 15px; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+        .ticker { font-weight: 900; color: var(--accent); }
+        .headline-feed { font-style: italic; color: var(--muted); font-size: 0.8rem; max-width: 350px; }
         .methodology { border-top: 2px solid var(--text); padding-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
         .method-item h3 { font-size: 0.75rem; font-weight: 900; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; color: var(--accent); }
-        .method-item p { font-size: 0.85rem; color: var(--muted); margin: 0; font-weight: 500; }
-        .ticker { font-weight: 900; color: var(--accent); }
+        .method-item p { font-size: 0.85rem; color: var(--muted); margin: 0; }
     </style>
 </head>
 <body>
@@ -24,52 +25,49 @@
     </div>
 
     <table>
-        <thead><tr><th>Asset</th><th>Exp. Value (1Y)</th><th>Sentiment</th><th>95% Confidence</th><th>Veritas Score</th></tr></thead>
+        <thead>
+            <tr>
+                <th>Asset</th>
+                <th>Exp. Value</th>
+                <th>Intelligence Feed (Live Headlines)</th>
+                <th>95% Confidence</th>
+                <th>Veritas Score</th>
+            </tr>
+        </thead>
         <tbody id="matrix-body"></tbody>
     </table>
 
     <div class="methodology">
         <div class="method-item">
             <h3>FASE Pipeline</h3>
-            <p>Financial Analysis & Sentiment Engine. Ingests high-frequency sentiment data and market indicators to synthesize real-time conviction metrics across asset classes.</p>
+            <p>Financial Analysis & Sentiment Engine. Ingests high-frequency sentiment data and market indicators to synthesize real-time conviction metrics.</p>
         </div>
         <div class="method-item">
             <h3>Monte Carlo Simulation</h3>
-            <p>Calculates 95% Confidence Intervals via 1,000-path stochastic price modeling, accounting for volatility spikes and Option Greek sensitivities.</p>
-        </div>
-        <div class="method-item">
-            <h3>Veritas Score</h3>
-            <p>A proprietary conviction index that quantifies the statistical probability of the Expected Value reaching its target within a 12-month window.</p>
-        </div>
-        <div class="method-item">
-            <h3>Sovereign Quant Stack</h3>
-            <p>Autonomous deployment architecture managed from the Jacksonville Node. Full CI/CD integration with GitHub via mobile terminal environments.</p>
+            <p>Calculates 95% Confidence Intervals via 1,000-path stochastic price modeling via Euler discretization.</p>
         </div>
     </div>
 
     <script>
         async function sync() {
-            const r = await fetch('web_status.json?t=' + Date.now());
-            const d = await r.json();
-            const b = document.getElementById('matrix-body');
-            const s = d.projections || d.PROJECTIONS || d;
-            document.getElementById('sync-time').innerText = "NODE_SYNC: " + (d.last_updated || new Date().toLocaleTimeString());
-            b.innerHTML = '';
-            for (const [t, v] of Object.entries(s)) {
-                if (typeof v !== 'object') continue;
-                const lo = v.ci_low || '0.00';
-                const hi = v.ci_high || '0.00';
-                const sent = v.sentiment_score || '0.0';
-                const score = (sent * 100).toFixed(1);
-
-                b.innerHTML += `<tr>
-                    <td class="ticker">${t}</td>
-                    <td style="font-weight:800;">$${v.expected_value || '0.00'}</td>
-                    <td style="color:#2b6cb0; font-weight:700;">${sent}</td>
-                    <td style="font-weight:600; color:#4a5568;">$${lo} — $${hi}</td>
-                    <td style="font-weight:800;">${score}%</td>
-                </tr>`;
-            }
+            try {
+                const r = await fetch('web_status.json?t=' + Date.now());
+                const d = await r.json();
+                const b = document.getElementById('matrix-body');
+                const s = d.projections || {};
+                document.getElementById('sync-time').innerText = "NODE_SYNC: " + (d.last_updated || "STALLED");
+                b.innerHTML = '';
+                for (const [t, v] of Object.entries(s)) {
+                    const score = (v.sentiment_score * 100).toFixed(1);
+                    b.innerHTML += `<tr>
+                        <td class="ticker">${t}</td>
+                        <td style="font-weight:800;">$${v.expected_value}</td>
+                        <td class="headline-feed">"${v.headline || 'Analyzing telemetry...'}"</td>
+                        <td style="color:#4a5568;">$${v.ci_low} — $${v.ci_high}</td>
+                        <td style="font-weight:800;">${score}%</td>
+                    </tr>`;
+                }
+            } catch (e) { console.error("Sync stall:", e); }
         }
         sync(); setInterval(sync, 30000);
     </script>
