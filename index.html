@@ -12,7 +12,6 @@
         th { text-align: left; padding: 15px; border-bottom: 2px solid var(--text); font-size: 0.7rem; letter-spacing: 2px; font-weight: 900; text-transform: uppercase; }
         td { padding: 18px 15px; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
         .ticker { font-weight: 900; color: var(--accent); }
-        .ev { font-weight: 800; }
     </style>
 </head>
 <body>
@@ -29,21 +28,21 @@
             const r = await fetch('web_status.json?t=' + Date.now());
             const d = await r.json();
             const b = document.getElementById('matrix-body');
-            const s = d.PROJECTIONS || d.projections || d;
-            document.getElementById('sync-time').innerText = "NODE_SYNC: " + (d.LAST_UPDATED || new Date().toLocaleTimeString());
+            const s = d.projections || d.PROJECTIONS || d;
+            document.getElementById('sync-time').innerText = "NODE_SYNC: " + (d.last_updated || new Date().toLocaleTimeString());
             b.innerHTML = '';
             for (const [t, v] of Object.entries(s)) {
                 if (typeof v !== 'object') continue;
                 
-                // AGGRESSIVE KEY MAPPING
-                const low = v["95_low"] || v.conf_low || v.low || '0.00';
-                const high = v["95_high"] || v.conf_high || v.high || '0.00';
-                const score = v.veritas_score || v.score || (v.sentiment ? (v.sentiment * 100).toFixed(1) : '0.0');
-                const sent = v.sentiment || v.sentiment_score || '0.0';
+                // MAPPED DIRECTLY TO IMAGE_84.PNG KEYS
+                const low = v.ci_low || '0.00';
+                const high = v.ci_high || '0.00';
+                const sent = v.sentiment_score || '0.0';
+                const score = (sent * 100).toFixed(1);
 
                 b.innerHTML += `<tr>
                     <td class="ticker">${t}</td>
-                    <td class="ev">$${v.expected_value || v.EV || '0.00'}</td>
+                    <td style="font-weight:800;">$${v.expected_value || '0.00'}</td>
                     <td style="color:#2b6cb0; font-weight:700;">${sent}</td>
                     <td style="font-weight:600; color:#4a5568;">$${low} — $${high}</td>
                     <td style="font-weight:800;">${score}%</td>
