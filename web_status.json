@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-14 13:25:25",
-    "execution_id": 1778779525.3431258,
+    "last_updated": "2026-05-14 13:27:09",
+    "execution_id": 1778779629.1721969,
     "projections": {
         "TSLA": {
-            "expected_value": 199.34,
-            "ci_low": 105.66,
-            "ci_high": 327.87,
+            "expected_value": 203.13,
+            "ci_low": 111.0,
+            "ci_high": 347.06,
             "sentiment_score": 0.65,
             "headline": "Record deliveries reported. Cybertruck margins expanding.",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.8,
-            "ci_low": 7.11,
-            "ci_high": 23.76,
+            "expected_value": 13.91,
+            "ci_low": 7.54,
+            "ci_high": 23.02,
             "sentiment_score": 0.2,
             "headline": "EV transition costs balanced by strong legacy fleet sales.",
             "volatility_alert": false
         },
         "XOM": {
             "expected_value": 135.36,
-            "ci_low": 73.61,
-            "ci_high": 231.07,
+            "ci_low": 76.01,
+            "ci_high": 234.16,
             "sentiment_score": 0.55,
             "headline": "Upstream production exceeding targets. Favorable crack spreads.",
             "volatility_alert": false
         },
         "PFE": {
             "expected_value": 31.61,
-            "ci_low": 16.29,
-            "ci_high": 55.86,
+            "ci_low": 16.41,
+            "ci_high": 51.92,
             "sentiment_score": 0.1,
             "headline": "Pipeline progression steady. Cost-realignment phase active.",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 93.47,
-            "ci_low": 48.71,
-            "ci_high": 158.65,
+            "expected_value": 93.7,
+            "ci_low": 49.91,
+            "ci_high": 159.65,
             "sentiment_score": 0.4,
             "headline": "Geopolitical risk premium priced into near-term contracts.",
             "volatility_alert": false
