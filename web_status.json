@@ -1,39 +1,39 @@
 {
-    "last_updated": "2026-05-14 02:57:55",
-    "execution_id": 1778741875.642351,
+    "last_updated": "2026-05-14 03:03:01",
+    "execution_id": 1778742181.119916,
     "projections": {
         "TSLA": {
-            "expected_value": 200.28,
-            "ci_low": 104.88,
-            "ci_high": 348.58,
+            "expected_value": 200.41,
+            "ci_low": 104.72,
+            "ci_high": 350.17,
             "sentiment_score": 0.65,
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.68,
-            "ci_low": 7.41,
-            "ci_high": 23.22,
+            "expected_value": 13.84,
+            "ci_low": 7.45,
+            "ci_high": 23.79,
             "sentiment_score": 0.2,
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 135.51,
-            "ci_low": 72.38,
-            "ci_high": 231.0,
+            "expected_value": 133.89,
+            "ci_low": 72.18,
+            "ci_high": 232.72,
             "sentiment_score": 0.55,
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.17,
-            "ci_low": 17.09,
-            "ci_high": 55.32,
+            "expected_value": 31.47,
+            "ci_low": 17.26,
+            "ci_high": 53.41,
             "sentiment_score": 0.1,
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 92.97,
-            "ci_low": 50.95,
-            "ci_high": 154.46,
+            "expected_value": 92.15,
+            "ci_low": 49.29,
+            "ci_high": 164.0,
             "sentiment_score": 0.4,
             "volatility_alert": false
         }
