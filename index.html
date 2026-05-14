@@ -4,24 +4,21 @@
     <meta charset="UTF-8">
     <title>HEALY VECTOR LABS // INSTITUTIONAL</title>
     <style>
-        :root { --bg: #ffffff; --text: #0a0a0a; --accent: #1a365d; --border: #cbd5e0; --muted: #4a5568; }
-        body { background: var(--bg); color: var(--text); font-family: "Inter", -apple-system, sans-serif; padding: 50px; line-height: 1.6; }
+        :root { --bg: #ffffff; --text: #0a0a0a; --accent: #1a365d; --border: #cbd5e0; }
+        body { background: var(--bg); color: var(--text); font-family: "Inter", sans-serif; padding: 50px; }
         .header { border-bottom: 2px solid var(--text); margin-bottom: 40px; padding-bottom: 15px; display: flex; justify-content: space-between; align-items: baseline; }
         h1 { margin: 0; font-size: 1.4rem; letter-spacing: 3px; font-weight: 800; text-transform: uppercase; }
-        .subtitle { color: var(--muted); font-size: 0.75rem; letter-spacing: 1.5px; font-weight: 600; }
-        table { width: 100%; border-collapse: collapse; margin-top: 20px; font-variant-numeric: tabular-nums; }
-        th { text-align: left; padding: 15px; border-bottom: 2px solid var(--text); color: var(--text); text-transform: uppercase; font-size: 0.7rem; letter-spacing: 2px; font-weight: 900; }
+        table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+        th { text-align: left; padding: 15px; border-bottom: 2px solid var(--text); font-size: 0.7rem; letter-spacing: 2px; font-weight: 900; text-transform: uppercase; }
         td { padding: 18px 15px; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
-        tr:hover { background-color: #f7fafc; }
-        .ticker { font-weight: 900; color: var(--accent); letter-spacing: 0.5px; }
-        .ev { font-weight: 800; font-family: "Monaco", monospace; }
-        .score { font-weight: 800; color: var(--text); }
+        .ticker { font-weight: 900; color: var(--accent); }
+        .ev { font-weight: 800; }
     </style>
 </head>
 <body>
     <div class="header">
-        <div><h1>HEALY VECTOR LABS</h1><div class="subtitle">VERITAS V2.2 // STOCHASTIC_DETECTION_MATRIX</div></div>
-        <div id="sync-time" class="subtitle"></div>
+        <div><h1>HEALY VECTOR LABS</h1><div style="font-size:0.75rem; font-weight:600; color:#4a5568; letter-spacing:1.5px;">VERITAS V2.2 // STOCHASTIC_MATRIX</div></div>
+        <div id="sync-time" style="font-size:0.75rem; font-weight:600; color:#4a5568;"></div>
     </div>
     <table>
         <thead><tr><th>Asset</th><th>Exp. Value (1Y)</th><th>Sentiment</th><th>95% Confidence</th><th>Veritas Score</th></tr></thead>
@@ -29,27 +26,29 @@
     </table>
     <script>
         async function sync() {
-            try {
-                const r = await fetch('web_status.json?t=' + Date.now());
-                const d = await r.json();
-                const b = document.getElementById('matrix-body');
-                const s = d.PROJECTIONS || d.projections || d;
-                document.getElementById('sync-time').innerText = "NODE_SYNC: " + (d.LAST_UPDATED || new Date().toLocaleTimeString());
-                b.innerHTML = '';
-                for (const [t, v] of Object.entries(s)) {
-                    if (typeof v !== 'object') continue;
-                    const lo = v["95_low"] || v.conf_low || v.low || '0.00';
-                    const hi = v["95_high"] || v.conf_high || v.high || '0.00';
-                    const sc = v.veritas_score || v.score || (v.sentiment ? (v.sentiment * 100).toFixed(1) : '0.0');
-                    b.innerHTML += `<tr>
-                        <td class="ticker">${t}</td>
-                        <td class="ev">$${v.expected_value || v.EV || '0.00'}</td>
-                        <td style="color:#2b6cb0; font-weight: 700;">${v.sentiment || '0.0'}</td>
-                        <td style="color:var(--muted); font-weight: 600;">$${lo} — $${hi}</td>
-                        <td class="score">${sc}%</td>
-                    </tr>`;
-                }
-            } catch (e) { console.error("Sync Error:", e); }
+            const r = await fetch('web_status.json?t=' + Date.now());
+            const d = await r.json();
+            const b = document.getElementById('matrix-body');
+            const s = d.PROJECTIONS || d.projections || d;
+            document.getElementById('sync-time').innerText = "NODE_SYNC: " + (d.LAST_UPDATED || new Date().toLocaleTimeString());
+            b.innerHTML = '';
+            for (const [t, v] of Object.entries(s)) {
+                if (typeof v !== 'object') continue;
+                
+                // AGGRESSIVE KEY MAPPING
+                const low = v["95_low"] || v.conf_low || v.low || '0.00';
+                const high = v["95_high"] || v.conf_high || v.high || '0.00';
+                const score = v.veritas_score || v.score || (v.sentiment ? (v.sentiment * 100).toFixed(1) : '0.0');
+                const sent = v.sentiment || v.sentiment_score || '0.0';
+
+                b.innerHTML += `<tr>
+                    <td class="ticker">${t}</td>
+                    <td class="ev">$${v.expected_value || v.EV || '0.00'}</td>
+                    <td style="color:#2b6cb0; font-weight:700;">${sent}</td>
+                    <td style="font-weight:600; color:#4a5568;">$${low} — $${high}</td>
+                    <td style="font-weight:800;">${score}%</td>
+                </tr>`;
+            }
         }
         sync(); setInterval(sync, 30000);
     </script>
