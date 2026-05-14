@@ -4,49 +4,54 @@
     <meta charset="UTF-8">
     <title>HEALY VECTOR LABS // INSTITUTIONAL</title>
     <style>
-        :root { --bg: #ffffff; --text: #1a1a1a; --accent: #2c3e50; --border: #e1e4e8; }
-        body { background: var(--bg); color: var(--text); font-family: -apple-system, sans-serif; padding: 40px; }
-        .header { border-bottom: 1px solid var(--border); margin-bottom: 30px; padding-bottom: 20px; }
-        h1 { margin: 0; font-size: 1.1rem; letter-spacing: 2px; }
-        .matrix-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
-        .matrix-table th { text-align: left; padding: 12px; border-bottom: 2px solid var(--accent); color: var(--accent); text-transform: uppercase; letter-spacing: 1px; }
-        .matrix-table td { padding: 12px; border-bottom: 1px solid var(--border); }
+        :root { --bg: #ffffff; --text: #0a0a0a; --accent: #1a365d; --border: #cbd5e0; --muted: #4a5568; }
+        body { background: var(--bg); color: var(--text); font-family: "Inter", -apple-system, sans-serif; padding: 50px; line-height: 1.6; }
+        .header { border-bottom: 2px solid var(--text); margin-bottom: 40px; padding-bottom: 15px; display: flex; justify-content: space-between; align-items: baseline; }
+        h1 { margin: 0; font-size: 1.4rem; letter-spacing: 3px; font-weight: 800; text-transform: uppercase; }
+        .subtitle { color: var(--muted); font-size: 0.75rem; letter-spacing: 1.5px; font-weight: 600; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; font-variant-numeric: tabular-nums; }
+        th { text-align: left; padding: 15px; border-bottom: 2px solid var(--text); color: var(--text); text-transform: uppercase; font-size: 0.7rem; letter-spacing: 2px; font-weight: 900; }
+        td { padding: 18px 15px; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+        tr:hover { background-color: #f7fafc; }
+        .ticker { font-weight: 900; color: var(--accent); letter-spacing: 0.5px; }
+        .ev { font-weight: 800; font-family: "Monaco", monospace; }
+        .score { font-weight: 800; color: var(--text); }
     </style>
 </head>
 <body>
-    <div class="header"><h1>HEALY VECTOR LABS</h1><div id="sync-time" style="font-size:0.7rem; color:#666;"></div></div>
-    <table class="matrix-table">
+    <div class="header">
+        <div><h1>HEALY VECTOR LABS</h1><div class="subtitle">VERITAS V2.2 // STOCHASTIC_DETECTION_MATRIX</div></div>
+        <div id="sync-time" class="subtitle"></div>
+    </div>
+    <table>
         <thead><tr><th>Asset</th><th>Exp. Value (1Y)</th><th>Sentiment</th><th>95% Confidence</th><th>Veritas Score</th></tr></thead>
         <tbody id="matrix-body"></tbody>
     </table>
     <script>
-        async function update() {
-            const res = await fetch('web_status.json?t=' + Date.now());
-            const data = await res.json();
-            const body = document.getElementById('matrix-body');
-            const source = data.PROJECTIONS || data.projections || data;
-            document.getElementById('sync-time').innerText = "LAST_SYNC: " + (data.LAST_UPDATED || new Date().toLocaleTimeString());
-            body.innerHTML = '';
-            for (const [ticker, stats] of Object.entries(source)) {
-                if (!stats || typeof stats !== 'object') continue;
-                
-                // Aggressive data hunter for confidence and scores
-                const ev = stats.expected_value || stats.EV || '0.00';
-                const sent = stats.sentiment || stats.sentiment_score || '0.0';
-                const low = stats.conf_low || stats.low || stats['95_low'] || '0.00';
-                const high = stats.conf_high || stats.high || stats['95_high'] || '0.00';
-                const score = stats.veritas_score || stats.score || (stats.sentiment ? (stats.sentiment * 100).toFixed(1) : '0.0');
-
-                body.innerHTML += `<tr>
-                    <td style="font-weight:700">${ticker}</td>
-                    <td style="font-weight:bold">$${ev}</td>
-                    <td style="color:#2980b9">${sent}</td>
-                    <td style="color:#666">$${low} — $${high}</td>
-                    <td style="font-weight:bold">${score}%</td>
-                </tr>`;
-            }
+        async function sync() {
+            try {
+                const r = await fetch('web_status.json?t=' + Date.now());
+                const d = await r.json();
+                const b = document.getElementById('matrix-body');
+                const s = d.PROJECTIONS || d.projections || d;
+                document.getElementById('sync-time').innerText = "NODE_SYNC: " + (d.LAST_UPDATED || new Date().toLocaleTimeString());
+                b.innerHTML = '';
+                for (const [t, v] of Object.entries(s)) {
+                    if (typeof v !== 'object') continue;
+                    const lo = v["95_low"] || v.conf_low || v.low || '0.00';
+                    const hi = v["95_high"] || v.conf_high || v.high || '0.00';
+                    const sc = v.veritas_score || v.score || (v.sentiment ? (v.sentiment * 100).toFixed(1) : '0.0');
+                    b.innerHTML += `<tr>
+                        <td class="ticker">${t}</td>
+                        <td class="ev">$${v.expected_value || v.EV || '0.00'}</td>
+                        <td style="color:#2b6cb0; font-weight: 700;">${v.sentiment || '0.0'}</td>
+                        <td style="color:var(--muted); font-weight: 600;">$${lo} — $${hi}</td>
+                        <td class="score">${sc}%</td>
+                    </tr>`;
+                }
+            } catch (e) { console.error("Sync Error:", e); }
         }
-        update(); setInterval(update, 30000);
+        sync(); setInterval(sync, 30000);
     </script>
 </body>
 </html>
