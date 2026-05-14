@@ -14,8 +14,9 @@
         .ticker { font-weight: 900; color: var(--accent); }
         .headline-feed { font-style: italic; color: var(--muted); font-size: 0.8rem; max-width: 350px; }
         .methodology { border-top: 2px solid var(--text); padding-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        .method-item { margin-bottom: 20px; }
         .method-item h3 { font-size: 0.75rem; font-weight: 900; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; color: var(--accent); }
-        .method-item p { font-size: 0.85rem; color: var(--muted); margin: 0; }
+        .method-item p { font-size: 0.85rem; color: var(--muted); margin: 0; font-weight: 500; }
     </style>
 </head>
 <body>
@@ -40,11 +41,19 @@
     <div class="methodology">
         <div class="method-item">
             <h3>FASE Pipeline</h3>
-            <p>Financial Analysis & Sentiment Engine. Ingests high-frequency sentiment data and market indicators to synthesize real-time conviction metrics.</p>
+            <p>Financial Analysis & Sentiment Engine. Ingests high-frequency sentiment data and market indicators to synthesize real-time conviction metrics across asset classes.</p>
         </div>
         <div class="method-item">
             <h3>Monte Carlo Simulation</h3>
-            <p>Calculates 95% Confidence Intervals via 1,000-path stochastic price modeling via Euler discretization.</p>
+            <p>Calculates 95% Confidence Intervals via 1,000-path stochastic price modeling, accounting for volatility spikes and Option Greek sensitivities.</p>
+        </div>
+        <div class="method-item">
+            <h3>Veritas Score</h3>
+            <p>A proprietary conviction index that quantifies the statistical probability of the Expected Value reaching its target within a 12-month window.</p>
+        </div>
+        <div class="method-item">
+            <h3>Sovereign Quant Stack</h3>
+            <p>Autonomous deployment architecture managed from the Jacksonville Node. Full CI/CD integration with GitHub via mobile terminal environments.</p>
         </div>
     </div>
 
