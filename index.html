@@ -5,18 +5,18 @@
     <title>HEALY VECTOR LABS // INSTITUTIONAL</title>
     <style>
         :root { --bg: #ffffff; --text: #0a0a0a; --accent: #1a365d; --border: #cbd5e0; }
-        body { background: var(--bg); color: var(--text); font-family: "Inter", sans-serif; padding: 50px; }
+        body { background: var(--bg); color: var(--text); font-family: sans-serif; padding: 50px; }
         .header { border-bottom: 2px solid var(--text); margin-bottom: 40px; padding-bottom: 15px; display: flex; justify-content: space-between; align-items: baseline; }
         h1 { margin: 0; font-size: 1.4rem; letter-spacing: 3px; font-weight: 800; text-transform: uppercase; }
-        table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
-        th { text-align: left; padding: 15px; border-bottom: 2px solid var(--text); font-size: 0.7rem; letter-spacing: 2px; font-weight: 900; text-transform: uppercase; }
+        table { width: 100%; border-collapse: collapse; }
+        th { text-align: left; padding: 15px; border-bottom: 2px solid var(--text); font-size: 0.7rem; font-weight: 900; text-transform: uppercase; }
         td { padding: 18px 15px; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
         .ticker { font-weight: 900; color: var(--accent); }
     </style>
 </head>
 <body>
     <div class="header">
-        <div><h1>HEALY VECTOR LABS</h1><div style="font-size:0.75rem; font-weight:600; color:#4a5568; letter-spacing:1.5px;">VERITAS V2.2 // STOCHASTIC_MATRIX</div></div>
+        <div><h1>HEALY VECTOR LABS</h1><div style="font-size:0.75rem; font-weight:600; color:#4a5568;">VERITAS V2.2 // STOCHASTIC_MATRIX</div></div>
         <div id="sync-time" style="font-size:0.75rem; font-weight:600; color:#4a5568;"></div>
     </div>
     <table>
@@ -34,7 +34,7 @@
             for (const [t, v] of Object.entries(s)) {
                 if (typeof v !== 'object') continue;
                 
-                // MAPPED DIRECTLY TO IMAGE_84.PNG KEYS
+                // MAPPED EXACTLY TO THE KEYS IN IMAGE_84.PNG
                 const low = v.ci_low || '0.00';
                 const high = v.ci_high || '0.00';
                 const sent = v.sentiment_score || '0.0';
