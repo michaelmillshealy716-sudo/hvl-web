@@ -2,6 +2,5 @@
 !*.py
 !*.sh
 !.gitignore
-!index.html
 !web_status.json
 !.nojekyll
