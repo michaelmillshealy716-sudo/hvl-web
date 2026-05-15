@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-14 23:35:08",
-    "execution_id": 1778816108.0008552,
+    "last_updated": "2026-05-14 23:38:20",
+    "execution_id": 1778816300.9604194,
     "projections": {
         "TSLA": {
-            "expected_value": 201.51,
-            "ci_low": 100.06,
-            "ci_high": 340.79,
+            "expected_value": 196.27,
+            "ci_low": 108.93,
+            "ci_high": 331.39,
             "sentiment_score": 0.65,
             "headline": "Record deliveries reported. Cybertruck margins expanding.",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.62,
-            "ci_low": 7.13,
-            "ci_high": 23.42,
+            "expected_value": 13.63,
+            "ci_low": 7.58,
+            "ci_high": 22.61,
             "sentiment_score": 0.2,
             "headline": "EV transition costs balanced by strong legacy fleet sales.",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 134.44,
-            "ci_low": 69.18,
-            "ci_high": 229.48,
+            "expected_value": 136.01,
+            "ci_low": 71.07,
+            "ci_high": 232.86,
             "sentiment_score": 0.55,
             "headline": "Upstream production exceeding targets. Favorable crack spreads.",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.86,
-            "ci_low": 17.4,
-            "ci_high": 54.06,
+            "expected_value": 31.4,
+            "ci_low": 16.57,
+            "ci_high": 54.59,
             "sentiment_score": 0.1,
             "headline": "Pipeline progression steady. Cost-realignment phase active.",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 94.28,
-            "ci_low": 52.17,
-            "ci_high": 160.85,
+            "expected_value": 94.54,
+            "ci_low": 47.92,
+            "ci_high": 163.54,
             "sentiment_score": 0.4,
             "headline": "Geopolitical risk premium priced into near-term contracts.",
             "volatility_alert": false
