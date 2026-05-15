@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-15 09:40:45",
-    "execution_id": 1778852445.4377136,
+    "last_updated": "2026-05-15 09:42:11",
+    "execution_id": 1778852531.5259972,
     "projections": {
         "TSLA": {
-            "expected_value": 199.82,
-            "ci_low": 105.92,
-            "ci_high": 349.21,
+            "expected_value": 203.01,
+            "ci_low": 110.41,
+            "ci_high": 346.01,
             "sentiment_score": 0.65,
             "headline": "Record deliveries reported. Cybertruck margins expanding.",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.82,
-            "ci_low": 7.63,
-            "ci_high": 23.24,
+            "expected_value": 13.85,
+            "ci_low": 7.27,
+            "ci_high": 23.47,
             "sentiment_score": 0.2,
             "headline": "EV transition costs balanced by strong legacy fleet sales.",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 133.72,
-            "ci_low": 72.01,
-            "ci_high": 224.62,
+            "expected_value": 132.52,
+            "ci_low": 72.17,
+            "ci_high": 226.97,
             "sentiment_score": 0.55,
             "headline": "Upstream production exceeding targets. Favorable crack spreads.",
             "volatility_alert": false
         },
         "PFE": {
             "expected_value": 31.33,
-            "ci_low": 17.19,
-            "ci_high": 53.45,
+            "ci_low": 16.77,
+            "ci_high": 53.36,
             "sentiment_score": 0.1,
             "headline": "Pipeline progression steady. Cost-realignment phase active.",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 93.14,
-            "ci_low": 49.55,
-            "ci_high": 155.34,
+            "expected_value": 92.56,
+            "ci_low": 50.46,
+            "ci_high": 158.72,
             "sentiment_score": 0.4,
             "headline": "Geopolitical risk premium priced into near-term contracts.",
             "volatility_alert": false
