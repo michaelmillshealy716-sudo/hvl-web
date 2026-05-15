@@ -1,247 +1,5 @@
 [
     {
-        "timestamp": "16:38:57",
-        "MTL": {
-            "H": 1.2364,
-            "psi_sq": 63.56,
-            "strike": 80.5,
-            "amp": 1.266
-        },
-        "BUF": {
-            "H": 1.2197,
-            "psi_sq": 63.39,
-            "strike": 74.48,
-            "amp": 1.175
-        },
-        "entropy": 0.685,
-        "metadata": {
-            "Hamiltonian": "Total system energy (Kinetic + Potential).",
-            "Psi_Squared": "Probability density of a state-change event (Goal).",
-            "Entropy": "Measure of system chaos vs stability.",
-            "Road_Warrior_Bias": "Multiplier for Buffalo road dominance (4-1 in playoffs)."
-        }
-    },
-    {
-        "timestamp": "16:39:27",
-        "MTL": {
-            "H": 1.2364,
-            "psi_sq": 63.56,
-            "strike": 80.5,
-            "amp": 1.266
-        },
-        "BUF": {
-            "H": 1.2197,
-            "psi_sq": 63.39,
-            "strike": 74.48,
-            "amp": 1.175
-        },
-        "entropy": 0.685,
-        "metadata": {
-            "Hamiltonian": "Total system energy (Kinetic + Potential).",
-            "Psi_Squared": "Probability density of a state-change event (Goal).",
-            "Entropy": "Measure of system chaos vs stability.",
-            "Road_Warrior_Bias": "Multiplier for Buffalo road dominance (4-1 in playoffs)."
-        }
-    },
-    {
-        "timestamp": "16:39:58",
-        "MTL": {
-            "H": 1.2364,
-            "psi_sq": 63.56,
-            "strike": 80.5,
-            "amp": 1.266
-        },
-        "BUF": {
-            "H": 1.2197,
-            "psi_sq": 63.39,
-            "strike": 74.48,
-            "amp": 1.175
-        },
-        "entropy": 0.685,
-        "metadata": {
-            "Hamiltonian": "Total system energy (Kinetic + Potential).",
-            "Psi_Squared": "Probability density of a state-change event (Goal).",
-            "Entropy": "Measure of system chaos vs stability.",
-            "Road_Warrior_Bias": "Multiplier for Buffalo road dominance (4-1 in playoffs)."
-        }
-    },
-    {
-        "timestamp": "16:40:28",
-        "MTL": {
-            "H": 1.2364,
-            "psi_sq": 63.56,
-            "strike": 80.5,
-            "amp": 1.266
-        },
-        "BUF": {
-            "H": 1.2197,
-            "psi_sq": 63.39,
-            "strike": 74.48,
-            "amp": 1.175
-        },
-        "entropy": 0.685,
-        "metadata": {
-            "Hamiltonian": "Total system energy (Kinetic + Potential).",
-            "Psi_Squared": "Probability density of a state-change event (Goal).",
-            "Entropy": "Measure of system chaos vs stability.",
-            "Road_Warrior_Bias": "Multiplier for Buffalo road dominance (4-1 in playoffs)."
-        }
-    },
-    {
-        "timestamp": "16:40:58",
-        "MTL": {
-            "H": 1.2364,
-            "psi_sq": 63.56,
-            "strike": 80.5,
-            "amp": 1.266
-        },
-        "BUF": {
-            "H": 1.2197,
-            "psi_sq": 63.39,
-            "strike": 74.48,
-            "amp": 1.175
-        },
-        "entropy": 0.685,
-        "metadata": {
-            "Hamiltonian": "Total system energy (Kinetic + Potential).",
-            "Psi_Squared": "Probability density of a state-change event (Goal).",
-            "Entropy": "Measure of system chaos vs stability.",
-            "Road_Warrior_Bias": "Multiplier for Buffalo road dominance (4-1 in playoffs)."
-        }
-    },
-    {
-        "timestamp": "16:41:29",
-        "MTL": {
-            "H": 1.2364,
-            "psi_sq": 63.56,
-            "strike": 80.5,
-            "amp": 1.266
-        },
-        "BUF": {
-            "H": 1.2197,
-            "psi_sq": 63.39,
-            "strike": 74.48,
-            "amp": 1.175
-        },
-        "entropy": 0.685,
-        "metadata": {
-            "Hamiltonian": "Total system energy (Kinetic + Potential).",
-            "Psi_Squared": "Probability density of a state-change event (Goal).",
-            "Entropy": "Measure of system chaos vs stability.",
-            "Road_Warrior_Bias": "Multiplier for Buffalo road dominance (4-1 in playoffs)."
-        }
-    },
-    {
-        "timestamp": "16:41:59",
-        "MTL": {
-            "H": 1.2364,
-            "psi_sq": 63.56,
-            "strike": 80.5,
-            "amp": 1.266
-        },
-        "BUF": {
-            "H": 1.2197,
-            "psi_sq": 63.39,
-            "strike": 74.48,
-            "amp": 1.175
-        },
-        "entropy": 0.685,
-        "metadata": {
-            "Hamiltonian": "Total system energy (Kinetic + Potential).",
-            "Psi_Squared": "Probability density of a state-change event (Goal).",
-            "Entropy": "Measure of system chaos vs stability.",
-            "Road_Warrior_Bias": "Multiplier for Buffalo road dominance (4-1 in playoffs)."
-        }
-    },
-    {
-        "timestamp": "16:42:30",
-        "MTL": {
-            "H": 1.2364,
-            "psi_sq": 63.56,
-            "strike": 80.5,
-            "amp": 1.266
-        },
-        "BUF": {
-            "H": 1.2197,
-            "psi_sq": 63.39,
-            "strike": 74.48,
-            "amp": 1.175
-        },
-        "entropy": 0.685,
-        "metadata": {
-            "Hamiltonian": "Total system energy (Kinetic + Potential).",
-            "Psi_Squared": "Probability density of a state-change event (Goal).",
-            "Entropy": "Measure of system chaos vs stability.",
-            "Road_Warrior_Bias": "Multiplier for Buffalo road dominance (4-1 in playoffs)."
-        }
-    },
-    {
-        "timestamp": "16:43:00",
-        "MTL": {
-            "H": 1.2364,
-            "psi_sq": 63.56,
-            "strike": 80.5,
-            "amp": 1.266
-        },
-        "BUF": {
-            "H": 1.2197,
-            "psi_sq": 63.39,
-            "strike": 74.48,
-            "amp": 1.175
-        },
-        "entropy": 0.685,
-        "metadata": {
-            "Hamiltonian": "Total system energy (Kinetic + Potential).",
-            "Psi_Squared": "Probability density of a state-change event (Goal).",
-            "Entropy": "Measure of system chaos vs stability.",
-            "Road_Warrior_Bias": "Multiplier for Buffalo road dominance (4-1 in playoffs)."
-        }
-    },
-    {
-        "timestamp": "16:43:31",
-        "MTL": {
-            "H": 1.2364,
-            "psi_sq": 63.56,
-            "strike": 80.5,
-            "amp": 1.266
-        },
-        "BUF": {
-            "H": 1.2197,
-            "psi_sq": 63.39,
-            "strike": 74.48,
-            "amp": 1.175
-        },
-        "entropy": 0.685,
-        "metadata": {
-            "Hamiltonian": "Total system energy (Kinetic + Potential).",
-            "Psi_Squared": "Probability density of a state-change event (Goal).",
-            "Entropy": "Measure of system chaos vs stability.",
-            "Road_Warrior_Bias": "Multiplier for Buffalo road dominance (4-1 in playoffs)."
-        }
-    },
-    {
-        "timestamp": "16:44:02",
-        "MTL": {
-            "H": 1.2364,
-            "psi_sq": 63.56,
-            "strike": 80.5,
-            "amp": 1.266
-        },
-        "BUF": {
-            "H": 1.2197,
-            "psi_sq": 63.39,
-            "strike": 74.48,
-            "amp": 1.175
-        },
-        "entropy": 0.685,
-        "metadata": {
-            "Hamiltonian": "Total system energy (Kinetic + Potential).",
-            "Psi_Squared": "Probability density of a state-change event (Goal).",
-            "Entropy": "Measure of system chaos vs stability.",
-            "Road_Warrior_Bias": "Multiplier for Buffalo road dominance (4-1 in playoffs)."
-        }
-    },
-    {
         "timestamp": "16:44:32",
         "MTL": {
             "H": 1.2364,
@@ -1079,6 +837,248 @@
     },
     {
         "timestamp": "17:03:47",
+        "MTL": {
+            "H": 1.2364,
+            "psi_sq": 63.56,
+            "strike": 80.5,
+            "amp": 1.266
+        },
+        "BUF": {
+            "H": 1.2197,
+            "psi_sq": 63.39,
+            "strike": 74.48,
+            "amp": 1.175
+        },
+        "entropy": 0.685,
+        "metadata": {
+            "Hamiltonian": "Total system energy (Kinetic + Potential).",
+            "Psi_Squared": "Probability density of a state-change event (Goal).",
+            "Entropy": "Measure of system chaos vs stability.",
+            "Road_Warrior_Bias": "Multiplier for Buffalo road dominance (4-1 in playoffs)."
+        }
+    },
+    {
+        "timestamp": "17:04:18",
+        "MTL": {
+            "H": 1.2364,
+            "psi_sq": 63.56,
+            "strike": 80.5,
+            "amp": 1.266
+        },
+        "BUF": {
+            "H": 1.2197,
+            "psi_sq": 63.39,
+            "strike": 74.48,
+            "amp": 1.175
+        },
+        "entropy": 0.685,
+        "metadata": {
+            "Hamiltonian": "Total system energy (Kinetic + Potential).",
+            "Psi_Squared": "Probability density of a state-change event (Goal).",
+            "Entropy": "Measure of system chaos vs stability.",
+            "Road_Warrior_Bias": "Multiplier for Buffalo road dominance (4-1 in playoffs)."
+        }
+    },
+    {
+        "timestamp": "17:04:48",
+        "MTL": {
+            "H": 1.2364,
+            "psi_sq": 63.56,
+            "strike": 80.5,
+            "amp": 1.266
+        },
+        "BUF": {
+            "H": 1.2197,
+            "psi_sq": 63.39,
+            "strike": 74.48,
+            "amp": 1.175
+        },
+        "entropy": 0.685,
+        "metadata": {
+            "Hamiltonian": "Total system energy (Kinetic + Potential).",
+            "Psi_Squared": "Probability density of a state-change event (Goal).",
+            "Entropy": "Measure of system chaos vs stability.",
+            "Road_Warrior_Bias": "Multiplier for Buffalo road dominance (4-1 in playoffs)."
+        }
+    },
+    {
+        "timestamp": "17:05:19",
+        "MTL": {
+            "H": 1.2364,
+            "psi_sq": 63.56,
+            "strike": 80.5,
+            "amp": 1.266
+        },
+        "BUF": {
+            "H": 1.2197,
+            "psi_sq": 63.39,
+            "strike": 74.48,
+            "amp": 1.175
+        },
+        "entropy": 0.685,
+        "metadata": {
+            "Hamiltonian": "Total system energy (Kinetic + Potential).",
+            "Psi_Squared": "Probability density of a state-change event (Goal).",
+            "Entropy": "Measure of system chaos vs stability.",
+            "Road_Warrior_Bias": "Multiplier for Buffalo road dominance (4-1 in playoffs)."
+        }
+    },
+    {
+        "timestamp": "17:05:49",
+        "MTL": {
+            "H": 1.2364,
+            "psi_sq": 63.56,
+            "strike": 80.5,
+            "amp": 1.266
+        },
+        "BUF": {
+            "H": 1.2197,
+            "psi_sq": 63.39,
+            "strike": 74.48,
+            "amp": 1.175
+        },
+        "entropy": 0.685,
+        "metadata": {
+            "Hamiltonian": "Total system energy (Kinetic + Potential).",
+            "Psi_Squared": "Probability density of a state-change event (Goal).",
+            "Entropy": "Measure of system chaos vs stability.",
+            "Road_Warrior_Bias": "Multiplier for Buffalo road dominance (4-1 in playoffs)."
+        }
+    },
+    {
+        "timestamp": "17:06:20",
+        "MTL": {
+            "H": 1.2364,
+            "psi_sq": 63.56,
+            "strike": 80.5,
+            "amp": 1.266
+        },
+        "BUF": {
+            "H": 1.2197,
+            "psi_sq": 63.39,
+            "strike": 74.48,
+            "amp": 1.175
+        },
+        "entropy": 0.685,
+        "metadata": {
+            "Hamiltonian": "Total system energy (Kinetic + Potential).",
+            "Psi_Squared": "Probability density of a state-change event (Goal).",
+            "Entropy": "Measure of system chaos vs stability.",
+            "Road_Warrior_Bias": "Multiplier for Buffalo road dominance (4-1 in playoffs)."
+        }
+    },
+    {
+        "timestamp": "17:06:50",
+        "MTL": {
+            "H": 1.2364,
+            "psi_sq": 63.56,
+            "strike": 80.5,
+            "amp": 1.266
+        },
+        "BUF": {
+            "H": 1.2197,
+            "psi_sq": 63.39,
+            "strike": 74.48,
+            "amp": 1.175
+        },
+        "entropy": 0.685,
+        "metadata": {
+            "Hamiltonian": "Total system energy (Kinetic + Potential).",
+            "Psi_Squared": "Probability density of a state-change event (Goal).",
+            "Entropy": "Measure of system chaos vs stability.",
+            "Road_Warrior_Bias": "Multiplier for Buffalo road dominance (4-1 in playoffs)."
+        }
+    },
+    {
+        "timestamp": "17:07:20",
+        "MTL": {
+            "H": 1.2364,
+            "psi_sq": 63.56,
+            "strike": 80.5,
+            "amp": 1.266
+        },
+        "BUF": {
+            "H": 1.2197,
+            "psi_sq": 63.39,
+            "strike": 74.48,
+            "amp": 1.175
+        },
+        "entropy": 0.685,
+        "metadata": {
+            "Hamiltonian": "Total system energy (Kinetic + Potential).",
+            "Psi_Squared": "Probability density of a state-change event (Goal).",
+            "Entropy": "Measure of system chaos vs stability.",
+            "Road_Warrior_Bias": "Multiplier for Buffalo road dominance (4-1 in playoffs)."
+        }
+    },
+    {
+        "timestamp": "17:07:51",
+        "MTL": {
+            "H": 1.2364,
+            "psi_sq": 63.56,
+            "strike": 80.5,
+            "amp": 1.266
+        },
+        "BUF": {
+            "H": 1.2197,
+            "psi_sq": 63.39,
+            "strike": 74.48,
+            "amp": 1.175
+        },
+        "entropy": 0.685,
+        "metadata": {
+            "Hamiltonian": "Total system energy (Kinetic + Potential).",
+            "Psi_Squared": "Probability density of a state-change event (Goal).",
+            "Entropy": "Measure of system chaos vs stability.",
+            "Road_Warrior_Bias": "Multiplier for Buffalo road dominance (4-1 in playoffs)."
+        }
+    },
+    {
+        "timestamp": "17:08:22",
+        "MTL": {
+            "H": 1.2364,
+            "psi_sq": 63.56,
+            "strike": 80.5,
+            "amp": 1.266
+        },
+        "BUF": {
+            "H": 1.2197,
+            "psi_sq": 63.39,
+            "strike": 74.48,
+            "amp": 1.175
+        },
+        "entropy": 0.685,
+        "metadata": {
+            "Hamiltonian": "Total system energy (Kinetic + Potential).",
+            "Psi_Squared": "Probability density of a state-change event (Goal).",
+            "Entropy": "Measure of system chaos vs stability.",
+            "Road_Warrior_Bias": "Multiplier for Buffalo road dominance (4-1 in playoffs)."
+        }
+    },
+    {
+        "timestamp": "17:08:52",
+        "MTL": {
+            "H": 1.2364,
+            "psi_sq": 63.56,
+            "strike": 80.5,
+            "amp": 1.266
+        },
+        "BUF": {
+            "H": 1.2197,
+            "psi_sq": 63.39,
+            "strike": 74.48,
+            "amp": 1.175
+        },
+        "entropy": 0.685,
+        "metadata": {
+            "Hamiltonian": "Total system energy (Kinetic + Potential).",
+            "Psi_Squared": "Probability density of a state-change event (Goal).",
+            "Entropy": "Measure of system chaos vs stability.",
+            "Road_Warrior_Bias": "Multiplier for Buffalo road dominance (4-1 in playoffs)."
+        }
+    },
+    {
+        "timestamp": "17:09:22",
         "MTL": {
             "H": 1.2364,
             "psi_sq": 63.56,
