@@ -1,0 +1,46 @@
+{
+    "last_updated": "2026-05-15 17:51:26",
+    "execution_id": 1778881886.6669984,
+    "projections": {
+        "TSLA": {
+            "expected_value": 200.34,
+            "ci_low": 103.99,
+            "ci_high": 332.65,
+            "sentiment_score": 0.65,
+            "headline": "Record deliveries reported. Cybertruck margins expanding.",
+            "volatility_alert": false
+        },
+        "F": {
+            "expected_value": 13.59,
+            "ci_low": 7.36,
+            "ci_high": 23.65,
+            "sentiment_score": 0.2,
+            "headline": "EV transition costs balanced by strong legacy fleet sales.",
+            "volatility_alert": false
+        },
+        "XOM": {
+            "expected_value": 134.87,
+            "ci_low": 72.59,
+            "ci_high": 227.34,
+            "sentiment_score": 0.55,
+            "headline": "Upstream production exceeding targets. Favorable crack spreads.",
+            "volatility_alert": false
+        },
+        "PFE": {
+            "expected_value": 31.41,
+            "ci_low": 16.12,
+            "ci_high": 55.37,
+            "sentiment_score": 0.1,
+            "headline": "Pipeline progression steady. Cost-realignment phase active.",
+            "volatility_alert": false
+        },
+        "CL=F": {
+            "expected_value": 92.21,
+            "ci_low": 47.56,
+            "ci_high": 165.11,
+            "sentiment_score": 0.4,
+            "headline": "Geopolitical risk premium priced into near-term contracts.",
+            "volatility_alert": false
+        }
+    }
+}
