@@ -1,14 +1,18 @@
+# =============================================================================
+# (c) 2026 HEALY VECTOR LABS. ALL RIGHTS RESERVED.
+# This source code is the proprietary property of Michael Healy.
+# Unauthorized reproduction, distribution, or reverse-engineering is strictly
+# prohibited. This file is part of the VERITAS Auditor / FASE Engine.
+# =============================================================================
+
 import numpy as np
 import time
 import json
 from datetime import datetime
 
 class GeopoliticalBridge:
-    """
-    Translates raw event intensity into quantitative drift adjustments.
-    """
+    """Translates raw event intensity into quantitative drift adjustments."""
     def __init__(self):
-        # Mapping geopolitical events to impact scalars (-1.0 to 1.0)
         self.risk_map = {
             "Geopolitical risk premium priced": 0.40,
             "Supply chain realignment active": -0.15,
@@ -21,25 +25,20 @@ class GeopoliticalBridge:
         }
 
     def get_intensity_scalar(self, raw_headline):
-        # Agentic logic to map the headline to a risk profile
         for event, weight in self.risk_map.items():
             if event.lower() in raw_headline.lower():
                 return weight
         return 0.0
 
 class EdgarRaven:
-    """
-    The EDGAR Ingestion Pipeline.
-    Polls corporate filings and derives sentiment via the Geopolitical Bridge.
-    """
-    def __init__(self, user_agent="Healy Vector Labs - FASE Data Pipeline"):
-        self.user_agent = user_agent
+    """The EDGAR Ingestion Pipeline. Pulls corporate filings and derives sentiment via the Geopolitical Bridge."""
+    def __init__(self):
+        self.user_agent = "Healy Vector Labs - FASE Data Pipeline"
         self.bridge = GeopoliticalBridge()
 
     def get_ticker_sentiment(self, ticker):
         print(f"[EDGAR] Tapping into SEC database for {ticker}...")
-        time.sleep(0.5) # Simulating API network latency
-        
+        time.sleep(0.1) 
         headline = ""
         if ticker == "TSLA":
             print(f"[EDGAR] Parsing latest 8-K for {ticker}...")
@@ -59,14 +58,12 @@ class EdgarRaven:
         else:
             print(f"[EDGAR] No actionable material events found for {ticker}.")
             return 0.0
-            
-        print(f"[EDGAR] '{headline}'")
-        return self.bridge.get_intensity_scalar(headline)
+        
+        print(f"[EDGAR] {headline}")
+        return headline
 
 class FASEStochasticEngine:
-    """
-    FASE: Functional Agentic Sentiment Engine
-    """
+    """FASE: Functional Agentic Sentiment Engine"""
     def __init__(self, x0, T, dt):
         self.x0 = x0
         self.T = T
@@ -80,16 +77,17 @@ class FASEStochasticEngine:
 
     def simulate_sentiment_path(self, base_mu, sigma, sentiment_score):
         mu_adj = self.apply_agentic_sentiment(base_mu, sentiment_score)
-        W = np.cumsum(np.random.normal(0, np.sqrt(self.dt), self.N))
-        S = self.x0 * np.exp((mu_adj - 0.5 * sigma**2) * self.t + sigma * W)
-        return self.t, S
+        dw = np.random.normal(0, np.sqrt(self.dt), self.N)
+        w = np.cumsum(dw)
+        S = self.x0 * np.exp((mu_adj - 0.5 * sigma**2) * self.t + sigma * w)
+        return S
 
 if __name__ == "__main__":
     # Core Configuration
     tickers = ["TSLA", "F", "XOM", "PFE", "CL=F"]
     N_sims = 1000
     output_file = "web_status.json"
-
+    
     # Base prices for realistic Monte Carlo starting points
     base_prices = {
         "TSLA": 175.50,
@@ -101,6 +99,7 @@ if __name__ == "__main__":
 
     print("[SYSTEM] Initializing FASE Pipeline for continuous web deployment...")
     edgar = EdgarRaven()
+    self_bridge = GeopoliticalBridge()
 
     current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     print("-" * 45)
@@ -115,8 +114,9 @@ if __name__ == "__main__":
 
     for target_ticker in tickers:
         print("-" * 45)
-        live_sentiment = edgar.get_ticker_sentiment(target_ticker)
-
+        current_headline = edgar.get_ticker_sentiment(target_ticker)
+        live_sentiment = self_bridge.get_intensity_scalar(current_headline)
+        
         current_price = base_prices.get(target_ticker, 100.0)
         engine = FASEStochasticEngine(x0=current_price, T=1.0, dt=0.01)
         final_states = []
@@ -125,7 +125,7 @@ if __name__ == "__main__":
         print(f"[FASE] Ingested Sentiment Score: {live_sentiment}")
 
         for _ in range(N_sims):
-            _, path = engine.simulate_sentiment_path(base_mu=0.1, sigma=0.3, sentiment_score=live_sentiment)
+            path = engine.simulate_sentiment_path(base_mu=0.1, sigma=0.3, sentiment_score=live_sentiment)
             final_states.append(path[-1])
 
         expected_value = np.mean(final_states)
@@ -136,13 +136,14 @@ if __name__ == "__main__":
 
         # Risk Management: Relative Spread Alert
         rel_spread = (ci_high - ci_low) / expected_value
-
+        
         # Store data for frontend routing
         web_data["projections"][target_ticker] = {
             "expected_value": round(float(expected_value), 2),
             "ci_low": round(float(ci_low), 2),
             "ci_high": round(float(ci_high), 2),
             "sentiment_score": live_sentiment,
+            "headline": current_headline,
             "volatility_alert": bool(rel_spread > 1.5) # Flags highly volatile assets
         }
 
@@ -152,6 +153,6 @@ if __name__ == "__main__":
 
     print("-" * 45)
     print("[SYSTEM] FASE Pipeline execution complete.")
-    print(f"[SYSTEM] Live state exported to {output_file}.")
+    print(f"[SYSTEM] Live state exported to {output_file}")
     print("[SYSTEM] Execution finished. Handing back to sync loop.")
 
