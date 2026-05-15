@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-15 14:35:27",
-    "execution_id": 1778870127.265995,
+    "last_updated": "2026-05-15 14:39:12",
+    "execution_id": 1778870352.8650272,
     "projections": {
         "TSLA": {
-            "expected_value": 197.62,
-            "ci_low": 100.9,
-            "ci_high": 349.59,
+            "expected_value": 199.36,
+            "ci_low": 101.73,
+            "ci_high": 339.01,
             "sentiment_score": 0.65,
             "headline": "Record deliveries reported. Cybertruck margins expanding.",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.8,
-            "ci_low": 7.7,
-            "ci_high": 23.73,
+            "expected_value": 13.65,
+            "ci_low": 7.27,
+            "ci_high": 23.88,
             "sentiment_score": 0.2,
             "headline": "EV transition costs balanced by strong legacy fleet sales.",
             "volatility_alert": false
         },
         "XOM": {
             "expected_value": 133.66,
-            "ci_low": 69.47,
-            "ci_high": 221.38,
+            "ci_low": 70.92,
+            "ci_high": 237.98,
             "sentiment_score": 0.55,
             "headline": "Upstream production exceeding targets. Favorable crack spreads.",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 32.18,
-            "ci_low": 17.38,
-            "ci_high": 55.85,
+            "expected_value": 31.5,
+            "ci_low": 16.51,
+            "ci_high": 53.2,
             "sentiment_score": 0.1,
             "headline": "Pipeline progression steady. Cost-realignment phase active.",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 92.72,
-            "ci_low": 48.68,
-            "ci_high": 162.5,
+            "expected_value": 92.98,
+            "ci_low": 50.77,
+            "ci_high": 160.32,
             "sentiment_score": 0.4,
             "headline": "Geopolitical risk premium priced into near-term contracts.",
             "volatility_alert": false
