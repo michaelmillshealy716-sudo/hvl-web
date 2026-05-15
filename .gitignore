@@ -1,6 +1,0 @@
-*
-!*.py
-!*.sh
-!.gitignore
-!web_status.json
-!.nojekyll
