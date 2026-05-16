@@ -1,0 +1,14 @@
+# Block proprietary engines from leaving the local machine
+*.py
+*.pyc
+__pycache__/
+.DS_Store
+*.csv
+series_history.json
+
+# Only allow web framework files to be pushed
+!.gitignore
+!index.html
+!web_status.json
+!score_status.json
+
