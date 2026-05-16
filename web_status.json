@@ -1,45 +1,45 @@
 {
-    "last_updated": "2026-05-16 06:50:53",
-    "execution_id": 1778928653.1728113,
+    "last_updated": "2026-05-16 13:25:08",
+    "execution_id": 1778952308.7792366,
     "projections": {
         "TSLA": {
-            "expected_value": 202.98,
-            "ci_low": 104.25,
-            "ci_high": 354.86,
-            "sentiment_score": 0.65,
-            "headline": "Record deliveries reported. Cybertruck margins expanding.",
+            "expected_value": 196.17,
+            "ci_low": 97.1,
+            "ci_high": 333.2,
+            "sentiment_score": 0.0,
+            "headline": "",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.66,
-            "ci_low": 7.48,
-            "ci_high": 24.48,
-            "sentiment_score": 0.2,
-            "headline": "EV transition costs balanced by strong legacy fleet sales.",
+            "expected_value": 13.75,
+            "ci_low": 7.05,
+            "ci_high": 23.7,
+            "sentiment_score": 0.0,
+            "headline": "",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 133.67,
-            "ci_low": 76.14,
-            "ci_high": 226.07,
-            "sentiment_score": 0.55,
-            "headline": "Upstream production exceeding targets. Favorable crack spreads.",
+            "expected_value": 128.67,
+            "ci_low": 67.95,
+            "ci_high": 221.23,
+            "sentiment_score": 0.0,
+            "headline": "",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.69,
-            "ci_low": 16.5,
-            "ci_high": 55.43,
-            "sentiment_score": 0.1,
-            "headline": "Pipeline progression steady. Cost-realignment phase active.",
+            "expected_value": 31.39,
+            "ci_low": 17.58,
+            "ci_high": 53.81,
+            "sentiment_score": 0.0,
+            "headline": "",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 93.58,
-            "ci_low": 48.21,
-            "ci_high": 155.99,
-            "sentiment_score": 0.4,
-            "headline": "Geopolitical risk premium priced into near-term contracts.",
+            "expected_value": 89.9,
+            "ci_low": 48.4,
+            "ci_high": 158.7,
+            "sentiment_score": 0.0,
+            "headline": "",
             "volatility_alert": false
         }
     }
