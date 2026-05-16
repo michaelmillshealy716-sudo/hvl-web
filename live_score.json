@@ -1,0 +1,16 @@
+{
+    "timestamp": "13:39:21",
+    "entropy": 0.682,
+    "teams": {
+        "MTL": {
+            "hamiltonian": 1.2364,
+            "psi_squared": 63.56,
+            "strike_chance": 80.5
+        },
+        "BUF": {
+            "hamiltonian": 1.4026,
+            "psi_squared": 65.28,
+            "strike_chance": 76.7
+        }
+    }
+}

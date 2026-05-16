@@ -12,3 +12,8 @@ series_history.json
 !web_status.json
 !score_status.json
 
+
+# HVL Telemetry Exemptions
+!live_score.json
+!web_status.json
+!index.html
