@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-16 17:45:32",
-    "execution_id": 1778967932.0366378,
+    "last_updated": "2026-05-16 17:47:36",
+    "execution_id": 1778968056.3435822,
     "projections": {
         "TSLA": {
-            "expected_value": 196.81,
-            "ci_low": 104.02,
-            "ci_high": 335.27,
+            "expected_value": 195.53,
+            "ci_low": 103.83,
+            "ci_high": 340.53,
             "sentiment_score": 0.0,
             "headline": "Elon Musk, Chip Giant?",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.6,
-            "ci_low": 6.98,
-            "ci_high": 23.97,
+            "expected_value": 13.5,
+            "ci_low": 7.21,
+            "ci_high": 22.57,
             "sentiment_score": 0.0,
             "headline": "For owners, the Ford Bronco isn't just a truck \u2014 it's a lifestyle",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 128.98,
-            "ci_low": 69.31,
-            "ci_high": 220.96,
+            "expected_value": 133.06,
+            "ci_low": 72.12,
+            "ci_high": 235.0,
             "sentiment_score": -0.026,
             "headline": "Exxon Mobil Cleared In Climate Case What Verdict Means For Dividend Risk",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.36,
-            "ci_low": 16.38,
-            "ci_high": 54.57,
+            "expected_value": 31.29,
+            "ci_low": 16.35,
+            "ci_high": 55.8,
             "sentiment_score": 0.202,
             "headline": "The Top 5 Analyst Questions From Novavax\u2019s Q1 Earnings Call",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 91.4,
-            "ci_low": 46.42,
-            "ci_high": 160.81,
+            "expected_value": 89.36,
+            "ci_low": 47.9,
+            "ci_high": 151.44,
             "sentiment_score": 0.0,
             "headline": "Oil, Geopolitics, and Occidental Petroleum: Here's Where the Stock Could Be in 12 Months",
             "volatility_alert": false
