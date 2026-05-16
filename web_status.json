@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-16 19:08:11",
-    "execution_id": 1778972891.9111555,
+    "last_updated": "2026-05-16 19:15:24",
+    "execution_id": 1778973324.8049004,
     "projections": {
         "TSLA": {
-            "expected_value": 192.21,
-            "ci_low": 103.27,
-            "ci_high": 333.1,
+            "expected_value": 192.66,
+            "ci_low": 99.97,
+            "ci_high": 327.5,
             "sentiment_score": 0.0,
             "headline": "Elon Musk, Chip Giant?",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.73,
-            "ci_low": 7.14,
-            "ci_high": 23.52,
+            "expected_value": 13.81,
+            "ci_low": 7.62,
+            "ci_high": 24.49,
             "sentiment_score": 0.0,
             "headline": "For owners, the Ford Bronco isn't just a truck \u2014 it's a lifestyle",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 130.52,
+            "expected_value": 128.02,
             "ci_low": 71.29,
-            "ci_high": 218.57,
+            "ci_high": 216.06,
             "sentiment_score": -0.026,
             "headline": "Exxon Mobil Cleared In Climate Case What Verdict Means For Dividend Risk",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.82,
-            "ci_low": 16.83,
-            "ci_high": 54.25,
+            "expected_value": 31.27,
+            "ci_low": 16.56,
+            "ci_high": 54.65,
             "sentiment_score": 0.202,
             "headline": "The Top 5 Analyst Questions From Novavax\u2019s Q1 Earnings Call",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 90.51,
-            "ci_low": 47.04,
-            "ci_high": 156.11,
+            "expected_value": 91.44,
+            "ci_low": 48.84,
+            "ci_high": 159.38,
             "sentiment_score": 0.0,
             "headline": "Oil, Geopolitics, and Occidental Petroleum: Here's Where the Stock Could Be in 12 Months",
             "volatility_alert": false
