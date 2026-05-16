@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-16 16:06:47",
-    "execution_id": 1778962007.3334446,
+    "last_updated": "2026-05-16 16:08:39",
+    "execution_id": 1778962119.0954878,
     "projections": {
         "TSLA": {
-            "expected_value": 189.88,
-            "ci_low": 100.96,
-            "ci_high": 325.42,
+            "expected_value": 188.86,
+            "ci_low": 102.22,
+            "ci_high": 322.09,
             "sentiment_score": -0.727,
             "headline": "A Long-Term Investor Says They Feel 'A Weird Mix Of Jealousy, FOMO, And Frustration' Watching People Around Them Make Fast Money On Options",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.71,
-            "ci_low": 7.29,
-            "ci_high": 23.92,
+            "expected_value": 13.48,
+            "ci_low": 7.24,
+            "ci_high": 23.14,
             "sentiment_score": 0.0,
             "headline": "For owners, the Ford Bronco isn't just a truck \u2014 it's a lifestyle",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 130.89,
-            "ci_low": 71.34,
-            "ci_high": 225.68,
+            "expected_value": 131.25,
+            "ci_low": 72.24,
+            "ci_high": 220.82,
             "sentiment_score": -0.026,
             "headline": "Exxon Mobil Cleared In Climate Case What Verdict Means For Dividend Risk",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.88,
-            "ci_low": 16.38,
-            "ci_high": 53.02,
+            "expected_value": 30.59,
+            "ci_low": 15.71,
+            "ci_high": 51.54,
             "sentiment_score": -0.34,
             "headline": "Wolfe Research Says COVID Uncertainty Continues to Weigh on Pfizer (PFE) Outlook",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 90.89,
-            "ci_low": 48.81,
-            "ci_high": 154.47,
+            "expected_value": 91.01,
+            "ci_low": 49.96,
+            "ci_high": 161.87,
             "sentiment_score": 0.0,
             "headline": "Oil, Geopolitics, and Occidental Petroleum: Here's Where the Stock Could Be in 12 Months",
             "volatility_alert": false
