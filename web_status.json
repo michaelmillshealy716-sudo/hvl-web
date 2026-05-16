@@ -1,45 +1,45 @@
 {
-    "last_updated": "2026-05-16 15:37:18",
-    "execution_id": 1778960238.3414004,
+    "last_updated": "2026-05-16 15:39:22",
+    "execution_id": 1778960362.4524925,
     "projections": {
         "TSLA": {
-            "expected_value": 195.02,
-            "ci_low": 103.44,
-            "ci_high": 323.26,
-            "sentiment_score": 0.0,
-            "headline": "Peter Navarro Once Slammed Tesla Over China Reliance\u2014Now Xi Jinping Says Beijing Will Open Wider To US Companies Amid Trump Visit",
+            "expected_value": 187.84,
+            "ci_low": 98.13,
+            "ci_high": 326.66,
+            "sentiment_score": -0.727,
+            "headline": "A Long-Term Investor Says They Feel 'A Weird Mix Of Jealousy, FOMO, And Frustration' Watching People Around Them Make Fast Money On Options",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.66,
-            "ci_low": 7.08,
-            "ci_high": 24.02,
+            "expected_value": 13.51,
+            "ci_low": 7.3,
+            "ci_high": 22.84,
             "sentiment_score": 0.0,
             "headline": "For owners, the Ford Bronco isn't just a truck \u2014 it's a lifestyle",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 131.11,
-            "ci_low": 71.0,
-            "ci_high": 224.23,
+            "expected_value": 130.55,
+            "ci_low": 67.99,
+            "ci_high": 229.12,
             "sentiment_score": -0.026,
             "headline": "Exxon Mobil Cleared In Climate Case What Verdict Means For Dividend Risk",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.1,
-            "ci_low": 16.49,
-            "ci_high": 52.01,
-            "sentiment_score": -0.34,
-            "headline": "Wolfe Research Says COVID Uncertainty Continues to Weigh on Pfizer (PFE) Outlook",
+            "expected_value": 31.44,
+            "ci_low": 16.54,
+            "ci_high": 56.61,
+            "sentiment_score": 0.0,
+            "headline": "",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 89.59,
-            "ci_low": 46.85,
-            "ci_high": 158.58,
+            "expected_value": 90.14,
+            "ci_low": 47.0,
+            "ci_high": 152.54,
             "sentiment_score": 0.0,
-            "headline": "Jerome Powell's final day as Fed Chair",
+            "headline": "Oil, Geopolitics, and Occidental Petroleum: Here's Where the Stock Could Be in 12 Months",
             "volatility_alert": false
         }
     }
