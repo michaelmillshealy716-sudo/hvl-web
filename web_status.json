@@ -1,46 +1,40 @@
 {
-    "last_updated": "2026-05-16 16:29:18",
-    "execution_id": 1778963358.9676056,
+    "last_updated": "2026-05-16 16:30:56",
     "projections": {
         "TSLA": {
-            "expected_value": 183.98,
-            "ci_low": 99.31,
-            "ci_high": 311.14,
+            "expected_value": 190.08,
+            "ci_low": 96.15,
+            "ci_high": 339.19,
             "sentiment_score": -0.727,
-            "headline": "A Long-Term Investor Says They Feel 'A Weird Mix Of Jealousy, FOMO, And Frustration' Watching People Around Them Make Fast Money On Options",
-            "volatility_alert": false
+            "headline": "A Long-Term Investor Says They Feel 'A Weird Mix Of Jea..."
         },
         "F": {
-            "expected_value": 13.58,
-            "ci_low": 7.24,
-            "ci_high": 23.37,
+            "expected_value": 13.77,
+            "ci_low": 7.4,
+            "ci_high": 23.71,
             "sentiment_score": 0.0,
-            "headline": "For owners, the Ford Bronco isn't just a truck \u2014 it's a lifestyle",
-            "volatility_alert": false
+            "headline": "For owners, the Ford Bronco isn't just a truck \u2014 it's a..."
         },
         "XOM": {
-            "expected_value": 130.35,
-            "ci_low": 66.27,
-            "ci_high": 230.09,
+            "expected_value": 131.83,
+            "ci_low": 68.71,
+            "ci_high": 217.46,
             "sentiment_score": -0.026,
-            "headline": "Exxon Mobil Cleared In Climate Case What Verdict Means For Dividend Risk",
-            "volatility_alert": false
+            "headline": "Exxon Mobil Cleared In Climate Case What Verdict Means ..."
         },
         "PFE": {
-            "expected_value": 32.38,
-            "ci_low": 16.41,
-            "ci_high": 55.43,
+            "expected_value": 30.93,
+            "ci_low": 16.09,
+            "ci_high": 51.47,
             "sentiment_score": 0.202,
-            "headline": "The Top 5 Analyst Questions From Novavax\u2019s Q1 Earnings Call",
-            "volatility_alert": false
+            "headline": "The Top 5 Analyst Questions From Novavax\u2019s Q1 Earnings ..."
         },
         "CL=F": {
-            "expected_value": 89.31,
-            "ci_low": 47.17,
-            "ci_high": 158.02,
+            "expected_value": 90.62,
+            "ci_low": 45.09,
+            "ci_high": 150.88,
             "sentiment_score": 0.0,
-            "headline": "Oil, Geopolitics, and Occidental Petroleum: Here's Where the Stock Could Be in 12 Months",
-            "volatility_alert": false
+            "headline": "Oil, Geopolitics, and Occidental Petroleum: Here's Wher..."
         }
     }
 }
