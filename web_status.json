@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-16 16:40:31",
-    "execution_id": 1778964031.2636857,
+    "last_updated": "2026-05-16 16:42:34",
+    "execution_id": 1778964154.1051373,
     "projections": {
         "TSLA": {
-            "expected_value": 189.43,
-            "ci_low": 99.57,
-            "ci_high": 324.04,
+            "expected_value": 188.69,
+            "ci_low": 103.71,
+            "ci_high": 331.31,
             "sentiment_score": -0.727,
             "headline": "A Long-Term Investor Says They Feel 'A Weird Mix Of Jealousy, FOMO, And Frustration' Watching People Around Them Make Fast Money On Options",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.41,
-            "ci_low": 7.06,
-            "ci_high": 23.6,
+            "expected_value": 13.64,
+            "ci_low": 7.22,
+            "ci_high": 23.79,
             "sentiment_score": 0.0,
             "headline": "For owners, the Ford Bronco isn't just a truck \u2014 it's a lifestyle",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 129.38,
-            "ci_low": 70.1,
-            "ci_high": 222.2,
+            "expected_value": 128.34,
+            "ci_low": 67.72,
+            "ci_high": 222.8,
             "sentiment_score": -0.026,
             "headline": "Exxon Mobil Cleared In Climate Case What Verdict Means For Dividend Risk",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.68,
-            "ci_low": 16.99,
-            "ci_high": 53.81,
+            "expected_value": 31.83,
+            "ci_low": 16.92,
+            "ci_high": 53.48,
             "sentiment_score": 0.202,
             "headline": "The Top 5 Analyst Questions From Novavax\u2019s Q1 Earnings Call",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 90.81,
-            "ci_low": 47.9,
-            "ci_high": 152.2,
+            "expected_value": 90.28,
+            "ci_low": 48.52,
+            "ci_high": 153.27,
             "sentiment_score": 0.0,
             "headline": "Oil, Geopolitics, and Occidental Petroleum: Here's Where the Stock Could Be in 12 Months",
             "volatility_alert": false
