@@ -1,45 +1,45 @@
 {
-    "last_updated": "2026-05-16 17:02:11",
-    "execution_id": 1778965331.8214052,
+    "last_updated": "2026-05-16 17:04:15",
+    "execution_id": 1778965455.642992,
     "projections": {
         "TSLA": {
-            "expected_value": 191.98,
-            "ci_low": 96.66,
-            "ci_high": 333.64,
+            "expected_value": 193.12,
+            "ci_low": 104.63,
+            "ci_high": 330.49,
             "sentiment_score": 0.0,
             "headline": "Elon Musk, Chip Giant?",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.48,
-            "ci_low": 7.37,
-            "ci_high": 23.86,
+            "expected_value": 13.45,
+            "ci_low": 7.02,
+            "ci_high": 23.76,
             "sentiment_score": 0.0,
             "headline": "For owners, the Ford Bronco isn't just a truck \u2014 it's a lifestyle",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 130.4,
-            "ci_low": 70.88,
-            "ci_high": 228.61,
+            "expected_value": 129.34,
+            "ci_low": 69.49,
+            "ci_high": 213.97,
             "sentiment_score": -0.026,
             "headline": "Exxon Mobil Cleared In Climate Case What Verdict Means For Dividend Risk",
             "volatility_alert": false
         },
         "PFE": {
             "expected_value": 31.97,
-            "ci_low": 16.46,
-            "ci_high": 54.49,
+            "ci_low": 16.5,
+            "ci_high": 55.44,
             "sentiment_score": 0.202,
             "headline": "The Top 5 Analyst Questions From Novavax\u2019s Q1 Earnings Call",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 89.86,
-            "ci_low": 47.51,
-            "ci_high": 150.93,
+            "expected_value": 89.83,
+            "ci_low": 47.41,
+            "ci_high": 156.01,
             "sentiment_score": 0.0,
-            "headline": "Oil, Geopolitics, and Occidental Petroleum: Here's Where the Stock Could Be in 12 Months",
+            "headline": "",
             "volatility_alert": false
         }
     }
