@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+q<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -29,10 +29,7 @@
             line-height: 1.6;
         }
 
-        .dashboard-container {
-            width: 100%;
-            max-width: 1100px;
-        }
+        .dashboard-container { width: 100%; max-width: 1100px; }
 
         header {
             display: flex;
@@ -43,31 +40,10 @@
             margin-bottom: 30px;
         }
 
-        .header-title {
-            margin: 0;
-        }
+        .header-title h1 { margin: 0; font-size: 2rem; font-weight: 700; letter-spacing: -0.5px; }
+        .header-title p { margin: 5px 0 0 0; color: var(--text-secondary); font-size: 0.95rem; }
 
-        .header-title h1 {
-            margin: 0;
-            font-size: 2rem;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-            color: var(--text-primary);
-        }
-
-        .header-title p {
-            margin: 5px 0 0 0;
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-            font-weight: 500;
-        }
-
-        .sync-status {
-            text-align: right;
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-        }
-
+        .sync-status { text-align: right; font-size: 0.85rem; color: var(--text-secondary); }
         .status-dot {
             display: inline-block;
             width: 8px;
@@ -84,141 +60,38 @@
             100% { opacity: 0.6; transform: scale(0.9); }
         }
 
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 25px;
-        }
-
+        .grid { display: grid; grid-template-columns: 1fr; gap: 25px; }
         @media (min-width: 850px) {
             .grid { grid-template-columns: 1fr 1fr; }
             .span-full { grid-column: 1 / -1; }
         }
 
-        .card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-light);
-            border-radius: 8px;
-            padding: 25px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
-        }
+        .card { background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 8px; padding: 25px; }
+        .card-header { font-size: 1.1rem; font-weight: 600; color: var(--hvl-blue); margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid var(--border-light); text-transform: uppercase; }
 
-        .card-header {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: var(--hvl-blue);
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid var(--border-light);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .data-row {
-            display: flex;
-            justify-content: space-between;
-            padding: 8px 0;
-            border-bottom: 1px solid #f0f0f0;
-            font-size: 0.95rem;
-        }
-        
+        .data-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #f0f0f0; font-size: 0.95rem; }
         .data-row:last-child { border-bottom: none; }
         .data-label { color: var(--text-secondary); font-weight: 500; }
-        .data-value { font-weight: 600; font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; }
+        .data-value { font-weight: 600; font-family: monospace; }
         
         .val-positive { color: var(--data-green); }
         .val-negative { color: var(--data-red); }
         .val-neutral { color: var(--text-primary); }
 
-        .fase-asset {
-            background-color: #f8f9fa;
-            border: 1px solid var(--border-light);
-            border-radius: 6px;
-            padding: 15px;
-            margin-bottom: 15px;
-        }
+        .fase-asset { background-color: #f8f9fa; border: 1px solid var(--border-light); border-radius: 6px; padding: 15px; margin-bottom: 15px; }
+        .fase-asset h3 { margin: 0 0 12px 0; font-size: 1.05rem; }
+        .news-headline { margin-top: 12px; font-size: 0.85rem; color: var(--text-secondary); font-style: italic; border-left: 3px solid var(--border-light); padding-left: 10px; }
 
-        .fase-asset h3 {
-            margin: 0 0 12px 0;
-            font-size: 1.05rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .volatility-badge {
-            background-color: #ffeeba;
-            color: #856404;
-            font-size: 0.7rem;
-            padding: 3px 8px;
-            border-radius: 12px;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-
-        .news-headline {
-            margin-top: 12px;
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            font-style: italic;
-            border-left: 3px solid var(--border-light);
-            padding-left: 10px;
-        }
-
-        .glossary-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
-        }
-
-        @media (min-width: 850px) {
-            .glossary-grid { grid-template-columns: 1fr 1fr; }
-        }
-
-        .term {
-            font-size: 0.9rem;
-        }
-
-        .term strong {
-            display: block;
-            color: var(--text-primary);
-            margin-bottom: 4px;
-        }
-
-        .term span {
-            color: var(--text-secondary);
-            line-height: 1.4;
-        }
-
-        .comparison-table {
-            width: 100%;
-            margin-top: 15px;
-            border-collapse: collapse;
-            font-size: 0.95rem;
-        }
-
-        .comparison-table th {
-            text-align: right;
-            padding: 8px;
-            color: var(--text-secondary);
-            font-weight: 500;
-            border-bottom: 2px solid var(--border-light);
-        }
-        
+        .comparison-table { width: 100%; margin-top: 15px; border-collapse: collapse; font-size: 0.95rem; }
+        .comparison-table th { text-align: right; padding: 8px; color: var(--text-secondary); border-bottom: 2px solid var(--border-light); }
         .comparison-table th:first-child { text-align: left; }
-        .comparison-table td {
-            text-align: right;
-            padding: 10px 8px;
-            border-bottom: 1px solid var(--border-light);
-            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-            font-weight: 600;
-        }
-        .comparison-table td:first-child {
-            text-align: left;
-            font-family: var(--font-main);
-            color: var(--text-secondary);
-            font-weight: 500;
-        }
+        .comparison-table td { text-align: right; padding: 10px 8px; border-bottom: 1px solid var(--border-light); font-family: monospace; font-weight: 600; }
+        .comparison-table td:first-child { text-align: left; font-family: var(--font-main); color: var(--text-secondary); }
+
+        .debug-panel { margin-top: 30px; background: #1e1e1e; color: #f1f1f1; font-family: monospace; font-size: 0.8rem; padding: 15px; border-radius: 6px; }
+        .debug-header { color: #ffcc00; font-weight: bold; margin-bottom: 10px; text-transform: uppercase; border-bottom: 1px solid #444; }
+        .debug-err { color: #ff6b6b; }
+        .debug-ok { color: #51cf66; }
     </style>
 </head>
 <body>
@@ -230,8 +103,8 @@
                 <p>Live Quantitative Modeling & Predictive Telemetry</p>
             </div>
             <div class="sync-status">
-                <div><span class="status-dot"></span><span id="connection-state">Active Connection</span></div>
-                <div id="last-sync" style="margin-top: 4px;">Awaiting cycle...</div>
+                <div><span class="status-dot"></span><span>Serverless Cloud API Linked</span></div>
+                <div id="last-sync" style="margin-top: 4px;">Awaiting live network stream...</div>
             </div>
         </header>
 
@@ -239,67 +112,77 @@
             <div class="card">
                 <div class="card-header">Veritas Auditor: Stochastic Engine</div>
                 <div id="veritas-content">
-                    <p style="color: var(--text-secondary); font-style: italic;">Establishing data bridge...</p>
+                    <p style="color: var(--text-secondary); font-style: italic;">Connecting to API matrix stream...</p>
                 </div>
             </div>
 
             <div class="card">
                 <div class="card-header">FASE: Geopolitical Sentiment</div>
                 <div id="fase-content">
-                    <p style="color: var(--text-secondary); font-style: italic;">Ingesting market telemetry...</p>
+                    <p style="color: var(--text-secondary); font-style: italic;">Ingesting token stream...</p>
                 </div>
             </div>
 
-            <div class="card span-full">
-                <div class="card-header">Engine Explicitory Metadata</div>
-                <div class="glossary-grid">
-                    <div class="term">
-                        <strong>System Entropy (S)</strong>
-                        <span>Calculates the active thermodynamic chaos in a system. Low entropy indicates extreme directional dominance; high entropy represents a volatile, heavily contested statistical state.</span>
-                    </div>
-                    <div class="term">
-                        <strong>Hamiltonian Energy (H)</strong>
-                        <span>The aggregate energy of the system. Computed by mapping offensive kinetic pressure against the dynamic potential energy barriers (real-time Goalie SV%).</span>
-                    </div>
-                    <div class="term">
-                        <strong>Collapse Probability (Ψ²)</strong>
-                        <span>The normalized probability density of the mathematical wave function collapsing into a definitive state-change event (e.g., a realized goal).</span>
-                    </div>
-                    <div class="term">
-                        <strong>Possession Amplitude (A)</strong>
-                        <span>The scalar multiplier of structural control, dictated by neutral-zone management and faceoff possession pacing.</span>
-                    </div>
-                </div>
+            <div class="span-full debug-panel">
+                <div class="debug-header">HVL Cloud API Log Ingestion Core</div>
+                <div id="debug-log">Pipeline initialized. Mapping endpoints...</div>
             </div>
         </div>
     </div>
 
     <script>
-        const fetchConfig = { cache: "no-store" };
+        const API_URL = "https://kvdb.io/889f8gS7Ygqrc7v68sN6fQ/matrix_state";
 
-        function updateDashboard() {
-            const cacheBuster = `?t=${new Date().getTime()}`;
+        function printDebug(msg, isError = false) {
+            const log = document.getElementById('debug-log');
+            log.innerHTML = `<div class="${isError ? 'debug-err' : 'debug-ok'}">[${new Date().toLocaleTimeString()}] ${msg}</div>`;
+        }
 
-            // VERITAS Fetch
-            fetch(`live_score.json${cacheBuster}`, fetchConfig)
-                .then(response => response.json())
-                .then(data => {
-                    const vContent = document.getElementById('veritas-content');
-                    const mtlStrike = parseFloat(data.teams.MTL.strike_chance);
-                    const bufStrike = parseFloat(data.teams.BUF.strike_chance);
+        function pullTelemetryStream() {
+            fetch(API_URL, { cache: "no-store" })
+                .then(res => {
+                    if (!res.ok) throw new Error(`Serverless DB returned HTTP status ${res.status}`);
+                    return res.json();
+                })
+                .then(state => {
+                    printDebug("Direct cloud API ingest successful. State matching active.");
+                    document.getElementById('last-sync').innerText = `API State Sync: ${state.last_updated}`;
 
-                    vContent.innerHTML = `
-                        <div class="data-row">
-                            <span class="data-label">System Entropy</span>
-                            <span class="data-value val-neutral">${data.entropy} S</span>
-                        </div>
-                        <div class="data-row">
-                            <span class="data-label">Calculation Timestamp</span>
-                            <span class="data-value" style="font-weight: 400;">${data.timestamp}</span>
-                        </div>
-                        
+                    // Render Veritas Card
+                    const vData = state.veritas;
+                    document.getElementById('veritas-content').innerHTML = `
+                        <div class="data-row"><span class="data-label">System Entropy</span><span class="data-value">${vData.entropy} S</span></div>
+                        <div class="data-row"><span class="data-label">Computation Clock</span><span class="data-value">${vData.timestamp}</span></div>
                         <table class="comparison-table">
-                            <thead>
-                                <tr>
-                                    <th>Vector Metric
+                            <thead><tr><th>Vector</th><th>MTL (Home)</th><th>BUF (Away)</th></tr></thead>
+                            <tbody>
+                                <tr><td>Hamiltonian</td><td>${vData.MTL.H}</td><td>${vData.BUF.H}</td></tr>
+                                <tr><td>Collapse %</td><td>${vData.MTL.psi_sq}%</td><td>${vData.BUF.psi_sq}%</td></tr>
+                                <tr><td style="font-weight:600;color:var(--text-primary)">Goal Strike</td><td class="${vData.MTL.strike > 65 ? 'val-positive' : 'val-neutral'}">${vData.MTL.strike}%</td><td class="${vData.BUF.strike > 65 ? 'val-positive' : 'val-neutral'}">${vData.BUF.strike}%</td></tr>
+                            </tbody>
+                        </table>`;
+
+                    // Render FASE Card
+                    let faseHTML = '';
+                    for (const [ticker, stats] of Object.entries(state.fase)) {
+                        const sClass = stats.sentiment_score > 0 ? 'val-positive' : (stats.sentiment_score < 0 ? 'val-negative' : 'val-neutral');
+                        faseHTML += `
+                            <div class="fase-asset">
+                                <h3>$${ticker}</h3>
+                                <div class="data-row"><span class="data-label">1-Yr EV Model</span><span class="data-value">$${stats.expected_value}</span></div>
+                                <div class="data-row"><span class="data-label">95% Confidence Bounds</span><span class="data-value" style="color:var(--text-secondary);font-weight:400;">$${stats.ci_low} — $${stats.ci_high}</span></div>
+                                <div class="data-row"><span class="data-label">VADER Polar Scalar</span><span class="data-value ${sClass}">${stats.sentiment_score}</span></div>
+                                <div class="news-headline">"${stats.headline}"</div>
+                            </div>`;
+                    }
+                    document.getElementById('fase-content').innerHTML = faseHTML;
+                })
+                .catch(err => printDebug(`API Ingest Halt: ${err.message}`, true));
+        }
+
+        pullTelemetryStream();
+        setInterval(pullTelemetryStream, 5000); // Polling data endpoint directly every 5 seconds
+    </script>
+</body>
+</html>
 
