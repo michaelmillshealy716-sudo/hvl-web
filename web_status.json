@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-16 14:33:10",
-    "execution_id": 1778956390.5590723,
+    "last_updated": "2026-05-16 14:34:57",
+    "execution_id": 1778956497.9454293,
     "projections": {
         "TSLA": {
-            "expected_value": 192.37,
-            "ci_low": 102.98,
-            "ci_high": 332.13,
+            "expected_value": 191.06,
+            "ci_low": 102.54,
+            "ci_high": 329.19,
             "sentiment_score": -0.296,
             "headline": "Tesla Raises U.S. Model Y Prices. Its Stock Just Forged A Lower Buy Point.",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.7,
-            "ci_low": 7.32,
-            "ci_high": 23.27,
+            "expected_value": 13.51,
+            "ci_low": 7.03,
+            "ci_high": 22.52,
             "sentiment_score": 0.0,
             "headline": "For owners, the Ford Bronco isn't just a truck \u2014 it's a lifestyle",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 131.25,
-            "ci_low": 70.9,
-            "ci_high": 220.77,
+            "expected_value": 130.58,
+            "ci_low": 66.29,
+            "ci_high": 231.48,
             "sentiment_score": -0.026,
             "headline": "Exxon Mobil Cleared In Climate Case What Verdict Means For Dividend Risk",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.39,
-            "ci_low": 15.71,
-            "ci_high": 53.52,
+            "expected_value": 30.55,
+            "ci_low": 16.87,
+            "ci_high": 52.57,
             "sentiment_score": -0.34,
             "headline": "Wolfe Research Says COVID Uncertainty Continues to Weigh on Pfizer (PFE) Outlook",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 89.45,
-            "ci_low": 48.94,
-            "ci_high": 157.9,
+            "expected_value": 91.43,
+            "ci_low": 47.59,
+            "ci_high": 157.84,
             "sentiment_score": 0.0,
             "headline": "Jerome Powell's final day as Fed Chair",
             "volatility_alert": false
