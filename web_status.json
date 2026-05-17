@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-17 13:26:23",
-    "execution_id": 1779038783.2880745,
+    "last_updated": "2026-05-17 13:28:27",
+    "execution_id": 1779038907.8766503,
     "projections": {
         "TSLA": {
-            "expected_value": 194.85,
-            "ci_low": 105.45,
-            "ci_high": 334.65,
+            "expected_value": 194.38,
+            "ci_low": 102.21,
+            "ci_high": 324.08,
             "sentiment_score": 0.0,
             "headline": "Why SpaceX Split Its Stock and 2 More Trillion-Dollar Issues",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.72,
-            "ci_low": 7.22,
-            "ci_high": 23.64,
+            "expected_value": 13.95,
+            "ci_low": 7.58,
+            "ci_high": 23.35,
             "sentiment_score": 0.459,
             "headline": "How much is Ford Energy worth? RBC breaks down the valuation",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 134.25,
-            "ci_low": 74.45,
-            "ci_high": 229.23,
+            "expected_value": 137.14,
+            "ci_low": 72.9,
+            "ci_high": 231.61,
             "sentiment_score": 0.71,
             "headline": "1 Brilliant Energy Stock to Buy Now and Hold for the Long Term",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.55,
-            "ci_low": 15.98,
-            "ci_high": 54.66,
+            "expected_value": 30.95,
+            "ci_low": 16.74,
+            "ci_high": 53.29,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 90.6,
-            "ci_low": 51.42,
-            "ci_high": 158.68,
+            "expected_value": 90.78,
+            "ci_low": 48.4,
+            "ci_high": 156.48,
             "sentiment_score": 0.202,
             "headline": "Dow Jones Futures Due With Treasury Yields, Oil Prices In Focus; Nvidia Earnings Ahead",
             "volatility_alert": false
