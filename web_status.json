@@ -1,45 +1,45 @@
 {
-    "last_updated": "2026-05-17 19:27:11",
-    "execution_id": 1779060431.1856139,
+    "last_updated": "2026-05-17 19:29:15",
+    "execution_id": 1779060555.2305543,
     "projections": {
         "TSLA": {
-            "expected_value": 190.57,
-            "ci_low": 102.17,
-            "ci_high": 326.78,
+            "expected_value": 191.67,
+            "ci_low": 100.5,
+            "ci_high": 335.21,
             "sentiment_score": -0.296,
             "headline": "Elon Musk Accused Of Building 'Most Management-Favorable' IPO Structure At SpaceX: Report",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.6,
-            "ci_low": 7.48,
-            "ci_high": 22.82,
+            "expected_value": 13.86,
+            "ci_low": 7.46,
+            "ci_high": 24.09,
             "sentiment_score": 0.382,
             "headline": "Ford rival doubles down on China with bold move",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 130.4,
-            "ci_low": 73.29,
-            "ci_high": 225.86,
+            "expected_value": 129.98,
+            "ci_low": 71.73,
+            "ci_high": 217.24,
             "sentiment_score": 0.0,
             "headline": "The $40,000 Tax Move That Comes After Your 401(k) Hits Its Limit",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.04,
-            "ci_low": 16.52,
-            "ci_high": 54.89,
+            "expected_value": 30.72,
+            "ci_low": 16.51,
+            "ci_high": 51.18,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 89.84,
-            "ci_low": 49.52,
-            "ci_high": 150.25,
+            "expected_value": 90.31,
+            "ci_low": 47.73,
+            "ci_high": 154.69,
             "sentiment_score": 0.0,
-            "headline": "Dow Jones Futures Fall, Oil Prices Rise As Trump Says 'Clock Is Ticking' For Iran; Nvidia Earnings Ahead",
+            "headline": "Stock market today: Dow, S&P 500, Nasdaq futures dip from record-highs ahead of packed earnings week",
             "volatility_alert": false
         }
     }
