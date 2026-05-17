@@ -1,45 +1,45 @@
 {
-    "last_updated": "2026-05-17 15:33:44",
-    "execution_id": 1779046424.3309088,
+    "last_updated": "2026-05-17 15:35:48",
+    "execution_id": 1779046548.2948787,
     "projections": {
         "TSLA": {
-            "expected_value": 191.68,
-            "ci_low": 105.16,
-            "ci_high": 319.14,
+            "expected_value": 194.54,
+            "ci_low": 100.7,
+            "ci_high": 327.9,
             "sentiment_score": 0.0,
             "headline": "Bank of America resets Google stock forecast before key event",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.6,
-            "ci_low": 7.24,
-            "ci_high": 22.73,
+            "expected_value": 14.02,
+            "ci_low": 7.2,
+            "ci_high": 23.89,
             "sentiment_score": 0.382,
             "headline": "Ford rival doubles down on China with bold move",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 131.09,
-            "ci_low": 69.29,
-            "ci_high": 221.57,
+            "expected_value": 129.86,
+            "ci_low": 72.63,
+            "ci_high": 228.2,
             "sentiment_score": 0.0,
             "headline": "The $40,000 Tax Move That Comes After Your 401(k) Hits Its Limit",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.95,
-            "ci_low": 16.27,
-            "ci_high": 53.77,
+            "expected_value": 31.28,
+            "ci_low": 16.43,
+            "ci_high": 54.37,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 93.13,
-            "ci_low": 49.31,
-            "ci_high": 159.31,
-            "sentiment_score": 0.361,
-            "headline": "Why Chevron (CVX) Is Up 5.2% After Asia Asset Sale To ENEOS And Oil-Price Tailwind",
+            "expected_value": 91.43,
+            "ci_low": 47.55,
+            "ci_high": 161.01,
+            "sentiment_score": 0.459,
+            "headline": "Why Franco-Nevada\u2019s (FNV) Exposure To Gold And Energy Could Be Worth Watching",
             "volatility_alert": false
         }
     }
