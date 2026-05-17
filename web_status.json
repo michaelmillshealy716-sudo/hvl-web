@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-17 01:49:29",
-    "execution_id": 1778996969.639926,
+    "last_updated": "2026-05-17 01:51:33",
+    "execution_id": 1778997093.466745,
     "projections": {
         "TSLA": {
-            "expected_value": 191.61,
-            "ci_low": 99.19,
-            "ci_high": 327.1,
+            "expected_value": 191.29,
+            "ci_low": 101.07,
+            "ci_high": 327.95,
             "sentiment_score": -0.421,
             "headline": "Elon Musk Says If We Don't Do Something About Corruption And Waste, 'The Ship Of America Is Going To Sink' \u2014And We're All Going Down With It",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.62,
-            "ci_low": 7.39,
-            "ci_high": 23.57,
+            "expected_value": 13.56,
+            "ci_low": 7.17,
+            "ci_high": 22.79,
             "sentiment_score": 0.0,
             "headline": "For owners, the Ford Bronco isn't just a truck \u2014 it's a lifestyle",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 134.79,
-            "ci_low": 70.13,
-            "ci_high": 244.17,
-            "sentiment_score": 0.0,
-            "headline": "",
+            "expected_value": 129.6,
+            "ci_low": 70.85,
+            "ci_high": 217.92,
+            "sentiment_score": -0.34,
+            "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.85,
-            "ci_low": 16.76,
-            "ci_high": 52.16,
+            "expected_value": 30.51,
+            "ci_low": 15.91,
+            "ci_high": 52.99,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 87.45,
-            "ci_low": 46.84,
-            "ci_high": 149.55,
+            "expected_value": 90.47,
+            "ci_low": 47.76,
+            "ci_high": 152.58,
             "sentiment_score": -0.329,
             "headline": "Dow Jones Futures: S&P 500, Nasdaq Still Near Highs But Note This; Nvidia, Walmart Earnings Loom",
             "volatility_alert": false
