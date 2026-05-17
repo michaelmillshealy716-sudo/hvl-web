@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-17 07:33:01",
-    "execution_id": 1779017581.360214,
+    "last_updated": "2026-05-17 07:35:05",
+    "execution_id": 1779017705.9533477,
     "projections": {
         "TSLA": {
-            "expected_value": 195.36,
-            "ci_low": 103.22,
-            "ci_high": 349.42,
+            "expected_value": 197.65,
+            "ci_low": 105.32,
+            "ci_high": 341.06,
             "sentiment_score": 0.34,
             "headline": "Tesla Robotaxi Hubs Highlight Autonomy Potential As Australian Scrutiny Builds",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.86,
-            "ci_low": 7.33,
-            "ci_high": 24.59,
+            "expected_value": 13.57,
+            "ci_low": 7.48,
+            "ci_high": 22.81,
             "sentiment_score": 0.0,
             "headline": "For owners, the Ford Bronco isn't just a truck \u2014 it's a lifestyle",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 127.43,
-            "ci_low": 68.16,
-            "ci_high": 221.28,
+            "expected_value": 128.3,
+            "ci_low": 65.76,
+            "ci_high": 225.67,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.65,
-            "ci_low": 16.35,
-            "ci_high": 52.67,
+            "expected_value": 31.2,
+            "ci_low": 16.52,
+            "ci_high": 54.69,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 93.31,
-            "ci_low": 48.84,
-            "ci_high": 162.07,
+            "expected_value": 95.13,
+            "ci_low": 51.74,
+            "ci_high": 162.8,
             "sentiment_score": 0.66,
             "headline": "Assessing Valeura Energy\u2019s Valuation After Q1 2026 Results And Southeast Asia Growth Progress",
             "volatility_alert": false
