@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-17 15:31:40",
-    "execution_id": 1779046300.2796552,
+    "last_updated": "2026-05-17 15:33:44",
+    "execution_id": 1779046424.3309088,
     "projections": {
         "TSLA": {
-            "expected_value": 193.8,
-            "ci_low": 104.13,
-            "ci_high": 335.92,
+            "expected_value": 191.68,
+            "ci_low": 105.16,
+            "ci_high": 319.14,
             "sentiment_score": 0.0,
             "headline": "Bank of America resets Google stock forecast before key event",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.79,
-            "ci_low": 7.38,
-            "ci_high": 23.95,
+            "expected_value": 13.6,
+            "ci_low": 7.24,
+            "ci_high": 22.73,
             "sentiment_score": 0.382,
             "headline": "Ford rival doubles down on China with bold move",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 131.46,
-            "ci_low": 72.68,
-            "ci_high": 228.27,
+            "expected_value": 131.09,
+            "ci_low": 69.29,
+            "ci_high": 221.57,
             "sentiment_score": 0.0,
             "headline": "The $40,000 Tax Move That Comes After Your 401(k) Hits Its Limit",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.14,
-            "ci_low": 16.6,
-            "ci_high": 54.06,
+            "expected_value": 30.95,
+            "ci_low": 16.27,
+            "ci_high": 53.77,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 93.29,
-            "ci_low": 50.04,
-            "ci_high": 162.15,
+            "expected_value": 93.13,
+            "ci_low": 49.31,
+            "ci_high": 159.31,
             "sentiment_score": 0.361,
             "headline": "Why Chevron (CVX) Is Up 5.2% After Asia Asset Sale To ENEOS And Oil-Price Tailwind",
             "volatility_alert": false
