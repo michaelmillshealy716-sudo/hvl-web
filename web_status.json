@@ -1,45 +1,45 @@
 {
-    "last_updated": "2026-05-17 14:57:31",
-    "execution_id": 1779044251.809532,
+    "last_updated": "2026-05-17 14:59:35",
+    "execution_id": 1779044375.9062853,
     "projections": {
         "TSLA": {
-            "expected_value": 192.76,
-            "ci_low": 102.56,
-            "ci_high": 335.41,
+            "expected_value": 193.02,
+            "ci_low": 103.78,
+            "ci_high": 343.47,
             "sentiment_score": 0.0,
             "headline": "Bank of America resets Google stock forecast before key event",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.67,
-            "ci_low": 7.43,
-            "ci_high": 22.88,
+            "expected_value": 13.88,
+            "ci_low": 7.37,
+            "ci_high": 23.38,
             "sentiment_score": 0.382,
             "headline": "Ford rival doubles down on China with bold move",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 128.31,
-            "ci_low": 68.66,
-            "ci_high": 209.28,
+            "expected_value": 131.31,
+            "ci_low": 67.87,
+            "ci_high": 234.15,
             "sentiment_score": 0.0,
             "headline": "The $40,000 Tax Move That Comes After Your 401(k) Hits Its Limit",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.85,
-            "ci_low": 15.78,
-            "ci_high": 54.98,
+            "expected_value": 30.24,
+            "ci_low": 16.22,
+            "ci_high": 51.59,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 89.4,
-            "ci_low": 48.23,
-            "ci_high": 150.47,
-            "sentiment_score": 0.0,
-            "headline": "Dow Jones Futures: Oil Prices, Yields In Focus As Trump Says 'Clock Is Ticking' For Iran; Nvidia Earnings Ahead",
+            "expected_value": 89.27,
+            "ci_low": 49.65,
+            "ci_high": 150.3,
+            "sentiment_score": -0.273,
+            "headline": "Gundlach Says It\u2019s \u2018Just Not Possible\u2019 for the Fed to Cut Rates",
             "volatility_alert": false
         }
     }
