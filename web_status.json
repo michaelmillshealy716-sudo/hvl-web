@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-17 15:10:57",
-    "execution_id": 1779045057.5170047,
+    "last_updated": "2026-05-17 15:13:01",
+    "execution_id": 1779045181.779897,
     "projections": {
         "TSLA": {
-            "expected_value": 195.43,
-            "ci_low": 101.74,
-            "ci_high": 340.1,
+            "expected_value": 192.8,
+            "ci_low": 103.81,
+            "ci_high": 321.19,
             "sentiment_score": 0.0,
             "headline": "Bank of America resets Google stock forecast before key event",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.94,
-            "ci_low": 7.51,
-            "ci_high": 23.63,
+            "expected_value": 13.67,
+            "ci_low": 7.07,
+            "ci_high": 23.19,
             "sentiment_score": 0.382,
             "headline": "Ford rival doubles down on China with bold move",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 130.11,
-            "ci_low": 68.12,
-            "ci_high": 220.95,
+            "expected_value": 129.4,
+            "ci_low": 70.4,
+            "ci_high": 229.3,
             "sentiment_score": 0.0,
             "headline": "The $40,000 Tax Move That Comes After Your 401(k) Hits Its Limit",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.32,
-            "ci_low": 16.66,
-            "ci_high": 54.49,
+            "expected_value": 30.66,
+            "ci_low": 17.25,
+            "ci_high": 52.33,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 88.93,
-            "ci_low": 46.96,
-            "ci_high": 156.41,
+            "expected_value": 87.09,
+            "ci_low": 46.4,
+            "ci_high": 150.51,
             "sentiment_score": -0.625,
             "headline": "The US Now Ships Oil to Australia as the Strait of Hormuz Crisis Escalates",
             "volatility_alert": false
