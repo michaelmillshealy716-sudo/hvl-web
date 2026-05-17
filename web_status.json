@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-17 14:13:57",
-    "execution_id": 1779041637.720757,
+    "last_updated": "2026-05-17 14:16:01",
+    "execution_id": 1779041761.5409067,
     "projections": {
         "TSLA": {
-            "expected_value": 194.89,
-            "ci_low": 103.25,
-            "ci_high": 337.39,
+            "expected_value": 196.09,
+            "ci_low": 103.35,
+            "ci_high": 337.46,
             "sentiment_score": 0.0,
             "headline": "Bank of America resets Google stock forecast before key event",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.79,
-            "ci_low": 7.16,
-            "ci_high": 22.88,
+            "expected_value": 13.84,
+            "ci_low": 7.34,
+            "ci_high": 23.71,
             "sentiment_score": 0.459,
             "headline": "How much is Ford Energy worth? RBC breaks down the valuation",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 134.51,
-            "ci_low": 72.49,
-            "ci_high": 228.33,
+            "expected_value": 135.26,
+            "ci_low": 66.89,
+            "ci_high": 245.4,
             "sentiment_score": 0.71,
             "headline": "1 Brilliant Energy Stock to Buy Now and Hold for the Long Term",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.11,
-            "ci_low": 17.07,
-            "ci_high": 53.66,
+            "expected_value": 30.59,
+            "ci_low": 16.17,
+            "ci_high": 55.13,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 90.6,
-            "ci_low": 50.2,
-            "ci_high": 152.52,
+            "expected_value": 91.02,
+            "ci_low": 46.88,
+            "ci_high": 152.07,
             "sentiment_score": 0.0,
             "headline": "Nvidia, retailer reports to shed light\u00a0on AI boom, consumer spending",
             "volatility_alert": false
