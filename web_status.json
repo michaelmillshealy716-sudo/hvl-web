@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-17 05:26:01",
-    "execution_id": 1779009961.546057,
+    "last_updated": "2026-05-17 05:28:05",
+    "execution_id": 1779010085.1409988,
     "projections": {
         "TSLA": {
-            "expected_value": 193.73,
-            "ci_low": 105.34,
-            "ci_high": 332.02,
-            "sentiment_score": -0.421,
-            "headline": "Elon Musk Says If We Don't Do Something About Corruption And Waste, 'The Ship Of America Is Going To Sink' \u2014And We're All Going Down With It",
+            "expected_value": 194.19,
+            "ci_low": 103.63,
+            "ci_high": 317.33,
+            "sentiment_score": 0.34,
+            "headline": "Tesla Robotaxi Hubs Highlight Autonomy Potential As Australian Scrutiny Builds",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.5,
-            "ci_low": 7.37,
-            "ci_high": 23.49,
+            "expected_value": 13.53,
+            "ci_low": 7.03,
+            "ci_high": 23.92,
             "sentiment_score": 0.0,
             "headline": "For owners, the Ford Bronco isn't just a truck \u2014 it's a lifestyle",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 131.47,
-            "ci_low": 69.67,
-            "ci_high": 225.27,
-            "sentiment_score": 0.0,
-            "headline": "",
+            "expected_value": 128.43,
+            "ci_low": 68.86,
+            "ci_high": 227.76,
+            "sentiment_score": -0.34,
+            "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.25,
-            "ci_low": 16.6,
-            "ci_high": 54.2,
+            "expected_value": 30.79,
+            "ci_low": 16.68,
+            "ci_high": 53.26,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 88.52,
-            "ci_low": 50.64,
-            "ci_high": 149.55,
+            "expected_value": 88.39,
+            "ci_low": 48.13,
+            "ci_high": 145.11,
             "sentiment_score": -0.329,
             "headline": "Dow Jones Futures: S&P 500, Nasdaq Still Near Highs But Note This; Nvidia, Walmart Earnings Loom",
             "volatility_alert": false
