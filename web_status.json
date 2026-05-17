@@ -1,45 +1,45 @@
 {
-    "last_updated": "2026-05-17 14:38:54",
-    "execution_id": 1779043134.7536213,
+    "last_updated": "2026-05-17 14:46:08",
+    "execution_id": 1779043568.5247002,
     "projections": {
         "TSLA": {
-            "expected_value": 193.81,
-            "ci_low": 104.29,
-            "ci_high": 321.42,
+            "expected_value": 193.79,
+            "ci_low": 101.45,
+            "ci_high": 328.95,
             "sentiment_score": 0.0,
             "headline": "Bank of America resets Google stock forecast before key event",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.98,
-            "ci_low": 7.63,
-            "ci_high": 25.16,
+            "expected_value": 13.83,
+            "ci_low": 7.54,
+            "ci_high": 23.23,
             "sentiment_score": 0.459,
             "headline": "How much is Ford Energy worth? RBC breaks down the valuation",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 134.88,
-            "ci_low": 71.09,
-            "ci_high": 237.71,
-            "sentiment_score": 0.71,
-            "headline": "1 Brilliant Energy Stock to Buy Now and Hold for the Long Term",
+            "expected_value": 130.41,
+            "ci_low": 65.53,
+            "ci_high": 223.83,
+            "sentiment_score": 0.0,
+            "headline": "The $40,000 Tax Move That Comes After Your 401(k) Hits Its Limit",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.77,
-            "ci_low": 16.35,
-            "ci_high": 53.09,
+            "expected_value": 30.84,
+            "ci_low": 16.44,
+            "ci_high": 52.92,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 90.42,
-            "ci_low": 49.86,
-            "ci_high": 152.35,
-            "sentiment_score": 0.0,
-            "headline": "Nvidia, retailer reports to shed light\u00a0on AI boom, consumer spending",
+            "expected_value": 89.47,
+            "ci_low": 47.67,
+            "ci_high": 152.17,
+            "sentiment_score": -0.273,
+            "headline": "Gundlach Says It\u2019s \u2018Just Not Possible\u2019 for the Fed to Cut Rates",
             "volatility_alert": false
         }
     }
