@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-17 16:53:31",
-    "execution_id": 1779051211.8755496,
+    "last_updated": "2026-05-17 16:55:35",
+    "execution_id": 1779051335.5589843,
     "projections": {
         "TSLA": {
-            "expected_value": 199.7,
-            "ci_low": 103.12,
-            "ci_high": 335.66,
+            "expected_value": 200.21,
+            "ci_low": 103.2,
+            "ci_high": 368.25,
             "sentiment_score": 0.599,
             "headline": "What Is the Cheapest \"Magnificent Seven\" Stock?",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.84,
-            "ci_low": 7.75,
-            "ci_high": 22.4,
+            "expected_value": 13.86,
+            "ci_low": 7.05,
+            "ci_high": 23.49,
             "sentiment_score": 0.382,
             "headline": "Ford rival doubles down on China with bold move",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 131.74,
-            "ci_low": 70.68,
-            "ci_high": 222.19,
+            "expected_value": 132.8,
+            "ci_low": 70.79,
+            "ci_high": 232.26,
             "sentiment_score": 0.0,
             "headline": "The $40,000 Tax Move That Comes After Your 401(k) Hits Its Limit",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.51,
-            "ci_low": 16.7,
-            "ci_high": 50.72,
+            "expected_value": 31.06,
+            "ci_low": 16.52,
+            "ci_high": 54.57,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 92.98,
-            "ci_low": 47.86,
-            "ci_high": 159.99,
+            "expected_value": 93.1,
+            "ci_low": 50.9,
+            "ci_high": 155.32,
             "sentiment_score": 0.382,
             "headline": "ASX Growth Companies With High Insider Ownership To Watch",
             "volatility_alert": false
