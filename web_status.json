@@ -1,45 +1,45 @@
 {
-    "last_updated": "2026-05-17 08:22:33",
-    "execution_id": 1779020553.9681742,
+    "last_updated": "2026-05-17 08:29:45",
+    "execution_id": 1779020985.2538629,
     "projections": {
         "TSLA": {
-            "expected_value": 195.91,
-            "ci_low": 100.98,
-            "ci_high": 330.5,
+            "expected_value": 194.64,
+            "ci_low": 103.3,
+            "ci_high": 326.06,
             "sentiment_score": 0.0,
             "headline": "Is a SpaceX-Tesla Merger Elon Musk's Endgame? Here Are 4 Factors Investors Need to Consider.",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.43,
-            "ci_low": 7.3,
-            "ci_high": 21.82,
+            "expected_value": 13.86,
+            "ci_low": 7.43,
+            "ci_high": 24.92,
             "sentiment_score": 0.0,
             "headline": "For owners, the Ford Bronco isn't just a truck \u2014 it's a lifestyle",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 127.81,
-            "ci_low": 67.69,
-            "ci_high": 222.41,
+            "expected_value": 129.49,
+            "ci_low": 71.5,
+            "ci_high": 219.45,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.63,
-            "ci_low": 16.83,
-            "ci_high": 53.42,
+            "expected_value": 30.96,
+            "ci_low": 16.82,
+            "ci_high": 52.93,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 91.16,
-            "ci_low": 46.89,
-            "ci_high": 156.72,
-            "sentiment_score": 0.0,
-            "headline": "Bitcoin Price: Why BTC Can\u2019t Close Above the 200-Day MA, and What Breaks It",
+            "expected_value": 88.07,
+            "ci_low": 46.67,
+            "ci_high": 157.91,
+            "sentiment_score": -0.296,
+            "headline": "Dow Jones Futures: Nvidia Due As Yields, Oil Prices Pressure Rally; What To Do Now",
             "volatility_alert": false
         }
     }
