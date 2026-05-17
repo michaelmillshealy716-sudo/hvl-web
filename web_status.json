@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-17 19:13:47",
-    "execution_id": 1779059627.190658,
+    "last_updated": "2026-05-17 19:15:50",
+    "execution_id": 1779059750.9527564,
     "projections": {
         "TSLA": {
-            "expected_value": 193.42,
-            "ci_low": 108.43,
-            "ci_high": 342.54,
+            "expected_value": 188.62,
+            "ci_low": 95.42,
+            "ci_high": 316.83,
             "sentiment_score": -0.296,
             "headline": "Elon Musk Accused Of Building 'Most Management-Favorable' IPO Structure At SpaceX: Report",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.74,
-            "ci_low": 7.32,
-            "ci_high": 23.92,
+            "expected_value": 13.89,
+            "ci_low": 7.47,
+            "ci_high": 23.98,
             "sentiment_score": 0.382,
             "headline": "Ford rival doubles down on China with bold move",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 130.46,
-            "ci_low": 69.59,
-            "ci_high": 224.47,
+            "expected_value": 131.16,
+            "ci_low": 70.77,
+            "ci_high": 229.19,
             "sentiment_score": 0.0,
             "headline": "The $40,000 Tax Move That Comes After Your 401(k) Hits Its Limit",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.48,
-            "ci_low": 16.73,
-            "ci_high": 53.76,
-            "sentiment_score": 0.0,
-            "headline": "",
+            "expected_value": 30.75,
+            "ci_low": 15.79,
+            "ci_high": 53.24,
+            "sentiment_score": -0.34,
+            "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 90.86,
-            "ci_low": 49.8,
-            "ci_high": 156.83,
+            "expected_value": 90.5,
+            "ci_low": 47.95,
+            "ci_high": 153.19,
             "sentiment_score": 0.0,
             "headline": "Dow Jones Futures Fall, Oil Prices Rise As Trump Says 'Clock Is Ticking' For Iran; Nvidia Earnings Ahead",
             "volatility_alert": false
