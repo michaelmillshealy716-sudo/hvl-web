@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-17 07:59:51",
-    "execution_id": 1779019191.4001157,
+    "last_updated": "2026-05-17 08:07:04",
+    "execution_id": 1779019624.886441,
     "projections": {
         "TSLA": {
-            "expected_value": 197.89,
-            "ci_low": 104.95,
-            "ci_high": 341.66,
-            "sentiment_score": 0.34,
-            "headline": "Tesla Robotaxi Hubs Highlight Autonomy Potential As Australian Scrutiny Builds",
+            "expected_value": 196.14,
+            "ci_low": 107.91,
+            "ci_high": 338.09,
+            "sentiment_score": 0.0,
+            "headline": "Is a SpaceX-Tesla Merger Elon Musk's Endgame? Here Are 4 Factors Investors Need to Consider.",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.81,
-            "ci_low": 7.21,
-            "ci_high": 23.17,
+            "expected_value": 13.68,
+            "ci_low": 7.55,
+            "ci_high": 24.33,
             "sentiment_score": 0.0,
             "headline": "For owners, the Ford Bronco isn't just a truck \u2014 it's a lifestyle",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 127.51,
-            "ci_low": 69.12,
-            "ci_high": 218.05,
+            "expected_value": 129.88,
+            "ci_low": 68.52,
+            "ci_high": 218.79,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.18,
-            "ci_low": 16.62,
-            "ci_high": 53.25,
+            "expected_value": 31.28,
+            "ci_low": 16.78,
+            "ci_high": 52.5,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 86.68,
-            "ci_low": 47.49,
-            "ci_high": 148.46,
+            "expected_value": 86.9,
+            "ci_low": 45.81,
+            "ci_high": 150.71,
             "sentiment_score": -0.881,
             "headline": "Thieves are cloning trucks and blowing up pipelines to steal $1 billion in Texas crude oil every year",
             "volatility_alert": false
