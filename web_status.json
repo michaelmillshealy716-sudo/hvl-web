@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-16 21:44:59",
-    "execution_id": 1778982299.3903518,
+    "last_updated": "2026-05-16 21:47:03",
+    "execution_id": 1778982423.0383618,
     "projections": {
         "TSLA": {
-            "expected_value": 188.79,
-            "ci_low": 101.43,
-            "ci_high": 308.46,
+            "expected_value": 189.05,
+            "ci_low": 96.36,
+            "ci_high": 325.04,
             "sentiment_score": -0.421,
             "headline": "Elon Musk Says If We Don't Do Something About Corruption And Waste, 'The Ship Of America Is Going To Sink' \u2014And We're All Going Down With It",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.61,
-            "ci_low": 7.1,
-            "ci_high": 23.51,
+            "expected_value": 13.71,
+            "ci_low": 7.37,
+            "ci_high": 23.6,
             "sentiment_score": 0.0,
             "headline": "For owners, the Ford Bronco isn't just a truck \u2014 it's a lifestyle",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 130.2,
-            "ci_low": 70.7,
-            "ci_high": 228.78,
-            "sentiment_score": 0.0,
-            "headline": "",
+            "expected_value": 127.89,
+            "ci_low": 68.05,
+            "ci_high": 224.25,
+            "sentiment_score": -0.34,
+            "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.8,
-            "ci_low": 16.52,
-            "ci_high": 51.8,
+            "expected_value": 30.52,
+            "ci_low": 16.13,
+            "ci_high": 53.6,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 91.03,
-            "ci_low": 49.14,
-            "ci_high": 161.02,
+            "expected_value": 90.45,
+            "ci_low": 49.86,
+            "ci_high": 153.36,
             "sentiment_score": 0.0,
             "headline": "Oil, Geopolitics, and Occidental Petroleum: Here's Where the Stock Could Be in 12 Months",
             "volatility_alert": false
