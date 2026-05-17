@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-17 08:18:26",
-    "execution_id": 1779020306.1701927,
+    "last_updated": "2026-05-17 08:20:30",
+    "execution_id": 1779020430.3157837,
     "projections": {
         "TSLA": {
-            "expected_value": 193.96,
-            "ci_low": 103.39,
-            "ci_high": 338.21,
+            "expected_value": 192.44,
+            "ci_low": 103.22,
+            "ci_high": 329.25,
             "sentiment_score": 0.0,
             "headline": "Is a SpaceX-Tesla Merger Elon Musk's Endgame? Here Are 4 Factors Investors Need to Consider.",
             "volatility_alert": false
         },
         "F": {
             "expected_value": 13.52,
-            "ci_low": 7.31,
-            "ci_high": 23.1,
+            "ci_low": 7.11,
+            "ci_high": 23.26,
             "sentiment_score": 0.0,
             "headline": "For owners, the Ford Bronco isn't just a truck \u2014 it's a lifestyle",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 129.85,
-            "ci_low": 69.76,
-            "ci_high": 214.94,
+            "expected_value": 129.45,
+            "ci_low": 66.58,
+            "ci_high": 225.25,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.99,
-            "ci_low": 15.74,
-            "ci_high": 54.67,
+            "expected_value": 30.97,
+            "ci_low": 16.38,
+            "ci_high": 51.74,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 90.91,
-            "ci_low": 46.34,
-            "ci_high": 162.66,
+            "expected_value": 91.49,
+            "ci_low": 49.62,
+            "ci_high": 164.99,
             "sentiment_score": 0.0,
             "headline": "Bitcoin Price: Why BTC Can\u2019t Close Above the 200-Day MA, and What Breaks It",
             "volatility_alert": false
