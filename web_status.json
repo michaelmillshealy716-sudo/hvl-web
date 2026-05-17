@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-17 12:10:46",
-    "execution_id": 1779034246.6810803,
+    "last_updated": "2026-05-17 12:18:01",
+    "execution_id": 1779034681.4948213,
     "projections": {
         "TSLA": {
-            "expected_value": 194.65,
-            "ci_low": 106.78,
-            "ci_high": 332.68,
+            "expected_value": 196.18,
+            "ci_low": 103.01,
+            "ci_high": 349.12,
             "sentiment_score": 0.0,
             "headline": "Why SpaceX Split Its Stock and 2 More Trillion-Dollar Issues",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.59,
-            "ci_low": 7.33,
-            "ci_high": 23.97,
-            "sentiment_score": 0.0,
-            "headline": "Why Ford (F) Stock Is Trading Up Today",
+            "expected_value": 13.97,
+            "ci_low": 7.48,
+            "ci_high": 23.78,
+            "sentiment_score": 0.459,
+            "headline": "How much is Ford Energy worth? RBC breaks down the valuation",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 133.59,
-            "ci_low": 73.43,
-            "ci_high": 235.82,
+            "expected_value": 134.3,
+            "ci_low": 70.46,
+            "ci_high": 226.12,
             "sentiment_score": 0.71,
             "headline": "1 Brilliant Energy Stock to Buy Now and Hold for the Long Term",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.76,
-            "ci_low": 16.42,
-            "ci_high": 54.43,
+            "expected_value": 30.96,
+            "ci_low": 16.04,
+            "ci_high": 54.73,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 89.67,
-            "ci_low": 47.32,
-            "ci_high": 151.74,
+            "expected_value": 89.69,
+            "ci_low": 50.05,
+            "ci_high": 154.54,
             "sentiment_score": -0.296,
             "headline": "Dow Jones Futures: Nvidia Due As Yields, Oil Prices Pressure Rally; What To Do Now",
             "volatility_alert": false
