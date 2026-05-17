@@ -1,45 +1,45 @@
 {
-    "last_updated": "2026-05-17 17:50:18",
-    "execution_id": 1779054618.8267536,
+    "last_updated": "2026-05-17 17:52:22",
+    "execution_id": 1779054742.2227347,
     "projections": {
         "TSLA": {
-            "expected_value": 198.46,
-            "ci_low": 109.16,
-            "ci_high": 339.03,
+            "expected_value": 198.77,
+            "ci_low": 107.96,
+            "ci_high": 340.72,
             "sentiment_score": 0.599,
             "headline": "What Is the Cheapest \"Magnificent Seven\" Stock?",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.87,
-            "ci_low": 7.51,
-            "ci_high": 23.69,
+            "expected_value": 13.82,
+            "ci_low": 6.95,
+            "ci_high": 24.03,
             "sentiment_score": 0.382,
             "headline": "Ford rival doubles down on China with bold move",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 132.27,
-            "ci_low": 72.51,
-            "ci_high": 230.89,
+            "expected_value": 132.44,
+            "ci_low": 68.68,
+            "ci_high": 240.89,
             "sentiment_score": 0.0,
             "headline": "The $40,000 Tax Move That Comes After Your 401(k) Hits Its Limit",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.47,
-            "ci_low": 16.49,
-            "ci_high": 51.86,
+            "expected_value": 30.49,
+            "ci_low": 17.04,
+            "ci_high": 51.32,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 90.75,
-            "ci_low": 48.85,
-            "ci_high": 147.73,
+            "expected_value": 89.31,
+            "ci_low": 47.27,
+            "ci_high": 152.8,
             "sentiment_score": 0.0,
-            "headline": "Dow Jones Futures: Oil Prices, Yields In Focus As Trump Says 'Clock Is Ticking' For Iran; Nvidia Earnings Ahead",
+            "headline": "Dow Jones Futures, Yields, Oil Set To Open As Trump Says 'Clock Is Ticking' For Iran; Nvidia Earnings Ahead",
             "volatility_alert": false
         }
     }
