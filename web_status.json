@@ -1,45 +1,45 @@
 {
-    "last_updated": "2026-05-17 13:53:19",
-    "execution_id": 1779040399.8772988,
+    "last_updated": "2026-05-17 14:00:32",
+    "execution_id": 1779040832.6455488,
     "projections": {
         "TSLA": {
-            "expected_value": 191.83,
-            "ci_low": 104.29,
-            "ci_high": 321.91,
+            "expected_value": 191.75,
+            "ci_low": 104.01,
+            "ci_high": 331.09,
             "sentiment_score": 0.0,
             "headline": "Bank of America resets Google stock forecast before key event",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 14.01,
-            "ci_low": 7.41,
-            "ci_high": 24.04,
+            "expected_value": 13.77,
+            "ci_low": 7.52,
+            "ci_high": 22.68,
             "sentiment_score": 0.459,
             "headline": "How much is Ford Energy worth? RBC breaks down the valuation",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 133.19,
-            "ci_low": 68.18,
-            "ci_high": 230.06,
+            "expected_value": 134.76,
+            "ci_low": 73.6,
+            "ci_high": 230.54,
             "sentiment_score": 0.71,
             "headline": "1 Brilliant Energy Stock to Buy Now and Hold for the Long Term",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.89,
-            "ci_low": 16.52,
-            "ci_high": 51.46,
+            "expected_value": 30.96,
+            "ci_low": 16.47,
+            "ci_high": 52.5,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 91.94,
-            "ci_low": 49.21,
-            "ci_high": 156.68,
-            "sentiment_score": 0.202,
-            "headline": "Dow Jones Futures Due With Treasury Yields, Oil Prices In Focus; Nvidia Earnings Ahead",
+            "expected_value": 89.78,
+            "ci_low": 48.22,
+            "ci_high": 157.71,
+            "sentiment_score": 0.0,
+            "headline": "Nvidia, retailer reports to shed light\u00a0on AI boom, consumer spending",
             "volatility_alert": false
         }
     }
