@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-16 20:14:18",
-    "execution_id": 1778976858.9627676,
+    "last_updated": "2026-05-16 20:16:22",
+    "execution_id": 1778976982.8134973,
     "projections": {
         "TSLA": {
-            "expected_value": 193.05,
-            "ci_low": 104.12,
-            "ci_high": 328.06,
-            "sentiment_score": 0.0,
-            "headline": "Elon Musk, Chip Giant?",
+            "expected_value": 189.28,
+            "ci_low": 100.51,
+            "ci_high": 318.92,
+            "sentiment_score": -0.421,
+            "headline": "Elon Musk Says If We Don't Do Something About Corruption And Waste, 'The Ship Of America Is Going To Sink' \u2014And We're All Going Down With It",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.6,
-            "ci_low": 7.23,
-            "ci_high": 22.67,
+            "expected_value": 13.57,
+            "ci_low": 6.97,
+            "ci_high": 23.52,
             "sentiment_score": 0.0,
             "headline": "For owners, the Ford Bronco isn't just a truck \u2014 it's a lifestyle",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 129.89,
-            "ci_low": 69.85,
-            "ci_high": 215.08,
+            "expected_value": 130.14,
+            "ci_low": 66.53,
+            "ci_high": 221.59,
             "sentiment_score": -0.026,
             "headline": "Exxon Mobil Cleared In Climate Case What Verdict Means For Dividend Risk",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.68,
-            "ci_low": 16.91,
-            "ci_high": 53.14,
+            "expected_value": 31.79,
+            "ci_low": 16.62,
+            "ci_high": 55.79,
             "sentiment_score": 0.202,
             "headline": "The Top 5 Analyst Questions From Novavax\u2019s Q1 Earnings Call",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 90.18,
-            "ci_low": 47.89,
-            "ci_high": 155.35,
+            "expected_value": 90.09,
+            "ci_low": 47.28,
+            "ci_high": 153.67,
             "sentiment_score": 0.0,
             "headline": "Oil, Geopolitics, and Occidental Petroleum: Here's Where the Stock Could Be in 12 Months",
             "volatility_alert": false
