@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-17 09:28:32",
-    "execution_id": 1779024512.5154252,
+    "last_updated": "2026-05-17 09:30:36",
+    "execution_id": 1779024636.0121508,
     "projections": {
         "TSLA": {
-            "expected_value": 193.81,
-            "ci_low": 98.45,
-            "ci_high": 331.77,
+            "expected_value": 195.33,
+            "ci_low": 105.83,
+            "ci_high": 337.25,
             "sentiment_score": 0.0,
             "headline": "Is a SpaceX-Tesla Merger Elon Musk's Endgame? Here Are 4 Factors Investors Need to Consider.",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.58,
-            "ci_low": 7.27,
-            "ci_high": 23.82,
+            "expected_value": 13.53,
+            "ci_low": 7.25,
+            "ci_high": 23.07,
             "sentiment_score": 0.0,
             "headline": "For owners, the Ford Bronco isn't just a truck \u2014 it's a lifestyle",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 127.72,
-            "ci_low": 69.84,
-            "ci_high": 219.86,
+            "expected_value": 127.46,
+            "ci_low": 70.11,
+            "ci_high": 215.54,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.7,
-            "ci_low": 16.43,
-            "ci_high": 52.89,
+            "expected_value": 30.82,
+            "ci_low": 16.66,
+            "ci_high": 52.49,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 89.91,
-            "ci_low": 46.19,
-            "ci_high": 154.91,
+            "expected_value": 88.71,
+            "ci_low": 48.37,
+            "ci_high": 146.71,
             "sentiment_score": 0.0,
             "headline": "Nvidia, retailer reports to shed light\u00a0on AI boom, consumer spending",
             "volatility_alert": false
