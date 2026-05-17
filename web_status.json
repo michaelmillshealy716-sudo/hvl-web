@@ -1,45 +1,45 @@
 {
-    "last_updated": "2026-05-17 08:11:12",
-    "execution_id": 1779019872.9282737,
+    "last_updated": "2026-05-17 08:18:26",
+    "execution_id": 1779020306.1701927,
     "projections": {
         "TSLA": {
-            "expected_value": 197.64,
-            "ci_low": 101.49,
-            "ci_high": 343.21,
+            "expected_value": 193.96,
+            "ci_low": 103.39,
+            "ci_high": 338.21,
             "sentiment_score": 0.0,
             "headline": "Is a SpaceX-Tesla Merger Elon Musk's Endgame? Here Are 4 Factors Investors Need to Consider.",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.49,
-            "ci_low": 7.46,
-            "ci_high": 23.19,
+            "expected_value": 13.52,
+            "ci_low": 7.31,
+            "ci_high": 23.1,
             "sentiment_score": 0.0,
             "headline": "For owners, the Ford Bronco isn't just a truck \u2014 it's a lifestyle",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 128.53,
-            "ci_low": 71.56,
-            "ci_high": 212.24,
+            "expected_value": 129.85,
+            "ci_low": 69.76,
+            "ci_high": 214.94,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.29,
-            "ci_low": 17.02,
-            "ci_high": 53.88,
+            "expected_value": 30.99,
+            "ci_low": 15.74,
+            "ci_high": 54.67,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 86.57,
-            "ci_low": 45.0,
-            "ci_high": 142.95,
-            "sentiment_score": -0.881,
-            "headline": "Thieves are cloning trucks and blowing up pipelines to steal $1 billion in Texas crude oil every year",
+            "expected_value": 90.91,
+            "ci_low": 46.34,
+            "ci_high": 162.66,
+            "sentiment_score": 0.0,
+            "headline": "Bitcoin Price: Why BTC Can\u2019t Close Above the 200-Day MA, and What Breaks It",
             "volatility_alert": false
         }
     }
