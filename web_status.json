@@ -1,45 +1,45 @@
 {
-    "last_updated": "2026-05-17 15:01:40",
-    "execution_id": 1779044500.383923,
+    "last_updated": "2026-05-17 15:08:52",
+    "execution_id": 1779044932.8178756,
     "projections": {
         "TSLA": {
-            "expected_value": 196.07,
-            "ci_low": 103.92,
-            "ci_high": 340.21,
+            "expected_value": 194.44,
+            "ci_low": 106.1,
+            "ci_high": 331.72,
             "sentiment_score": 0.0,
             "headline": "Bank of America resets Google stock forecast before key event",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.72,
-            "ci_low": 6.99,
-            "ci_high": 23.57,
+            "expected_value": 13.9,
+            "ci_low": 7.44,
+            "ci_high": 24.23,
             "sentiment_score": 0.382,
             "headline": "Ford rival doubles down on China with bold move",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 129.32,
-            "ci_low": 67.8,
-            "ci_high": 233.42,
+            "expected_value": 131.3,
+            "ci_low": 69.91,
+            "ci_high": 226.52,
             "sentiment_score": 0.0,
             "headline": "The $40,000 Tax Move That Comes After Your 401(k) Hits Its Limit",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.65,
-            "ci_low": 17.05,
-            "ci_high": 52.23,
+            "expected_value": 30.61,
+            "ci_low": 16.17,
+            "ci_high": 53.94,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 90.95,
-            "ci_low": 47.45,
-            "ci_high": 156.43,
-            "sentiment_score": -0.273,
-            "headline": "Gundlach Says It\u2019s \u2018Just Not Possible\u2019 for the Fed to Cut Rates",
+            "expected_value": 89.69,
+            "ci_low": 48.51,
+            "ci_high": 160.44,
+            "sentiment_score": -0.625,
+            "headline": "The US Now Ships Oil to Australia as the Strait of Hormuz Crisis Escalates",
             "volatility_alert": false
         }
     }
