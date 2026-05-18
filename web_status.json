@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-18 11:49:29",
-    "execution_id": 1779119369.388066,
+    "last_updated": "2026-05-18 11:56:40",
+    "execution_id": 1779119800.9605205,
     "projections": {
         "TSLA": {
-            "expected_value": 193.6,
-            "ci_low": 98.75,
-            "ci_high": 322.22,
+            "expected_value": 189.96,
+            "ci_low": 96.76,
+            "ci_high": 320.48,
             "sentiment_score": 0.0,
             "headline": "SpaceX, mega-IPOs could 'take oxygen out of the room' for AI players",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.86,
-            "ci_low": 7.54,
-            "ci_high": 24.73,
+            "expected_value": 14.02,
+            "ci_low": 7.46,
+            "ci_high": 23.63,
             "sentiment_score": 0.273,
             "headline": "Ford Energy lands its first customer in battery storage deal",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 134.81,
-            "ci_low": 71.41,
-            "ci_high": 228.1,
+            "expected_value": 133.96,
+            "ci_low": 70.03,
+            "ci_high": 234.84,
             "sentiment_score": 0.477,
             "headline": "Exxon Mobil Corporation (XOM) is Attracting Investor Attention: Here is What You Should Know",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.94,
-            "ci_low": 16.87,
-            "ci_high": 53.58,
+            "expected_value": 30.47,
+            "ci_low": 16.36,
+            "ci_high": 52.45,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 89.23,
-            "ci_low": 45.04,
-            "ci_high": 150.65,
+            "expected_value": 88.76,
+            "ci_low": 48.31,
+            "ci_high": 150.7,
             "sentiment_score": -0.296,
             "headline": "Bitcoin and ethereum prices today, Monday, May 18, 2026: Prices are down and moving lower this morning",
             "volatility_alert": false
