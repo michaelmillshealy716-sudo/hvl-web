@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-18 13:24:09",
-    "execution_id": 1779125049.4373693,
+    "last_updated": "2026-05-18 13:26:14",
+    "execution_id": 1779125174.13959,
     "projections": {
         "TSLA": {
-            "expected_value": 192.82,
-            "ci_low": 100.02,
-            "ci_high": 322.68,
+            "expected_value": 193.37,
+            "ci_low": 104.23,
+            "ci_high": 339.83,
             "sentiment_score": 0.0,
             "headline": "SpaceX, mega-IPOs could 'take oxygen out of the room' for AI players",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.66,
-            "ci_low": 7.22,
-            "ci_high": 23.05,
+            "expected_value": 13.73,
+            "ci_low": 7.37,
+            "ci_high": 22.9,
             "sentiment_score": 0.273,
             "headline": "Ford Energy lands its first customer in battery storage deal",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 128.39,
-            "ci_low": 69.25,
-            "ci_high": 223.25,
+            "expected_value": 128.04,
+            "ci_low": 67.79,
+            "ci_high": 216.96,
             "sentiment_score": 0.0,
             "headline": "ConocoPhillips Joins Alaska LNG Push",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.35,
-            "ci_low": 16.78,
-            "ci_high": 55.56,
+            "expected_value": 31.37,
+            "ci_low": 16.75,
+            "ci_high": 52.03,
             "sentiment_score": 0.0,
             "headline": "3 Deeply Undervalued Stocks You Can Buy for Less Than $100 Right Now",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 88.84,
-            "ci_low": 47.15,
-            "ci_high": 153.12,
+            "expected_value": 91.47,
+            "ci_low": 46.93,
+            "ci_high": 157.72,
             "sentiment_score": 0.0,
             "headline": "Oil prices rise as Trump says 'clock is ticking' for Iran",
             "volatility_alert": false
