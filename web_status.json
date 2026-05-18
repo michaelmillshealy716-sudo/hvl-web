@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-18 15:46:51",
-    "execution_id": 1779133611.7849019,
+    "last_updated": "2026-05-18 15:48:54",
+    "execution_id": 1779133734.7793481,
     "projections": {
         "TSLA": {
-            "expected_value": 189.9,
-            "ci_low": 104.89,
-            "ci_high": 323.73,
+            "expected_value": 188.3,
+            "ci_low": 103.43,
+            "ci_high": 330.1,
             "sentiment_score": -0.599,
             "headline": "Elon Musk loses court battle against OpenAI",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.99,
-            "ci_low": 7.35,
-            "ci_high": 23.21,
+            "expected_value": 13.83,
+            "ci_low": 7.37,
+            "ci_high": 25.01,
             "sentiment_score": 0.273,
             "headline": "Ford Energy lands its first customer in battery storage deal",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 130.74,
-            "ci_low": 69.57,
-            "ci_high": 225.41,
+            "expected_value": 128.92,
+            "ci_low": 70.09,
+            "ci_high": 219.39,
             "sentiment_score": 0.0,
             "headline": "ConocoPhillips Joins Alaska LNG Push",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.45,
-            "ci_low": 16.88,
-            "ci_high": 51.95,
+            "expected_value": 31.6,
+            "ci_low": 17.17,
+            "ci_high": 53.25,
             "sentiment_score": 0.0,
             "headline": "3 Deeply Undervalued Stocks You Can Buy for Less Than $100 Right Now",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 89.66,
-            "ci_low": 48.19,
-            "ci_high": 154.27,
+            "expected_value": 89.36,
+            "ci_low": 49.16,
+            "ci_high": 154.67,
             "sentiment_score": -0.421,
             "headline": "Stock market today: S&P 500, Nasdaq slip as inflation fears grip markets",
             "volatility_alert": false
