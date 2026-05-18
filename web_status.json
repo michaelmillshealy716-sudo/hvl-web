@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-18 13:12:49",
-    "execution_id": 1779124369.0307465,
+    "last_updated": "2026-05-18 13:14:53",
+    "execution_id": 1779124493.1216419,
     "projections": {
         "TSLA": {
-            "expected_value": 191.87,
-            "ci_low": 100.45,
-            "ci_high": 318.84,
+            "expected_value": 194.22,
+            "ci_low": 106.19,
+            "ci_high": 330.9,
             "sentiment_score": 0.0,
             "headline": "SpaceX, mega-IPOs could 'take oxygen out of the room' for AI players",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.88,
-            "ci_low": 7.38,
-            "ci_high": 24.26,
+            "expected_value": 13.86,
+            "ci_low": 7.32,
+            "ci_high": 23.92,
             "sentiment_score": 0.273,
             "headline": "Ford Energy lands its first customer in battery storage deal",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 134.23,
-            "ci_low": 68.78,
-            "ci_high": 242.34,
+            "expected_value": 133.03,
+            "ci_low": 72.28,
+            "ci_high": 224.85,
             "sentiment_score": 0.477,
             "headline": "Exxon Mobil Corporation (XOM) is Attracting Investor Attention: Here is What You Should Know",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.08,
-            "ci_low": 16.66,
-            "ci_high": 52.87,
+            "expected_value": 31.52,
+            "ci_low": 16.8,
+            "ci_high": 54.65,
             "sentiment_score": 0.0,
             "headline": "3 Deeply Undervalued Stocks You Can Buy for Less Than $100 Right Now",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 90.0,
-            "ci_low": 48.03,
-            "ci_high": 157.49,
+            "expected_value": 90.43,
+            "ci_low": 47.3,
+            "ci_high": 148.81,
             "sentiment_score": 0.0,
             "headline": "Oil prices rise as Trump says 'clock is ticking' for Iran",
             "volatility_alert": false
