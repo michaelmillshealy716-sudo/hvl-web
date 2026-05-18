@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-18 02:27:21",
-    "execution_id": 1779085641.422632,
+    "last_updated": "2026-05-18 02:29:24",
+    "execution_id": 1779085764.8631928,
     "projections": {
         "TSLA": {
-            "expected_value": 196.22,
-            "ci_low": 104.25,
-            "ci_high": 329.48,
+            "expected_value": 199.11,
+            "ci_low": 107.0,
+            "ci_high": 361.03,
             "sentiment_score": 0.67,
             "headline": "Gavin Newsom Unveils $1 Billion EV Incentive Program That Could Benefit Elon Musk's Tesla Semi",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.77,
-            "ci_low": 7.28,
-            "ci_high": 24.16,
+            "expected_value": 14.02,
+            "ci_low": 7.32,
+            "ci_high": 23.51,
             "sentiment_score": 0.382,
             "headline": "Ford rival doubles down on China with bold move",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 128.79,
-            "ci_low": 68.9,
-            "ci_high": 236.43,
+            "expected_value": 132.98,
+            "ci_low": 68.78,
+            "ci_high": 224.83,
             "sentiment_score": 0.0,
             "headline": "The $40,000 Tax Move That Comes After Your 401(k) Hits Its Limit",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.74,
-            "ci_low": 16.52,
-            "ci_high": 51.65,
+            "expected_value": 30.59,
+            "ci_low": 16.46,
+            "ci_high": 51.93,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 91.81,
-            "ci_low": 47.86,
-            "ci_high": 156.78,
+            "expected_value": 93.12,
+            "ci_low": 50.46,
+            "ci_high": 159.19,
             "sentiment_score": 0.361,
             "headline": "Ryanair warns flat fares may weigh on profits",
             "volatility_alert": false
