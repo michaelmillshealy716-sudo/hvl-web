@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-18 14:07:16",
-    "execution_id": 1779127636.8393915,
+    "last_updated": "2026-05-18 14:14:27",
+    "execution_id": 1779128067.5965834,
     "projections": {
         "TSLA": {
-            "expected_value": 186.17,
-            "ci_low": 97.46,
-            "ci_high": 315.37,
+            "expected_value": 187.71,
+            "ci_low": 95.56,
+            "ci_high": 331.27,
             "sentiment_score": -0.599,
             "headline": "Elon Musk loses court battle against OpenAI",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.66,
-            "ci_low": 7.48,
-            "ci_high": 23.47,
+            "expected_value": 13.67,
+            "ci_low": 7.47,
+            "ci_high": 23.14,
             "sentiment_score": 0.273,
             "headline": "Ford Energy lands its first customer in battery storage deal",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 131.2,
-            "ci_low": 70.27,
-            "ci_high": 221.96,
+            "expected_value": 133.03,
+            "ci_low": 72.67,
+            "ci_high": 228.1,
             "sentiment_score": 0.0,
             "headline": "ConocoPhillips Joins Alaska LNG Push",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.37,
-            "ci_low": 16.4,
-            "ci_high": 54.63,
+            "expected_value": 31.07,
+            "ci_low": 16.58,
+            "ci_high": 52.66,
             "sentiment_score": 0.0,
             "headline": "3 Deeply Undervalued Stocks You Can Buy for Less Than $100 Right Now",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 91.47,
-            "ci_low": 48.71,
-            "ci_high": 159.15,
+            "expected_value": 92.06,
+            "ci_low": 50.5,
+            "ci_high": 162.07,
             "sentiment_score": 0.0,
             "headline": "Oil prices rise as Trump says 'clock is ticking' for Iran",
             "volatility_alert": false
