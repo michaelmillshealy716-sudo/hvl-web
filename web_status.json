@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-18 17:37:00",
-    "execution_id": 1779140220.2760792,
+    "last_updated": "2026-05-18 17:39:04",
+    "execution_id": 1779140344.319829,
     "projections": {
         "TSLA": {
-            "expected_value": 193.48,
-            "ci_low": 100.63,
-            "ci_high": 337.16,
+            "expected_value": 196.33,
+            "ci_low": 101.44,
+            "ci_high": 342.04,
             "sentiment_score": 0.0,
             "headline": "SpaceX eyes 5-for-1 stock split as IPO takes shape",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.96,
-            "ci_low": 7.38,
-            "ci_high": 23.75,
+            "expected_value": 13.68,
+            "ci_low": 7.25,
+            "ci_high": 22.89,
             "sentiment_score": 0.402,
             "headline": "Ford Stock Falls Again. Two Announcements Couldn\u2019t Boost the Car Maker.",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 132.4,
-            "ci_low": 71.44,
-            "ci_high": 232.41,
+            "expected_value": 132.59,
+            "ci_low": 73.55,
+            "ci_high": 223.71,
             "sentiment_score": 0.599,
             "headline": "Exxon Mobil (XOM) Valuation Check As Legal Win And Strong Q1 Meet Rising Crude Prices",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.46,
-            "ci_low": 16.75,
-            "ci_high": 53.17,
+            "expected_value": 31.13,
+            "ci_low": 17.25,
+            "ci_high": 52.38,
             "sentiment_score": 0.0,
             "headline": "3 Deeply Undervalued Stocks You Can Buy for Less Than $100 Right Now",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 91.19,
-            "ci_low": 46.23,
-            "ci_high": 155.04,
+            "expected_value": 89.52,
+            "ci_low": 48.58,
+            "ci_high": 158.78,
             "sentiment_score": 0.0,
             "headline": "Are rising costs influencing Americans' Memorial Day travel?",
             "volatility_alert": false
