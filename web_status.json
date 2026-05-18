@@ -1,45 +1,45 @@
 {
-    "last_updated": "2026-05-18 16:24:47",
-    "execution_id": 1779135887.4309947,
+    "last_updated": "2026-05-18 16:26:51",
+    "execution_id": 1779136011.2869465,
     "projections": {
         "TSLA": {
-            "expected_value": 192.18,
-            "ci_low": 101.61,
-            "ci_high": 327.61,
+            "expected_value": 197.99,
+            "ci_low": 104.68,
+            "ci_high": 335.53,
             "sentiment_score": 0.0,
             "headline": "SpaceX eyes 5-for-1 stock split as IPO takes shape",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.72,
-            "ci_low": 7.6,
-            "ci_high": 24.02,
+            "expected_value": 13.81,
+            "ci_low": 7.16,
+            "ci_high": 24.15,
             "sentiment_score": 0.402,
             "headline": "Ford Stock Falls Again. Two Announcements Couldn\u2019t Boost the Car Maker.",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 129.38,
-            "ci_low": 70.19,
-            "ci_high": 234.47,
+            "expected_value": 129.69,
+            "ci_low": 69.16,
+            "ci_high": 219.9,
             "sentiment_score": 0.0,
             "headline": "ConocoPhillips Joins Alaska LNG Push",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.43,
-            "ci_low": 16.36,
-            "ci_high": 51.67,
+            "expected_value": 31.28,
+            "ci_low": 16.84,
+            "ci_high": 53.74,
             "sentiment_score": 0.0,
             "headline": "3 Deeply Undervalued Stocks You Can Buy for Less Than $100 Right Now",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 91.39,
-            "ci_low": 48.38,
-            "ci_high": 153.05,
-            "sentiment_score": 0.0,
-            "headline": "",
+            "expected_value": 90.41,
+            "ci_low": 47.62,
+            "ci_high": 153.98,
+            "sentiment_score": 0.052,
+            "headline": "Bond market is losing 'a bit of faith' in Fed's inflation handling",
             "volatility_alert": false
         }
     }
