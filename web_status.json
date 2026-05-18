@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-18 08:53:51",
-    "execution_id": 1779108831.3847644,
+    "last_updated": "2026-05-18 09:01:04",
+    "execution_id": 1779109264.1043873,
     "projections": {
         "TSLA": {
-            "expected_value": 190.16,
-            "ci_low": 98.51,
-            "ci_high": 338.58,
-            "sentiment_score": -0.361,
-            "headline": "This Fast-Rising Fund Has Been Crushing the Market \u2014 Nvidia, Micron and TSMC are Reasons Why",
+            "expected_value": 190.51,
+            "ci_low": 99.04,
+            "ci_high": 315.61,
+            "sentiment_score": 0.0,
+            "headline": "Stock Market Today: Dow Futures Rise As Oil Falls In Latest Iran Twist; Nvidia, Walmart, Tesla On Watch (Live Coverage)",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.81,
-            "ci_low": 7.62,
-            "ci_high": 23.99,
+            "expected_value": 13.63,
+            "ci_low": 7.17,
+            "ci_high": 23.26,
             "sentiment_score": 0.296,
             "headline": "Ford to build compact Bronco SUV in Spain, signs battery storage deal; shares up",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 136.81,
-            "ci_low": 71.53,
-            "ci_high": 232.7,
+            "expected_value": 135.68,
+            "ci_low": 72.23,
+            "ci_high": 227.03,
             "sentiment_score": 0.691,
             "headline": "Sintana Energy raises $11.5m to support exploration plans in Namibia",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.97,
-            "ci_low": 16.42,
-            "ci_high": 54.4,
+            "expected_value": 31.22,
+            "ci_low": 16.38,
+            "ci_high": 55.03,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 89.96,
-            "ci_low": 45.31,
-            "ci_high": 159.07,
+            "expected_value": 88.91,
+            "ci_low": 47.54,
+            "ci_high": 153.22,
             "sentiment_score": -0.296,
             "headline": "Bitcoin and ethereum prices today, Monday, May 18, 2026: Prices are down and moving lower this morning",
             "volatility_alert": false
