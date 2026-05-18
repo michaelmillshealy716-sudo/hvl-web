@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-18 10:51:39",
-    "execution_id": 1779115899.4012518,
+    "last_updated": "2026-05-18 10:53:43",
+    "execution_id": 1779116023.8286223,
     "projections": {
         "TSLA": {
-            "expected_value": 192.59,
-            "ci_low": 100.7,
-            "ci_high": 338.08,
-            "sentiment_score": -0.026,
-            "headline": "Stock Market Today: Dow Rises With Oil Lower On Iran News; Energy Name Lights Up (Live Coverage)",
+            "expected_value": 201.35,
+            "ci_low": 106.02,
+            "ci_high": 351.44,
+            "sentiment_score": 0.625,
+            "headline": "Jim Cramer Shares Why Tesla (TSLA) Is Better Than Ford",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.96,
-            "ci_low": 7.53,
-            "ci_high": 24.11,
-            "sentiment_score": 0.273,
-            "headline": "Ford Energy signs first grid storage deal with EDF, up to 20 GWh",
+            "expected_value": 14.28,
+            "ci_low": 7.58,
+            "ci_high": 24.52,
+            "sentiment_score": 0.625,
+            "headline": "Jim Cramer Shares Why Tesla (TSLA) Is Better Than Ford",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 132.17,
-            "ci_low": 71.92,
-            "ci_high": 232.02,
+            "expected_value": 132.26,
+            "ci_low": 73.09,
+            "ci_high": 235.56,
             "sentiment_score": 0.477,
             "headline": "Exxon Mobil Corporation (XOM) is Attracting Investor Attention: Here is What You Should Know",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.27,
-            "ci_low": 16.54,
-            "ci_high": 55.03,
+            "expected_value": 30.96,
+            "ci_low": 16.73,
+            "ci_high": 51.83,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 87.85,
-            "ci_low": 47.72,
-            "ci_high": 151.24,
+            "expected_value": 88.77,
+            "ci_low": 47.3,
+            "ci_high": 156.79,
             "sentiment_score": -0.421,
             "headline": "Stock market today: Nasdaq falls, S&P 500 and Dow waver as inflation fears grip markets",
             "volatility_alert": false
