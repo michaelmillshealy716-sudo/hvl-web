@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-18 05:38:20",
-    "execution_id": 1779097100.6480448,
+    "last_updated": "2026-05-18 05:40:24",
+    "execution_id": 1779097224.989338,
     "projections": {
         "TSLA": {
-            "expected_value": 193.8,
-            "ci_low": 100.69,
-            "ci_high": 328.57,
+            "expected_value": 193.61,
+            "ci_low": 107.58,
+            "ci_high": 323.94,
             "sentiment_score": 0.0,
             "headline": "China\u2019s Xpeng begins mass production of robotaxis in Guangzhou",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.35,
-            "ci_low": 7.27,
-            "ci_high": 23.84,
+            "expected_value": 13.12,
+            "ci_low": 7.13,
+            "ci_high": 22.88,
             "sentiment_score": -0.273,
             "headline": "While Detroit blinked on EVs, the Iran war has handed Chinese automakers the opportunity of a lifetime",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 136.96,
-            "ci_low": 70.69,
-            "ci_high": 241.71,
+            "expected_value": 134.96,
+            "ci_low": 70.97,
+            "ci_high": 244.13,
             "sentiment_score": 0.691,
             "headline": "Sintana Energy raises $11.5m to support exploration plans in Namibia",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.77,
-            "ci_low": 16.76,
-            "ci_high": 52.46,
+            "expected_value": 31.29,
+            "ci_low": 16.95,
+            "ci_high": 55.72,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 89.06,
-            "ci_low": 45.59,
-            "ci_high": 157.64,
+            "expected_value": 89.84,
+            "ci_low": 47.87,
+            "ci_high": 159.49,
             "sentiment_score": -0.402,
             "headline": "Stock market today: Dow, S&P 500, Nasdaq futures slide as oil jumps amid US-Iran tensions",
             "volatility_alert": false
