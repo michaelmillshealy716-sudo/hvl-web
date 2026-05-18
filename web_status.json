@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-18 16:51:37",
-    "execution_id": 1779137497.9692302,
+    "last_updated": "2026-05-18 16:53:41",
+    "execution_id": 1779137621.9296417,
     "projections": {
         "TSLA": {
-            "expected_value": 194.7,
-            "ci_low": 101.07,
-            "ci_high": 330.19,
-            "sentiment_score": 0.0,
-            "headline": "SpaceX eyes 5-for-1 stock split as IPO takes shape",
+            "expected_value": 191.32,
+            "ci_low": 100.65,
+            "ci_high": 334.81,
+            "sentiment_score": -0.527,
+            "headline": "Why Elon Musk lost his OpenAI legal battle so decisively",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.89,
-            "ci_low": 7.3,
-            "ci_high": 24.19,
+            "expected_value": 14.1,
+            "ci_low": 7.62,
+            "ci_high": 23.63,
             "sentiment_score": 0.402,
             "headline": "Ford Stock Falls Again. Two Announcements Couldn\u2019t Boost the Car Maker.",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 134.44,
-            "ci_low": 72.84,
-            "ci_high": 230.24,
+            "expected_value": 137.81,
+            "ci_low": 74.03,
+            "ci_high": 236.77,
             "sentiment_score": 0.599,
             "headline": "Exxon Mobil (XOM) Valuation Check As Legal Win And Strong Q1 Meet Rising Crude Prices",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.7,
-            "ci_low": 17.53,
-            "ci_high": 53.2,
+            "expected_value": 31.41,
+            "ci_low": 16.46,
+            "ci_high": 54.31,
             "sentiment_score": 0.0,
             "headline": "3 Deeply Undervalued Stocks You Can Buy for Less Than $100 Right Now",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 92.12,
-            "ci_low": 48.9,
-            "ci_high": 158.57,
+            "expected_value": 91.21,
+            "ci_low": 49.86,
+            "ci_high": 158.35,
             "sentiment_score": 0.052,
             "headline": "Bond market is losing 'a bit of faith' in Fed's inflation handling",
             "volatility_alert": false
