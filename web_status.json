@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-18 16:11:23",
-    "execution_id": 1779135083.0978765,
+    "last_updated": "2026-05-18 16:18:36",
+    "execution_id": 1779135516.4831476,
     "projections": {
         "TSLA": {
-            "expected_value": 190.83,
-            "ci_low": 97.56,
-            "ci_high": 332.41,
+            "expected_value": 192.3,
+            "ci_low": 104.24,
+            "ci_high": 327.56,
             "sentiment_score": 0.0,
             "headline": "SpaceX eyes 5-for-1 stock split as IPO takes shape",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.81,
-            "ci_low": 7.09,
-            "ci_high": 23.65,
+            "expected_value": 13.68,
+            "ci_low": 7.56,
+            "ci_high": 23.1,
             "sentiment_score": 0.273,
             "headline": "Ford Energy lands its first customer in battery storage deal",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 131.39,
-            "ci_low": 71.74,
-            "ci_high": 224.32,
+            "expected_value": 131.07,
+            "ci_low": 71.46,
+            "ci_high": 229.22,
             "sentiment_score": 0.0,
             "headline": "ConocoPhillips Joins Alaska LNG Push",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.22,
-            "ci_low": 16.97,
-            "ci_high": 52.43,
+            "expected_value": 30.9,
+            "ci_low": 16.78,
+            "ci_high": 52.53,
             "sentiment_score": 0.0,
             "headline": "3 Deeply Undervalued Stocks You Can Buy for Less Than $100 Right Now",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 90.6,
-            "ci_low": 47.66,
-            "ci_high": 151.94,
+            "expected_value": 92.1,
+            "ci_low": 48.04,
+            "ci_high": 155.54,
             "sentiment_score": 0.052,
             "headline": "Bond market is losing 'a bit of faith' in Fed's inflation handling",
             "volatility_alert": false
