@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-18 07:38:38",
-    "execution_id": 1779104318.8846965,
+    "last_updated": "2026-05-18 07:40:42",
+    "execution_id": 1779104442.5338216,
     "projections": {
         "TSLA": {
-            "expected_value": 190.87,
-            "ci_low": 102.1,
-            "ci_high": 334.24,
+            "expected_value": 191.81,
+            "ci_low": 102.41,
+            "ci_high": 325.11,
             "sentiment_score": 0.0,
             "headline": "SpaceX To Go Public June 12, As Speculation Rises",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.64,
-            "ci_low": 7.42,
-            "ci_high": 24.0,
+            "expected_value": 13.53,
+            "ci_low": 7.23,
+            "ci_high": 24.05,
             "sentiment_score": 0.0,
             "headline": "Ford to build Bronco SUV in Spain as part of European revival plan",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 137.4,
-            "ci_low": 70.78,
-            "ci_high": 236.92,
+            "expected_value": 134.98,
+            "ci_low": 75.35,
+            "ci_high": 228.21,
             "sentiment_score": 0.691,
             "headline": "Sintana Energy raises $11.5m to support exploration plans in Namibia",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.51,
-            "ci_low": 16.54,
-            "ci_high": 52.22,
+            "expected_value": 30.74,
+            "ci_low": 16.44,
+            "ci_high": 53.16,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 93.45,
-            "ci_low": 51.2,
-            "ci_high": 155.53,
+            "expected_value": 91.49,
+            "ci_low": 49.5,
+            "ci_high": 160.32,
             "sentiment_score": 0.202,
             "headline": "Global stocks retreat and bonds wilt as oil climbs",
             "volatility_alert": false
