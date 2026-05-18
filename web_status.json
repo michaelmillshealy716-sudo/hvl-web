@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-18 16:07:17",
-    "execution_id": 1779134837.0707462,
+    "last_updated": "2026-05-18 16:09:20",
+    "execution_id": 1779134960.2022593,
     "projections": {
         "TSLA": {
-            "expected_value": 188.73,
-            "ci_low": 104.58,
-            "ci_high": 313.19,
+            "expected_value": 190.83,
+            "ci_low": 102.41,
+            "ci_high": 324.1,
             "sentiment_score": -0.599,
             "headline": "Elon Musk loses court battle against OpenAI",
             "volatility_alert": false
         },
         "F": {
             "expected_value": 13.94,
-            "ci_low": 7.48,
-            "ci_high": 24.16,
+            "ci_low": 7.22,
+            "ci_high": 24.48,
             "sentiment_score": 0.273,
             "headline": "Ford Energy lands its first customer in battery storage deal",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 129.99,
-            "ci_low": 64.74,
-            "ci_high": 234.84,
+            "expected_value": 127.01,
+            "ci_low": 68.32,
+            "ci_high": 212.7,
             "sentiment_score": 0.0,
             "headline": "ConocoPhillips Joins Alaska LNG Push",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.46,
-            "ci_low": 16.55,
-            "ci_high": 53.37,
+            "expected_value": 31.83,
+            "ci_low": 16.46,
+            "ci_high": 55.21,
             "sentiment_score": 0.0,
             "headline": "3 Deeply Undervalued Stocks You Can Buy for Less Than $100 Right Now",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 93.22,
-            "ci_low": 47.72,
-            "ci_high": 160.75,
+            "expected_value": 90.14,
+            "ci_low": 45.54,
+            "ci_high": 156.35,
             "sentiment_score": 0.052,
             "headline": "Bond market is losing 'a bit of faith' in Fed's inflation handling",
             "volatility_alert": false
