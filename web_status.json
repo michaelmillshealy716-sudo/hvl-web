@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-18 09:56:52",
-    "execution_id": 1779112612.880988,
+    "last_updated": "2026-05-18 09:58:57",
+    "execution_id": 1779112737.2037194,
     "projections": {
         "TSLA": {
-            "expected_value": 195.3,
-            "ci_low": 108.75,
-            "ci_high": 336.67,
+            "expected_value": 192.34,
+            "ci_low": 102.26,
+            "ci_high": 329.06,
             "sentiment_score": 0.0,
             "headline": "Stock Market Today: Dow Wavers As Oil Falls On Iran News; Nvidia, Walmart On Watch (Live Coverage)",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.52,
-            "ci_low": 7.07,
-            "ci_high": 23.7,
+            "expected_value": 13.7,
+            "ci_low": 7.17,
+            "ci_high": 24.12,
             "sentiment_score": 0.128,
             "headline": "Exchange-Traded Funds, Equity Futures Lower Pre-Bell Monday Amid Stalled Iran Peace Efforts, Inflation Concerns",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 134.88,
-            "ci_low": 70.9,
-            "ci_high": 233.32,
+            "expected_value": 137.68,
+            "ci_low": 71.46,
+            "ci_high": 234.5,
             "sentiment_score": 0.691,
             "headline": "Sintana Energy raises $11.5m to support exploration plans in Namibia",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.9,
-            "ci_low": 16.14,
-            "ci_high": 54.94,
+            "expected_value": 31.01,
+            "ci_low": 16.32,
+            "ci_high": 53.93,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 89.79,
-            "ci_low": 48.53,
-            "ci_high": 155.33,
+            "expected_value": 88.93,
+            "ci_low": 47.95,
+            "ci_high": 147.47,
             "sentiment_score": -0.421,
             "headline": "Stock market today: S&P 500, Dow, Nasdaq waver as inflation fears grip markets",
             "volatility_alert": false
