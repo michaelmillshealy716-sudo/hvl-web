@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-18 12:29:38",
-    "execution_id": 1779121778.9944313,
+    "last_updated": "2026-05-18 12:31:41",
+    "execution_id": 1779121901.9162967,
     "projections": {
         "TSLA": {
-            "expected_value": 192.83,
-            "ci_low": 101.37,
-            "ci_high": 325.07,
+            "expected_value": 191.58,
+            "ci_low": 103.73,
+            "ci_high": 337.82,
             "sentiment_score": 0.0,
             "headline": "SpaceX, mega-IPOs could 'take oxygen out of the room' for AI players",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.86,
-            "ci_low": 7.6,
-            "ci_high": 23.52,
+            "expected_value": 13.68,
+            "ci_low": 7.38,
+            "ci_high": 23.56,
             "sentiment_score": 0.273,
             "headline": "Ford Energy lands its first customer in battery storage deal",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 132.46,
-            "ci_low": 70.91,
-            "ci_high": 231.08,
+            "expected_value": 132.4,
+            "ci_low": 71.03,
+            "ci_high": 224.47,
             "sentiment_score": 0.477,
             "headline": "Exxon Mobil Corporation (XOM) is Attracting Investor Attention: Here is What You Should Know",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.84,
-            "ci_low": 16.25,
-            "ci_high": 53.11,
+            "expected_value": 30.98,
+            "ci_low": 16.15,
+            "ci_high": 56.72,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 91.3,
-            "ci_low": 48.99,
-            "ci_high": 158.1,
+            "expected_value": 90.82,
+            "ci_low": 49.22,
+            "ci_high": 151.22,
             "sentiment_score": 0.0,
             "headline": "Oil prices rise as Trump says 'clock is ticking' for Iran",
             "volatility_alert": false
