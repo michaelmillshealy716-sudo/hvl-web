@@ -1,45 +1,45 @@
 {
-    "last_updated": "2026-05-18 15:10:57",
-    "execution_id": 1779131457.4269056,
+    "last_updated": "2026-05-18 15:13:01",
+    "execution_id": 1779131581.8138027,
     "projections": {
         "TSLA": {
-            "expected_value": 188.43,
-            "ci_low": 102.94,
-            "ci_high": 328.29,
+            "expected_value": 188.78,
+            "ci_low": 101.94,
+            "ci_high": 328.41,
             "sentiment_score": -0.599,
             "headline": "Elon Musk loses court battle against OpenAI",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.8,
-            "ci_low": 7.45,
-            "ci_high": 23.48,
+            "expected_value": 13.68,
+            "ci_low": 7.29,
+            "ci_high": 24.09,
             "sentiment_score": 0.273,
             "headline": "Ford Energy lands its first customer in battery storage deal",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 132.76,
-            "ci_low": 69.0,
-            "ci_high": 221.62,
+            "expected_value": 129.39,
+            "ci_low": 69.06,
+            "ci_high": 222.48,
             "sentiment_score": 0.0,
             "headline": "ConocoPhillips Joins Alaska LNG Push",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.47,
-            "ci_low": 16.65,
-            "ci_high": 54.36,
+            "expected_value": 31.64,
+            "ci_low": 17.19,
+            "ci_high": 54.9,
             "sentiment_score": 0.0,
             "headline": "3 Deeply Undervalued Stocks You Can Buy for Less Than $100 Right Now",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 89.63,
-            "ci_low": 48.89,
-            "ci_high": 154.62,
-            "sentiment_score": 0.0,
-            "headline": "Oil prices rise as Trump says 'clock is ticking' for Iran",
+            "expected_value": 88.06,
+            "ci_low": 49.16,
+            "ci_high": 146.32,
+            "sentiment_score": -0.421,
+            "headline": "Stock market today: S&P 500, Nasdaq, Dow slip as inflation fears grip markets",
             "volatility_alert": false
         }
     }
