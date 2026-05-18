@@ -1,45 +1,45 @@
 {
-    "last_updated": "2026-05-18 17:50:26",
-    "execution_id": 1779141026.6656,
+    "last_updated": "2026-05-18 17:52:30",
+    "execution_id": 1779141150.3254619,
     "projections": {
         "TSLA": {
-            "expected_value": 191.77,
-            "ci_low": 102.27,
-            "ci_high": 322.62,
+            "expected_value": 191.0,
+            "ci_low": 102.14,
+            "ci_high": 323.95,
             "sentiment_score": 0.0,
             "headline": "SpaceX eyes 5-for-1 stock split as IPO takes shape",
             "volatility_alert": false
         },
         "F": {
             "expected_value": 13.89,
-            "ci_low": 7.42,
-            "ci_high": 23.73,
+            "ci_low": 7.23,
+            "ci_high": 23.84,
             "sentiment_score": 0.402,
             "headline": "Ford Stock Falls Again. Two Announcements Couldn\u2019t Boost the Car Maker.",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 134.91,
-            "ci_low": 69.75,
-            "ci_high": 226.79,
+            "expected_value": 132.93,
+            "ci_low": 71.68,
+            "ci_high": 219.45,
             "sentiment_score": 0.599,
             "headline": "Exxon Mobil (XOM) Valuation Check As Legal Win And Strong Q1 Meet Rising Crude Prices",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.73,
-            "ci_low": 17.27,
-            "ci_high": 52.75,
+            "expected_value": 31.6,
+            "ci_low": 17.15,
+            "ci_high": 53.79,
             "sentiment_score": 0.0,
             "headline": "3 Deeply Undervalued Stocks You Can Buy for Less Than $100 Right Now",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 91.78,
-            "ci_low": 48.74,
-            "ci_high": 155.42,
+            "expected_value": 90.3,
+            "ci_low": 50.76,
+            "ci_high": 154.2,
             "sentiment_score": 0.0,
-            "headline": "Are rising costs influencing Americans' Memorial Day travel?",
+            "headline": "US\u2013Iran stalemate: A look at year-end oil price predictions",
             "volatility_alert": false
         }
     }
