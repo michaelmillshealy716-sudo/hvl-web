@@ -1,45 +1,45 @@
 {
-    "last_updated": "2026-05-18 02:38:42",
-    "execution_id": 1779086322.2937148,
+    "last_updated": "2026-05-18 02:40:46",
+    "execution_id": 1779086446.6026332,
     "projections": {
         "TSLA": {
-            "expected_value": 201.65,
-            "ci_low": 110.43,
-            "ci_high": 346.13,
+            "expected_value": 200.87,
+            "ci_low": 103.01,
+            "ci_high": 352.32,
             "sentiment_score": 0.67,
             "headline": "Gavin Newsom Unveils $1 Billion EV Incentive Program That Could Benefit Elon Musk's Tesla Semi",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.99,
-            "ci_low": 7.55,
-            "ci_high": 23.71,
+            "expected_value": 13.84,
+            "ci_low": 7.08,
+            "ci_high": 24.25,
             "sentiment_score": 0.382,
             "headline": "Ford rival doubles down on China with bold move",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 130.71,
-            "ci_low": 68.59,
-            "ci_high": 221.55,
+            "expected_value": 131.67,
+            "ci_low": 71.69,
+            "ci_high": 224.03,
             "sentiment_score": 0.0,
             "headline": "The $40,000 Tax Move That Comes After Your 401(k) Hits Its Limit",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.7,
-            "ci_low": 15.84,
-            "ci_high": 54.7,
+            "expected_value": 30.87,
+            "ci_low": 16.99,
+            "ci_high": 52.81,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 93.08,
-            "ci_low": 47.77,
-            "ci_high": 157.61,
-            "sentiment_score": 0.361,
-            "headline": "Ryanair warns flat fares may weigh on profits",
+            "expected_value": 93.07,
+            "ci_low": 48.86,
+            "ci_high": 159.95,
+            "sentiment_score": 0.0,
+            "headline": "Stock market today: Dow, S&P 500, Nasdaq futures dip from record-highs ahead of packed earnings week",
             "volatility_alert": false
         }
     }
