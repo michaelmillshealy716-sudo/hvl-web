@@ -1,45 +1,45 @@
 {
-    "last_updated": "2026-05-18 16:22:42",
-    "execution_id": 1779135762.6740634,
+    "last_updated": "2026-05-18 16:24:47",
+    "execution_id": 1779135887.4309947,
     "projections": {
         "TSLA": {
-            "expected_value": 190.62,
-            "ci_low": 100.74,
-            "ci_high": 320.52,
+            "expected_value": 192.18,
+            "ci_low": 101.61,
+            "ci_high": 327.61,
             "sentiment_score": 0.0,
             "headline": "SpaceX eyes 5-for-1 stock split as IPO takes shape",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 14.21,
-            "ci_low": 7.83,
-            "ci_high": 24.06,
+            "expected_value": 13.72,
+            "ci_low": 7.6,
+            "ci_high": 24.02,
             "sentiment_score": 0.402,
             "headline": "Ford Stock Falls Again. Two Announcements Couldn\u2019t Boost the Car Maker.",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 131.13,
-            "ci_low": 71.38,
-            "ci_high": 232.19,
+            "expected_value": 129.38,
+            "ci_low": 70.19,
+            "ci_high": 234.47,
             "sentiment_score": 0.0,
             "headline": "ConocoPhillips Joins Alaska LNG Push",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.41,
-            "ci_low": 16.72,
-            "ci_high": 53.73,
+            "expected_value": 31.43,
+            "ci_low": 16.36,
+            "ci_high": 51.67,
             "sentiment_score": 0.0,
             "headline": "3 Deeply Undervalued Stocks You Can Buy for Less Than $100 Right Now",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 91.17,
-            "ci_low": 47.08,
-            "ci_high": 153.68,
-            "sentiment_score": 0.052,
-            "headline": "Bond market is losing 'a bit of faith' in Fed's inflation handling",
+            "expected_value": 91.39,
+            "ci_low": 48.38,
+            "ci_high": 153.05,
+            "sentiment_score": 0.0,
+            "headline": "",
             "volatility_alert": false
         }
     }
