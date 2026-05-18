@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-18 10:57:51",
-    "execution_id": 1779116271.470129,
+    "last_updated": "2026-05-18 10:59:56",
+    "execution_id": 1779116396.9239492,
     "projections": {
         "TSLA": {
-            "expected_value": 201.89,
-            "ci_low": 109.54,
-            "ci_high": 339.0,
+            "expected_value": 202.36,
+            "ci_low": 110.45,
+            "ci_high": 346.48,
             "sentiment_score": 0.625,
             "headline": "Jim Cramer Shares Why Tesla (TSLA) Is Better Than Ford",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.91,
-            "ci_low": 7.43,
-            "ci_high": 23.29,
+            "expected_value": 13.88,
+            "ci_low": 7.42,
+            "ci_high": 23.94,
             "sentiment_score": 0.625,
             "headline": "Jim Cramer Shares Why Tesla (TSLA) Is Better Than Ford",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 135.16,
-            "ci_low": 71.92,
-            "ci_high": 221.42,
+            "expected_value": 134.66,
+            "ci_low": 70.75,
+            "ci_high": 233.34,
             "sentiment_score": 0.477,
             "headline": "Exxon Mobil Corporation (XOM) is Attracting Investor Attention: Here is What You Should Know",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.26,
-            "ci_low": 16.69,
-            "ci_high": 56.06,
-            "sentiment_score": 0.0,
-            "headline": "",
+            "expected_value": 30.77,
+            "ci_low": 16.75,
+            "ci_high": 52.43,
+            "sentiment_score": -0.34,
+            "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 89.77,
-            "ci_low": 47.28,
-            "ci_high": 157.11,
+            "expected_value": 88.85,
+            "ci_low": 47.61,
+            "ci_high": 153.77,
             "sentiment_score": -0.421,
             "headline": "Stock market today: Nasdaq falls, S&P 500 and Dow waver as inflation fears grip markets",
             "volatility_alert": false
