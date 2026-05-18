@@ -1,45 +1,45 @@
 {
-    "last_updated": "2026-05-18 07:09:48",
-    "execution_id": 1779102588.8738434,
+    "last_updated": "2026-05-18 07:11:53",
+    "execution_id": 1779102713.002608,
     "projections": {
         "TSLA": {
-            "expected_value": 191.91,
-            "ci_low": 104.67,
-            "ci_high": 331.36,
+            "expected_value": 191.7,
+            "ci_low": 102.54,
+            "ci_high": 324.61,
             "sentiment_score": 0.0,
             "headline": "SpaceX To Go Public June 12, As Speculation Rises",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.81,
-            "ci_low": 7.1,
-            "ci_high": 24.32,
+            "expected_value": 13.68,
+            "ci_low": 7.44,
+            "ci_high": 23.95,
             "sentiment_score": 0.0,
             "headline": "Ford to build Bronco SUV in Spain as part of European revival plan",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 134.7,
-            "ci_low": 71.9,
-            "ci_high": 222.91,
+            "expected_value": 135.62,
+            "ci_low": 72.55,
+            "ci_high": 241.18,
             "sentiment_score": 0.691,
             "headline": "Sintana Energy raises $11.5m to support exploration plans in Namibia",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.94,
-            "ci_low": 17.06,
-            "ci_high": 51.67,
-            "sentiment_score": -0.34,
-            "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
+            "expected_value": 31.44,
+            "ci_low": 17.72,
+            "ci_high": 53.56,
+            "sentiment_score": 0.0,
+            "headline": "",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 90.09,
-            "ci_low": 47.71,
-            "ci_high": 152.43,
-            "sentiment_score": 0.0,
-            "headline": "Oil Outlook Darkens Wall Street Pre-Bell; Asia, Europe Off",
+            "expected_value": 89.37,
+            "ci_low": 46.74,
+            "ci_high": 152.91,
+            "sentiment_score": -0.402,
+            "headline": "Oil prices jump as Iran tensions persist, UAE nuclear plant hit",
             "volatility_alert": false
         }
     }
