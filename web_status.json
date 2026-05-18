@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-18 07:16:00",
-    "execution_id": 1779102960.8954985,
+    "last_updated": "2026-05-18 07:18:04",
+    "execution_id": 1779103084.937533,
     "projections": {
         "TSLA": {
-            "expected_value": 193.6,
-            "ci_low": 104.62,
-            "ci_high": 334.28,
+            "expected_value": 194.58,
+            "ci_low": 105.82,
+            "ci_high": 340.65,
             "sentiment_score": 0.0,
             "headline": "SpaceX To Go Public June 12, As Speculation Rises",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.35,
-            "ci_low": 7.2,
-            "ci_high": 22.99,
+            "expected_value": 13.45,
+            "ci_low": 7.15,
+            "ci_high": 23.25,
             "sentiment_score": 0.0,
             "headline": "Ford to build Bronco SUV in Spain as part of European revival plan",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 134.9,
-            "ci_low": 73.76,
-            "ci_high": 235.54,
+            "expected_value": 132.97,
+            "ci_low": 68.88,
+            "ci_high": 225.22,
             "sentiment_score": 0.691,
             "headline": "Sintana Energy raises $11.5m to support exploration plans in Namibia",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.83,
-            "ci_low": 16.97,
-            "ci_high": 51.51,
+            "expected_value": 31.11,
+            "ci_low": 16.6,
+            "ci_high": 53.19,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 90.45,
-            "ci_low": 48.01,
-            "ci_high": 159.27,
+            "expected_value": 88.6,
+            "ci_low": 47.71,
+            "ci_high": 152.14,
             "sentiment_score": -0.402,
             "headline": "Stock market today: Dow, S&P 500, Nasdaq futures slide as oil jumps amid US-Iran tensions",
             "volatility_alert": false
