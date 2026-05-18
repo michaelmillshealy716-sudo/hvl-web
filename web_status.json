@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-18 18:26:40",
-    "execution_id": 1779143200.4124787,
+    "last_updated": "2026-05-18 18:33:52",
+    "execution_id": 1779143632.9208584,
     "projections": {
         "TSLA": {
-            "expected_value": 192.45,
-            "ci_low": 103.24,
-            "ci_high": 321.35,
+            "expected_value": 193.22,
+            "ci_low": 101.39,
+            "ci_high": 334.97,
             "sentiment_score": 0.0,
             "headline": "SpaceX eyes 5-for-1 stock split as IPO takes shape",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.89,
-            "ci_low": 7.29,
-            "ci_high": 23.33,
+            "expected_value": 13.99,
+            "ci_low": 7.31,
+            "ci_high": 23.77,
             "sentiment_score": 0.7,
             "headline": "Ford Details European Growth Strategy, Signs EDF Energy-Storage Agreement",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 133.27,
-            "ci_low": 69.27,
-            "ci_high": 226.46,
+            "expected_value": 134.59,
+            "ci_low": 71.15,
+            "ci_high": 229.64,
             "sentiment_score": 0.599,
             "headline": "Exxon Mobil (XOM) Valuation Check As Legal Win And Strong Q1 Meet Rising Crude Prices",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.08,
-            "ci_low": 16.73,
-            "ci_high": 55.1,
+            "expected_value": 31.74,
+            "ci_low": 17.06,
+            "ci_high": 53.72,
             "sentiment_score": 0.0,
             "headline": "3 Deeply Undervalued Stocks You Can Buy for Less Than $100 Right Now",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 91.21,
-            "ci_low": 47.47,
-            "ci_high": 151.77,
+            "expected_value": 92.81,
+            "ci_low": 48.68,
+            "ci_high": 157.18,
             "sentiment_score": 0.0,
             "headline": "US\u2013Iran stalemate: A look at year-end oil price predictions",
             "volatility_alert": false
