@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-18 19:46:19",
-    "execution_id": 1779147979.0923429,
+    "last_updated": "2026-05-18 19:53:31",
+    "execution_id": 1779148411.3549232,
     "projections": {
         "TSLA": {
-            "expected_value": 190.0,
-            "ci_low": 105.73,
-            "ci_high": 318.69,
+            "expected_value": 196.14,
+            "ci_low": 110.52,
+            "ci_high": 328.74,
             "sentiment_score": 0.0,
             "headline": "SpaceX eyes 5-for-1 stock split as IPO takes shape",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.97,
+            "expected_value": 13.94,
             "ci_low": 7.37,
-            "ci_high": 23.46,
+            "ci_high": 23.67,
             "sentiment_score": 0.7,
             "headline": "Ford Details European Growth Strategy, Signs EDF Energy-Storage Agreement",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 135.98,
-            "ci_low": 70.29,
-            "ci_high": 242.2,
+            "expected_value": 134.22,
+            "ci_low": 71.02,
+            "ci_high": 224.83,
             "sentiment_score": 0.599,
             "headline": "Exxon Mobil (XOM) Valuation Check As Legal Win And Strong Q1 Meet Rising Crude Prices",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.57,
-            "ci_low": 16.64,
-            "ci_high": 55.26,
+            "expected_value": 31.56,
+            "ci_low": 16.81,
+            "ci_high": 55.43,
             "sentiment_score": 0.0,
             "headline": "3 Deeply Undervalued Stocks You Can Buy for Less Than $100 Right Now",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 88.7,
-            "ci_low": 47.32,
-            "ci_high": 156.21,
+            "expected_value": 88.05,
+            "ci_low": 46.62,
+            "ci_high": 155.0,
             "sentiment_score": -0.421,
             "headline": "Stock market today: Dow, S&P 500, Nasdaq futures trade flat as inflation worries persist",
             "volatility_alert": false
