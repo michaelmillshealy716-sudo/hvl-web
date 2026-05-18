@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-18 01:24:19",
-    "execution_id": 1779081859.158713,
+    "last_updated": "2026-05-18 01:26:22",
+    "execution_id": 1779081982.9070482,
     "projections": {
         "TSLA": {
-            "expected_value": 200.47,
-            "ci_low": 108.71,
-            "ci_high": 339.24,
+            "expected_value": 198.26,
+            "ci_low": 109.13,
+            "ci_high": 320.87,
             "sentiment_score": 0.67,
             "headline": "Gavin Newsom Unveils $1 Billion EV Incentive Program That Could Benefit Elon Musk's Tesla Semi",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.85,
-            "ci_low": 7.33,
-            "ci_high": 24.36,
+            "expected_value": 14.0,
+            "ci_low": 7.09,
+            "ci_high": 23.67,
             "sentiment_score": 0.382,
             "headline": "Ford rival doubles down on China with bold move",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 132.23,
-            "ci_low": 71.84,
-            "ci_high": 239.91,
+            "expected_value": 130.36,
+            "ci_low": 71.3,
+            "ci_high": 222.44,
             "sentiment_score": 0.0,
             "headline": "The $40,000 Tax Move That Comes After Your 401(k) Hits Its Limit",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.57,
-            "ci_low": 16.52,
-            "ci_high": 54.76,
-            "sentiment_score": -0.34,
-            "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
+            "expected_value": 31.56,
+            "ci_low": 16.85,
+            "ci_high": 53.24,
+            "sentiment_score": 0.0,
+            "headline": "",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 89.99,
-            "ci_low": 47.49,
-            "ci_high": 152.67,
+            "expected_value": 92.56,
+            "ci_low": 47.83,
+            "ci_high": 157.42,
             "sentiment_score": 0.0,
             "headline": "Stock market today: Dow, S&P 500, Nasdaq futures dip from record-highs ahead of packed earnings week",
             "volatility_alert": false
