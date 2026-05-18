@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-18 07:27:21",
-    "execution_id": 1779103641.5424619,
+    "last_updated": "2026-05-18 07:29:25",
+    "execution_id": 1779103765.3908515,
     "projections": {
         "TSLA": {
-            "expected_value": 192.18,
-            "ci_low": 105.56,
-            "ci_high": 324.9,
+            "expected_value": 194.42,
+            "ci_low": 104.3,
+            "ci_high": 337.47,
             "sentiment_score": 0.0,
             "headline": "SpaceX To Go Public June 12, As Speculation Rises",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.66,
-            "ci_low": 7.3,
-            "ci_high": 23.06,
+            "expected_value": 13.43,
+            "ci_low": 7.05,
+            "ci_high": 23.13,
             "sentiment_score": 0.0,
             "headline": "Ford to build Bronco SUV in Spain as part of European revival plan",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 133.55,
-            "ci_low": 70.96,
-            "ci_high": 228.75,
+            "expected_value": 133.24,
+            "ci_low": 68.08,
+            "ci_high": 222.54,
             "sentiment_score": 0.691,
             "headline": "Sintana Energy raises $11.5m to support exploration plans in Namibia",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.18,
-            "ci_low": 16.59,
-            "ci_high": 53.36,
+            "expected_value": 31.07,
+            "ci_low": 16.62,
+            "ci_high": 56.03,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 89.83,
-            "ci_low": 49.81,
-            "ci_high": 157.19,
+            "expected_value": 88.68,
+            "ci_low": 44.87,
+            "ci_high": 154.01,
             "sentiment_score": -0.402,
             "headline": "Oil prices jump as Iran tensions persist, UAE nuclear plant hit",
             "volatility_alert": false
