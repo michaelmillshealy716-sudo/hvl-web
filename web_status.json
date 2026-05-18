@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-18 06:58:27",
-    "execution_id": 1779101907.6257994,
+    "last_updated": "2026-05-18 07:05:40",
+    "execution_id": 1779102340.1413474,
     "projections": {
         "TSLA": {
-            "expected_value": 205.53,
-            "ci_low": 108.67,
-            "ci_high": 349.51,
+            "expected_value": 202.82,
+            "ci_low": 105.01,
+            "ci_high": 356.04,
             "sentiment_score": 0.586,
             "headline": "Latest News In Electric Vehicles - Bi-Directional Chargers Powering Smart Energy Transformation",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.59,
-            "ci_low": 7.39,
-            "ci_high": 22.76,
+            "expected_value": 13.49,
+            "ci_low": 6.99,
+            "ci_high": 22.36,
             "sentiment_score": 0.0,
-            "headline": "Ford to launch seven European models by 2029 as it seeks to fend off Chinese rivals",
+            "headline": "Ford to build Bronco SUV in Spain as part of European revival plan",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 135.07,
-            "ci_low": 76.13,
-            "ci_high": 236.07,
+            "expected_value": 137.06,
+            "ci_low": 69.78,
+            "ci_high": 232.3,
             "sentiment_score": 0.691,
             "headline": "Sintana Energy raises $11.5m to support exploration plans in Namibia",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.54,
-            "ci_low": 15.86,
-            "ci_high": 54.05,
+            "expected_value": 30.98,
+            "ci_low": 16.54,
+            "ci_high": 53.88,
             "sentiment_score": -0.34,
             "headline": "Up 231%, Is RTX Proving Why It Was a Mistake for Honeywell to Replace RTX in the Dow Jones Industrial Average?",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 88.35,
-            "ci_low": 47.33,
-            "ci_high": 155.75,
+            "expected_value": 87.64,
+            "ci_low": 46.74,
+            "ci_high": 149.64,
             "sentiment_score": -0.557,
             "headline": "US Equity Investors to Stay Glued to Treasury Yields as Crude Oil Gains Likely to Make Inflation Worse",
             "volatility_alert": false
