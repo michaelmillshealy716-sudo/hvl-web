@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-19 15:44:54",
-    "execution_id": 1779219894.1593604,
+    "last_updated": "2026-05-19 15:46:57",
+    "execution_id": 1779220017.9603157,
     "projections": {
         "TSLA": {
-            "expected_value": 194.98,
-            "ci_low": 103.59,
-            "ci_high": 340.4,
+            "expected_value": 194.38,
+            "ci_low": 109.22,
+            "ci_high": 335.7,
             "sentiment_score": 0.0,
             "headline": "Tech stocks today: OpenAI co-founder Andrej Karpathy joins Anthropic",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.38,
-            "ci_low": 6.88,
-            "ci_high": 24.5,
+            "expected_value": 13.54,
+            "ci_low": 7.15,
+            "ci_high": 23.6,
             "sentiment_score": -0.421,
             "headline": "How the Iran war is driving a renewable energy pivot",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 129.58,
-            "ci_low": 70.24,
-            "ci_high": 216.96,
+            "expected_value": 129.69,
+            "ci_low": 69.35,
+            "ci_high": 228.18,
             "sentiment_score": 0.0,
             "headline": "Most Retirees Skip Over Vanguard\u2019s $100 Billion VYM Despite Its 2.9 Percent Yield and Almost Zero Maintenance",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 32.35,
-            "ci_low": 17.52,
-            "ci_high": 53.79,
+            "expected_value": 31.97,
+            "ci_low": 16.48,
+            "ci_high": 55.01,
             "sentiment_score": 0.521,
             "headline": "The SoFi CEO Just Bought 70,000 Shares With His Own Money. Here Are Four More Under $30 Worth a Closer Look",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 91.19,
-            "ci_low": 48.59,
-            "ci_high": 157.56,
+            "expected_value": 92.0,
+            "ci_low": 47.67,
+            "ci_high": 159.13,
             "sentiment_score": 0.128,
             "headline": "Trump threatened Iran with 'another big hit' amid peace talks",
             "volatility_alert": false
