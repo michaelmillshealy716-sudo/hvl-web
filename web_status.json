@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-19 18:17:52",
-    "execution_id": 1779229072.3559127,
+    "last_updated": "2026-05-19 18:19:55",
+    "execution_id": 1779229195.204609,
     "projections": {
         "TSLA": {
-            "expected_value": 196.4,
-            "ci_low": 101.43,
-            "ci_high": 335.57,
+            "expected_value": 194.13,
+            "ci_low": 99.4,
+            "ci_high": 331.04,
             "sentiment_score": 0.0,
             "headline": "Tech stocks today: OpenAI co-founder Andrej Karpathy joins Anthropic",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.23,
+            "expected_value": 13.28,
             "ci_low": 7.0,
-            "ci_high": 23.73,
+            "ci_high": 22.87,
             "sentiment_score": -0.421,
             "headline": "How the Iran war is driving a renewable energy pivot",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 130.6,
-            "ci_low": 65.47,
-            "ci_high": 232.32,
+            "expected_value": 131.73,
+            "ci_low": 70.09,
+            "ci_high": 224.41,
             "sentiment_score": 0.0,
             "headline": "Most Retirees Skip Over Vanguard\u2019s $100 Billion VYM Despite Its 2.9 Percent Yield and Almost Zero Maintenance",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.88,
-            "ci_low": 16.19,
-            "ci_high": 52.13,
-            "sentiment_score": 0.0,
-            "headline": "",
+            "expected_value": 32.38,
+            "ci_low": 17.41,
+            "ci_high": 57.18,
+            "sentiment_score": 0.521,
+            "headline": "The SoFi CEO Just Bought 70,000 Shares With His Own Money. Here Are Four More Under $30 Worth a Closer Look",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 92.65,
-            "ci_low": 50.09,
-            "ci_high": 158.65,
+            "expected_value": 91.82,
+            "ci_low": 49.56,
+            "ci_high": 163.52,
             "sentiment_score": 0.202,
             "headline": "Treasury yields climb as bond market weighs inflation concerns",
             "volatility_alert": false
