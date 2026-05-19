@@ -1,45 +1,45 @@
 {
-    "last_updated": "2026-05-18 20:31:48",
-    "execution_id": 1779150708.4825234,
+    "last_updated": "2026-05-18 20:39:02",
+    "execution_id": 1779151142.221792,
     "projections": {
         "TSLA": {
-            "expected_value": 193.61,
-            "ci_low": 109.05,
-            "ci_high": 330.38,
+            "expected_value": 192.52,
+            "ci_low": 100.3,
+            "ci_high": 323.73,
             "sentiment_score": 0.0,
             "headline": "SpaceX eyes 5-for-1 stock split as IPO takes shape",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 14.13,
-            "ci_low": 7.37,
-            "ci_high": 24.78,
+            "expected_value": 14.01,
+            "ci_low": 7.48,
+            "ci_high": 22.2,
             "sentiment_score": 0.7,
             "headline": "Ford Details European Growth Strategy, Signs EDF Energy-Storage Agreement",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 135.75,
-            "ci_low": 74.61,
-            "ci_high": 229.72,
+            "expected_value": 136.14,
+            "ci_low": 72.05,
+            "ci_high": 229.22,
             "sentiment_score": 0.599,
             "headline": "Exxon Mobil (XOM) Valuation Check As Legal Win And Strong Q1 Meet Rising Crude Prices",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.74,
-            "ci_low": 17.19,
-            "ci_high": 54.27,
+            "expected_value": 31.31,
+            "ci_low": 16.75,
+            "ci_high": 53.52,
             "sentiment_score": 0.0,
             "headline": "3 Deeply Undervalued Stocks You Can Buy for Less Than $100 Right Now",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 88.81,
-            "ci_low": 47.2,
-            "ci_high": 159.28,
-            "sentiment_score": -0.421,
-            "headline": "Stock market today: Dow, S&P 500, Nasdaq futures trade flat as inflation worries persist",
+            "expected_value": 91.32,
+            "ci_low": 49.29,
+            "ci_high": 151.38,
+            "sentiment_score": 0.0,
+            "headline": "US\u2013Iran stalemate: A look at year-end oil price predictions",
             "volatility_alert": false
         }
     }
