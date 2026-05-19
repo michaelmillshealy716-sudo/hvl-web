@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-19 10:48:42",
-    "execution_id": 1779202122.2399566,
+    "last_updated": "2026-05-19 10:55:54",
+    "execution_id": 1779202554.3962576,
     "projections": {
         "TSLA": {
-            "expected_value": 190.44,
-            "ci_low": 99.67,
-            "ci_high": 338.51,
+            "expected_value": 192.49,
+            "ci_low": 104.71,
+            "ci_high": 326.48,
             "sentiment_score": -0.226,
             "headline": "OpenAI prevails in Musk's lawsuit, paving the way for IPO",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.32,
-            "ci_low": 7.31,
-            "ci_high": 21.88,
+            "expected_value": 13.45,
+            "ci_low": 7.23,
+            "ci_high": 22.27,
             "sentiment_score": -0.421,
             "headline": "How the Iran war is driving a renewable energy pivot",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 129.63,
-            "ci_low": 71.07,
-            "ci_high": 219.76,
+            "expected_value": 130.3,
+            "ci_low": 67.3,
+            "ci_high": 218.18,
             "sentiment_score": 0.0,
-            "headline": "The Zacks Analyst Blog Highlights Broadcom, Berkshire Hathaway, Exxon Mobil and Weyco",
+            "headline": "Graphene Manufacturing Group inks global distribution deal with Curran International for THERMAL-XR",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.28,
-            "ci_low": 16.94,
-            "ci_high": 57.47,
-            "sentiment_score": 0.0,
-            "headline": "3 Deeply Undervalued Stocks You Can Buy for Less Than $100 Right Now",
+            "expected_value": 30.51,
+            "ci_low": 16.44,
+            "ci_high": 52.41,
+            "sentiment_score": -0.296,
+            "headline": "Rate Cuts Are Off the Table. Here Are 2 Stocks Under $30 Built Exactly for This Moment",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 87.82,
-            "ci_low": 46.13,
-            "ci_high": 146.95,
+            "expected_value": 88.12,
+            "ci_low": 45.05,
+            "ci_high": 150.02,
             "sentiment_score": -0.421,
             "headline": "How the Iran war is driving a renewable energy pivot",
             "volatility_alert": false
