@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-19 13:03:57",
-    "execution_id": 1779210237.1778834,
+    "last_updated": "2026-05-19 13:11:10",
+    "execution_id": 1779210670.2193325,
     "projections": {
         "TSLA": {
-            "expected_value": 188.99,
-            "ci_low": 97.92,
-            "ci_high": 318.84,
+            "expected_value": 192.2,
+            "ci_low": 102.94,
+            "ci_high": 333.64,
             "sentiment_score": -0.273,
             "headline": "What the Musk\u2013Altman legal battle means for OpenAI, SpaceX IPOs",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.24,
-            "ci_low": 7.09,
-            "ci_high": 21.89,
+            "expected_value": 13.37,
+            "ci_low": 7.02,
+            "ci_high": 23.51,
             "sentiment_score": -0.421,
             "headline": "How the Iran war is driving a renewable energy pivot",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 131.73,
-            "ci_low": 70.95,
-            "ci_high": 226.57,
+            "expected_value": 129.82,
+            "ci_low": 72.62,
+            "ci_high": 216.27,
             "sentiment_score": 0.0,
             "headline": "Chevron at $196, ExxonMobil at $160: Buy, Sell or Hold?",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 32.08,
-            "ci_low": 16.82,
-            "ci_high": 54.66,
+            "expected_value": 32.3,
+            "ci_low": 17.55,
+            "ci_high": 55.09,
             "sentiment_score": 0.521,
             "headline": "The SoFi CEO Just Bought 70,000 Shares With His Own Money. Here Are Four More Under $30 Worth a Closer Look",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 89.31,
-            "ci_low": 46.78,
-            "ci_high": 156.05,
+            "expected_value": 89.88,
+            "ci_low": 47.71,
+            "ci_high": 156.17,
             "sentiment_score": -0.318,
             "headline": "The 10-year Treasury yield is moving the 'wrong way' for stocks",
             "volatility_alert": false
