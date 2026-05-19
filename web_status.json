@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-19 14:59:30",
-    "execution_id": 1779217170.547688,
+    "last_updated": "2026-05-19 15:01:34",
+    "execution_id": 1779217294.2063978,
     "projections": {
         "TSLA": {
-            "expected_value": 193.07,
-            "ci_low": 101.96,
-            "ci_high": 334.88,
+            "expected_value": 193.04,
+            "ci_low": 102.92,
+            "ci_high": 331.06,
             "sentiment_score": 0.0,
             "headline": "Tech stocks today: OpenAI co-founder Andrej Karpathy joins Anthropic",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.36,
-            "ci_low": 7.12,
-            "ci_high": 22.99,
+            "expected_value": 13.33,
+            "ci_low": 7.0,
+            "ci_high": 22.53,
             "sentiment_score": -0.421,
             "headline": "How the Iran war is driving a renewable energy pivot",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 130.0,
-            "ci_low": 69.61,
-            "ci_high": 222.53,
+            "expected_value": 131.41,
+            "ci_low": 71.38,
+            "ci_high": 220.23,
             "sentiment_score": 0.0,
             "headline": "Most Retirees Skip Over Vanguard\u2019s $100 Billion VYM Despite Its 2.9 Percent Yield and Almost Zero Maintenance",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 32.04,
-            "ci_low": 16.85,
-            "ci_high": 54.92,
-            "sentiment_score": 0.521,
-            "headline": "The SoFi CEO Just Bought 70,000 Shares With His Own Money. Here Are Four More Under $30 Worth a Closer Look",
+            "expected_value": 31.19,
+            "ci_low": 16.46,
+            "ci_high": 52.76,
+            "sentiment_score": 0.0,
+            "headline": "",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 89.66,
-            "ci_low": 46.75,
-            "ci_high": 152.9,
+            "expected_value": 88.67,
+            "ci_low": 47.36,
+            "ci_high": 148.95,
             "sentiment_score": -0.296,
             "headline": "Only 2 things could stop bond yields from climbing even higher",
             "volatility_alert": false
