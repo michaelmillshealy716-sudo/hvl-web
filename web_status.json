@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-19 06:11:04",
-    "execution_id": 1779185464.6000566,
+    "last_updated": "2026-05-19 06:13:08",
+    "execution_id": 1779185588.3863802,
     "projections": {
         "TSLA": {
-            "expected_value": 202.21,
-            "ci_low": 109.84,
-            "ci_high": 332.45,
+            "expected_value": 200.94,
+            "ci_low": 107.75,
+            "ci_high": 332.66,
             "sentiment_score": 0.599,
             "headline": "Trump traded over $50 million in 'Magnificent 7' stocks last quarter, loading up on Apple and Google and selling Tesla",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.7,
-            "ci_low": 7.14,
-            "ci_high": 22.91,
+            "expected_value": 13.83,
+            "ci_low": 7.55,
+            "ci_high": 24.88,
             "sentiment_score": 0.273,
             "headline": "Ford Energy and EDF Sign Major Battery Storage Supply Deal",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 136.41,
-            "ci_low": 71.03,
-            "ci_high": 236.99,
+            "expected_value": 135.0,
+            "ci_low": 71.58,
+            "ci_high": 229.51,
             "sentiment_score": 0.599,
             "headline": "Exxon Mobil (XOM) Valuation Check As Legal Win And Strong Q1 Meet Rising Crude Prices",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.35,
-            "ci_low": 16.53,
-            "ci_high": 52.33,
+            "expected_value": 31.49,
+            "ci_low": 16.77,
+            "ci_high": 52.32,
             "sentiment_score": 0.0,
             "headline": "3 Deeply Undervalued Stocks You Can Buy for Less Than $100 Right Now",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 91.94,
-            "ci_low": 49.87,
-            "ci_high": 163.89,
+            "expected_value": 91.88,
+            "ci_low": 49.46,
+            "ci_high": 156.71,
             "sentiment_score": 0.0,
             "headline": "US\u2013Iran stalemate: A look at year-end oil price predictions",
             "volatility_alert": false
