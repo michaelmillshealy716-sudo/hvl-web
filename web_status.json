@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-19 04:17:34",
-    "execution_id": 1779178654.5482683,
+    "last_updated": "2026-05-19 04:19:37",
+    "execution_id": 1779178777.5799663,
     "projections": {
         "TSLA": {
-            "expected_value": 193.68,
-            "ci_low": 104.72,
-            "ci_high": 326.13,
+            "expected_value": 194.87,
+            "ci_low": 102.58,
+            "ci_high": 324.29,
             "sentiment_score": 0.0,
             "headline": "SpaceX eyes 5-for-1 stock split as IPO takes shape",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.69,
-            "ci_low": 7.35,
-            "ci_high": 23.14,
+            "expected_value": 13.64,
+            "ci_low": 7.19,
+            "ci_high": 23.68,
             "sentiment_score": 0.273,
             "headline": "Ford Energy and EDF Sign Major Battery Storage Supply Deal",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 133.64,
-            "ci_low": 72.5,
-            "ci_high": 225.17,
+            "expected_value": 136.0,
+            "ci_low": 70.67,
+            "ci_high": 237.13,
             "sentiment_score": 0.599,
             "headline": "Exxon Mobil (XOM) Valuation Check As Legal Win And Strong Q1 Meet Rising Crude Prices",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.67,
-            "ci_low": 15.89,
-            "ci_high": 55.15,
+            "expected_value": 31.12,
+            "ci_low": 16.4,
+            "ci_high": 53.56,
             "sentiment_score": 0.0,
             "headline": "3 Deeply Undervalued Stocks You Can Buy for Less Than $100 Right Now",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 89.3,
-            "ci_low": 48.61,
-            "ci_high": 152.49,
+            "expected_value": 88.26,
+            "ci_low": 47.67,
+            "ci_high": 156.7,
             "sentiment_score": -0.421,
             "headline": "Stock market today: Dow, S&P 500, Nasdaq futures fall as inflation worries persist",
             "volatility_alert": false
