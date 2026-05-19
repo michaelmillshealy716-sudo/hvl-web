@@ -1,45 +1,45 @@
 {
-    "last_updated": "2026-05-19 11:19:27",
-    "execution_id": 1779203967.6171486,
+    "last_updated": "2026-05-19 11:26:41",
+    "execution_id": 1779204401.463543,
     "projections": {
         "TSLA": {
-            "expected_value": 189.03,
-            "ci_low": 100.03,
-            "ci_high": 324.41,
+            "expected_value": 196.79,
+            "ci_low": 104.45,
+            "ci_high": 348.69,
             "sentiment_score": -0.226,
             "headline": "OpenAI prevails in Musk's lawsuit, paving the way for IPO",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.2,
-            "ci_low": 7.11,
-            "ci_high": 23.55,
+            "expected_value": 13.37,
+            "ci_low": 6.98,
+            "ci_high": 23.59,
             "sentiment_score": -0.421,
             "headline": "How the Iran war is driving a renewable energy pivot",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 132.39,
-            "ci_low": 68.93,
-            "ci_high": 221.76,
+            "expected_value": 130.98,
+            "ci_low": 71.47,
+            "ci_high": 217.89,
             "sentiment_score": 0.178,
             "headline": "ExxonMobil vs Chevron: The Better Dividend Stock in an Uncertain Oil Market",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.18,
-            "ci_low": 16.85,
-            "ci_high": 53.04,
+            "expected_value": 30.86,
+            "ci_low": 15.5,
+            "ci_high": 53.4,
             "sentiment_score": -0.296,
             "headline": "Rate Cuts Are Off the Table. Here Are 2 Stocks Under $30 Built Exactly for This Moment",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 90.18,
-            "ci_low": 49.23,
-            "ci_high": 153.7,
-            "sentiment_score": -0.421,
-            "headline": "How the Iran war is driving a renewable energy pivot",
+            "expected_value": 87.18,
+            "ci_low": 46.33,
+            "ci_high": 154.47,
+            "sentiment_score": -0.625,
+            "headline": "Oil reserves are dangerously low. Here's what happens next.",
             "volatility_alert": false
         }
     }
