@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-19 08:24:27",
-    "execution_id": 1779193467.3382819,
+    "last_updated": "2026-05-19 08:26:31",
+    "execution_id": 1779193591.2074947,
     "projections": {
         "TSLA": {
-            "expected_value": 199.63,
-            "ci_low": 104.88,
-            "ci_high": 350.03,
+            "expected_value": 203.64,
+            "ci_low": 106.02,
+            "ci_high": 355.61,
             "sentiment_score": 0.599,
             "headline": "Trump traded over $50 million in 'Magnificent 7' stocks last quarter, loading up on Apple and Google and selling Tesla",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.56,
-            "ci_low": 7.27,
-            "ci_high": 23.28,
+            "expected_value": 13.88,
+            "ci_low": 7.72,
+            "ci_high": 24.8,
             "sentiment_score": 0.361,
             "headline": "Ford Expands Energy Storage Push With EDF Deal",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 132.42,
-            "ci_low": 71.62,
-            "ci_high": 224.93,
+            "expected_value": 134.15,
+            "ci_low": 69.76,
+            "ci_high": 232.31,
             "sentiment_score": 0.599,
             "headline": "Exxon Mobil (XOM) Valuation Check As Legal Win And Strong Q1 Meet Rising Crude Prices",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.28,
-            "ci_low": 16.92,
-            "ci_high": 52.78,
+            "expected_value": 31.41,
+            "ci_low": 16.95,
+            "ci_high": 54.18,
             "sentiment_score": 0.0,
-            "headline": "",
+            "headline": "3 Deeply Undervalued Stocks You Can Buy for Less Than $100 Right Now",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 91.75,
-            "ci_low": 49.49,
-            "ci_high": 160.92,
+            "expected_value": 90.5,
+            "ci_low": 49.37,
+            "ci_high": 151.66,
             "sentiment_score": 0.0,
             "headline": "3 factors that could prompt a summer stock market correction",
             "volatility_alert": false
