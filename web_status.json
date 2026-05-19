@@ -1,45 +1,45 @@
 {
-    "last_updated": "2026-05-19 04:53:40",
-    "execution_id": 1779180820.2662196,
+    "last_updated": "2026-05-19 05:00:52",
+    "execution_id": 1779181252.761978,
     "projections": {
         "TSLA": {
-            "expected_value": 192.96,
-            "ci_low": 109.02,
-            "ci_high": 324.7,
+            "expected_value": 195.08,
+            "ci_low": 106.02,
+            "ci_high": 327.9,
             "sentiment_score": 0.0,
             "headline": "SpaceX eyes 5-for-1 stock split as IPO takes shape",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.6,
-            "ci_low": 6.91,
-            "ci_high": 23.37,
+            "expected_value": 13.71,
+            "ci_low": 7.24,
+            "ci_high": 23.14,
             "sentiment_score": 0.273,
             "headline": "Ford Energy and EDF Sign Major Battery Storage Supply Deal",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 133.4,
-            "ci_low": 68.98,
-            "ci_high": 229.54,
+            "expected_value": 135.84,
+            "ci_low": 73.89,
+            "ci_high": 236.64,
             "sentiment_score": 0.599,
             "headline": "Exxon Mobil (XOM) Valuation Check As Legal Win And Strong Q1 Meet Rising Crude Prices",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.62,
-            "ci_low": 17.44,
-            "ci_high": 52.72,
+            "expected_value": 31.78,
+            "ci_low": 16.86,
+            "ci_high": 55.54,
             "sentiment_score": 0.0,
             "headline": "3 Deeply Undervalued Stocks You Can Buy for Less Than $100 Right Now",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 89.22,
-            "ci_low": 45.8,
-            "ci_high": 151.62,
-            "sentiment_score": -0.421,
-            "headline": "Stock market today: Dow, S&P 500, Nasdaq futures fall as inflation worries persist",
+            "expected_value": 90.99,
+            "ci_low": 47.88,
+            "ci_high": 161.99,
+            "sentiment_score": 0.0,
+            "headline": "Stock market today: Dow, S&P 500, Nasdaq futures hit pause in wait for Hormuz update",
             "volatility_alert": false
         }
     }
