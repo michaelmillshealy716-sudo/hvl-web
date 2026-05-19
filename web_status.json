@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-19 11:30:48",
-    "execution_id": 1779204648.43619,
+    "last_updated": "2026-05-19 11:38:11",
+    "execution_id": 1779205091.2826798,
     "projections": {
         "TSLA": {
-            "expected_value": 194.4,
-            "ci_low": 103.67,
-            "ci_high": 331.35,
+            "expected_value": 191.37,
+            "ci_low": 103.19,
+            "ci_high": 329.79,
             "sentiment_score": 0.0,
-            "headline": "",
+            "headline": "Trump's Big Tech trades while in office raise concerns",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.42,
+            "expected_value": 13.4,
             "ci_low": 7.14,
-            "ci_high": 23.19,
+            "ci_high": 22.88,
             "sentiment_score": -0.421,
             "headline": "How the Iran war is driving a renewable energy pivot",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 132.55,
-            "ci_low": 70.49,
-            "ci_high": 233.34,
+            "expected_value": 133.23,
+            "ci_low": 70.37,
+            "ci_high": 229.91,
             "sentiment_score": 0.178,
             "headline": "ExxonMobil vs Chevron: The Better Dividend Stock in an Uncertain Oil Market",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.25,
-            "ci_low": 16.67,
-            "ci_high": 53.9,
+            "expected_value": 30.43,
+            "ci_low": 16.77,
+            "ci_high": 50.14,
             "sentiment_score": -0.296,
             "headline": "Rate Cuts Are Off the Table. Here Are 2 Stocks Under $30 Built Exactly for This Moment",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 88.48,
-            "ci_low": 46.66,
-            "ci_high": 156.3,
+            "expected_value": 87.86,
+            "ci_low": 48.04,
+            "ci_high": 148.63,
             "sentiment_score": -0.625,
             "headline": "Oil reserves are dangerously low. Here's what happens next.",
             "volatility_alert": false
