@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-19 12:10:13",
-    "execution_id": 1779207013.1978817,
+    "last_updated": "2026-05-19 12:17:26",
+    "execution_id": 1779207446.5476637,
     "projections": {
         "TSLA": {
-            "expected_value": 201.69,
-            "ci_low": 101.95,
-            "ci_high": 353.96,
+            "expected_value": 201.58,
+            "ci_low": 108.68,
+            "ci_high": 333.62,
             "sentiment_score": 0.599,
             "headline": "Trump traded over $50 million in 'Magnificent 7' stocks last quarter, loading up on Apple and Google and selling Tesla",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.27,
-            "ci_low": 7.17,
-            "ci_high": 21.96,
+            "expected_value": 13.36,
+            "ci_low": 6.86,
+            "ci_high": 22.55,
             "sentiment_score": -0.421,
             "headline": "How the Iran war is driving a renewable energy pivot",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 132.04,
-            "ci_low": 68.91,
-            "ci_high": 226.03,
+            "expected_value": 129.44,
+            "ci_low": 71.25,
+            "ci_high": 212.89,
             "sentiment_score": 0.178,
             "headline": "ExxonMobil vs Chevron: The Better Dividend Stock in an Uncertain Oil Market",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.69,
-            "ci_low": 16.72,
-            "ci_high": 54.07,
+            "expected_value": 30.53,
+            "ci_low": 15.98,
+            "ci_high": 52.47,
             "sentiment_score": -0.296,
             "headline": "Rate Cuts Are Off the Table. Here Are 2 Stocks Under $30 Built Exactly for This Moment",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 89.05,
-            "ci_low": 46.29,
-            "ci_high": 152.89,
+            "expected_value": 89.15,
+            "ci_low": 49.72,
+            "ci_high": 148.91,
             "sentiment_score": -0.318,
             "headline": "The 10-year Treasury yield is moving the 'wrong way' for stocks",
             "volatility_alert": false
