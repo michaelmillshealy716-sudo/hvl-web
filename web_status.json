@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-19 10:55:54",
-    "execution_id": 1779202554.3962576,
+    "last_updated": "2026-05-19 10:57:59",
+    "execution_id": 1779202679.1719635,
     "projections": {
         "TSLA": {
-            "expected_value": 192.49,
-            "ci_low": 104.71,
-            "ci_high": 326.48,
+            "expected_value": 191.89,
+            "ci_low": 105.61,
+            "ci_high": 331.69,
             "sentiment_score": -0.226,
             "headline": "OpenAI prevails in Musk's lawsuit, paving the way for IPO",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.45,
-            "ci_low": 7.23,
-            "ci_high": 22.27,
+            "expected_value": 13.08,
+            "ci_low": 7.26,
+            "ci_high": 21.75,
             "sentiment_score": -0.421,
             "headline": "How the Iran war is driving a renewable energy pivot",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 130.3,
-            "ci_low": 67.3,
-            "ci_high": 218.18,
+            "expected_value": 130.47,
+            "ci_low": 67.85,
+            "ci_high": 224.9,
             "sentiment_score": 0.0,
             "headline": "Graphene Manufacturing Group inks global distribution deal with Curran International for THERMAL-XR",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.51,
-            "ci_low": 16.44,
-            "ci_high": 52.41,
+            "expected_value": 30.7,
+            "ci_low": 15.5,
+            "ci_high": 51.64,
             "sentiment_score": -0.296,
             "headline": "Rate Cuts Are Off the Table. Here Are 2 Stocks Under $30 Built Exactly for This Moment",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 88.12,
-            "ci_low": 45.05,
-            "ci_high": 150.02,
+            "expected_value": 87.76,
+            "ci_low": 45.51,
+            "ci_high": 150.62,
             "sentiment_score": -0.421,
             "headline": "How the Iran war is driving a renewable energy pivot",
             "volatility_alert": false
