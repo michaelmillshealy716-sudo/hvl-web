@@ -1,45 +1,45 @@
 {
-    "last_updated": "2026-05-19 14:28:32",
-    "execution_id": 1779215312.7437367,
+    "last_updated": "2026-05-19 14:35:44",
+    "execution_id": 1779215744.2502334,
     "projections": {
         "TSLA": {
-            "expected_value": 193.67,
-            "ci_low": 104.52,
-            "ci_high": 334.35,
+            "expected_value": 193.16,
+            "ci_low": 103.76,
+            "ci_high": 343.9,
             "sentiment_score": 0.0,
             "headline": "Tech stocks today: OpenAI co-founder Andrej Karpathy joins Anthropic",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.59,
-            "ci_low": 6.81,
-            "ci_high": 23.09,
+            "expected_value": 13.24,
+            "ci_low": 6.71,
+            "ci_high": 22.37,
             "sentiment_score": -0.421,
             "headline": "How the Iran war is driving a renewable energy pivot",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 131.1,
-            "ci_low": 70.22,
-            "ci_high": 221.94,
+            "expected_value": 128.08,
+            "ci_low": 69.43,
+            "ci_high": 217.56,
             "sentiment_score": 0.0,
             "headline": "Most Retirees Skip Over Vanguard\u2019s $100 Billion VYM Despite Its 2.9 Percent Yield and Almost Zero Maintenance",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 32.18,
-            "ci_low": 17.32,
-            "ci_high": 56.12,
+            "expected_value": 32.33,
+            "ci_low": 17.59,
+            "ci_high": 55.42,
             "sentiment_score": 0.521,
             "headline": "The SoFi CEO Just Bought 70,000 Shares With His Own Money. Here Are Four More Under $30 Worth a Closer Look",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 89.06,
-            "ci_low": 48.39,
-            "ci_high": 148.57,
-            "sentiment_score": -0.318,
-            "headline": "The 10-year Treasury yield is moving the 'wrong way' for stocks",
+            "expected_value": 89.92,
+            "ci_low": 47.9,
+            "ci_high": 158.59,
+            "sentiment_score": -0.296,
+            "headline": "Only 2 things could stop bond yields from climbing even higher",
             "volatility_alert": false
         }
     }
