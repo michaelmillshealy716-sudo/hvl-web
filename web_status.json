@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-19 11:05:58",
-    "execution_id": 1779203158.1704202,
+    "last_updated": "2026-05-19 11:08:01",
+    "execution_id": 1779203281.9824255,
     "projections": {
         "TSLA": {
-            "expected_value": 192.63,
-            "ci_low": 101.29,
-            "ci_high": 312.77,
+            "expected_value": 193.17,
+            "ci_low": 103.52,
+            "ci_high": 340.66,
             "sentiment_score": -0.226,
             "headline": "OpenAI prevails in Musk's lawsuit, paving the way for IPO",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.21,
-            "ci_low": 6.95,
-            "ci_high": 22.23,
+            "expected_value": 13.34,
+            "ci_low": 7.14,
+            "ci_high": 23.63,
             "sentiment_score": -0.421,
             "headline": "How the Iran war is driving a renewable energy pivot",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 132.04,
-            "ci_low": 72.77,
-            "ci_high": 224.48,
+            "expected_value": 129.37,
+            "ci_low": 69.57,
+            "ci_high": 221.61,
             "sentiment_score": 0.178,
             "headline": "ExxonMobil vs Chevron: The Better Dividend Stock in an Uncertain Oil Market",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.71,
-            "ci_low": 16.6,
-            "ci_high": 52.05,
+            "expected_value": 30.86,
+            "ci_low": 16.38,
+            "ci_high": 52.42,
             "sentiment_score": -0.296,
             "headline": "Rate Cuts Are Off the Table. Here Are 2 Stocks Under $30 Built Exactly for This Moment",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 89.47,
-            "ci_low": 49.75,
-            "ci_high": 150.5,
+            "expected_value": 89.14,
+            "ci_low": 47.66,
+            "ci_high": 154.27,
             "sentiment_score": -0.421,
             "headline": "How the Iran war is driving a renewable energy pivot",
             "volatility_alert": false
