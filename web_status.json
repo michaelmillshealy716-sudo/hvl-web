@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-19 12:37:05",
-    "execution_id": 1779208625.3491118,
+    "last_updated": "2026-05-19 12:39:09",
+    "execution_id": 1779208749.9653444,
     "projections": {
         "TSLA": {
-            "expected_value": 198.88,
-            "ci_low": 105.15,
-            "ci_high": 343.64,
-            "sentiment_score": 0.599,
-            "headline": "Trump traded over $50 million in 'Magnificent 7' stocks last quarter, loading up on Apple and Google and selling Tesla",
+            "expected_value": 195.02,
+            "ci_low": 104.5,
+            "ci_high": 330.58,
+            "sentiment_score": 0.0,
+            "headline": "Trump's Big Tech trades while in office raise concerns",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.43,
-            "ci_low": 6.93,
-            "ci_high": 23.47,
+            "expected_value": 13.34,
+            "ci_low": 7.04,
+            "ci_high": 23.43,
             "sentiment_score": -0.421,
             "headline": "How the Iran war is driving a renewable energy pivot",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 132.05,
-            "ci_low": 71.29,
-            "ci_high": 224.9,
+            "expected_value": 130.56,
+            "ci_low": 71.14,
+            "ci_high": 221.79,
             "sentiment_score": 0.178,
             "headline": "ExxonMobil vs Chevron: The Better Dividend Stock in an Uncertain Oil Market",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.52,
-            "ci_low": 16.42,
-            "ci_high": 52.14,
+            "expected_value": 31.37,
+            "ci_low": 16.99,
+            "ci_high": 54.09,
             "sentiment_score": -0.382,
             "headline": "Citi Initiates BridgeBio at Neutral: Why the Cardiomyopathy Story Isn\u2019t a Slam Dunk",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 89.24,
-            "ci_low": 49.04,
-            "ci_high": 149.87,
+            "expected_value": 88.09,
+            "ci_low": 48.17,
+            "ci_high": 154.0,
             "sentiment_score": -0.318,
             "headline": "The 10-year Treasury yield is moving the 'wrong way' for stocks",
             "volatility_alert": false
