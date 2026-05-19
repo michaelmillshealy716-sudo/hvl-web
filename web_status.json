@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-19 10:12:37",
-    "execution_id": 1779199957.9648125,
+    "last_updated": "2026-05-19 10:14:41",
+    "execution_id": 1779200081.254312,
     "projections": {
         "TSLA": {
-            "expected_value": 192.08,
-            "ci_low": 99.42,
-            "ci_high": 337.21,
+            "expected_value": 191.56,
+            "ci_low": 101.96,
+            "ci_high": 325.87,
             "sentiment_score": -0.226,
             "headline": "OpenAI prevails in Musk's lawsuit, paving the way for IPO",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.15,
-            "ci_low": 7.14,
-            "ci_high": 23.47,
+            "expected_value": 13.02,
+            "ci_low": 6.72,
+            "ci_high": 22.49,
             "sentiment_score": -0.421,
             "headline": "How the Iran war is driving a renewable energy pivot",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 129.53,
-            "ci_low": 69.22,
-            "ci_high": 225.09,
+            "expected_value": 129.56,
+            "ci_low": 68.92,
+            "ci_high": 231.35,
             "sentiment_score": 0.0,
             "headline": "The Zacks Analyst Blog Highlights Broadcom, Berkshire Hathaway, Exxon Mobil and Weyco",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.33,
-            "ci_low": 16.94,
-            "ci_high": 54.75,
+            "expected_value": 31.56,
+            "ci_low": 16.21,
+            "ci_high": 55.75,
             "sentiment_score": 0.0,
             "headline": "3 Deeply Undervalued Stocks You Can Buy for Less Than $100 Right Now",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 92.04,
-            "ci_low": 50.2,
-            "ci_high": 160.05,
+            "expected_value": 89.97,
+            "ci_low": 47.2,
+            "ci_high": 155.34,
             "sentiment_score": -0.103,
             "headline": "Stock market today: Dow, S&P 500, Nasdaq slide as rising bond yields maintain pressure, tech stocks retreat",
             "volatility_alert": false
