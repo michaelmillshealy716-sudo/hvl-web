@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-19 09:52:05",
-    "execution_id": 1779198725.3724308,
+    "last_updated": "2026-05-19 09:59:19",
+    "execution_id": 1779199159.2184482,
     "projections": {
         "TSLA": {
-            "expected_value": 201.9,
-            "ci_low": 109.8,
-            "ci_high": 352.61,
+            "expected_value": 200.22,
+            "ci_low": 107.12,
+            "ci_high": 332.64,
             "sentiment_score": 0.599,
             "headline": "Trump traded over $50 million in 'Magnificent 7' stocks last quarter, loading up on Apple and Google and selling Tesla",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.6,
-            "ci_low": 6.98,
-            "ci_high": 22.87,
+            "expected_value": 14.16,
+            "ci_low": 7.36,
+            "ci_high": 24.01,
             "sentiment_score": 0.361,
             "headline": "Ford Expands Energy Storage Push With EDF Deal",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 134.48,
-            "ci_low": 72.23,
-            "ci_high": 232.83,
+            "expected_value": 134.92,
+            "ci_low": 73.37,
+            "ci_high": 231.48,
             "sentiment_score": 0.599,
             "headline": "Exxon Mobil (XOM) Valuation Check As Legal Win And Strong Q1 Meet Rising Crude Prices",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.14,
-            "ci_low": 16.07,
-            "ci_high": 52.7,
+            "expected_value": 31.77,
+            "ci_low": 17.29,
+            "ci_high": 53.0,
             "sentiment_score": 0.0,
             "headline": "3 Deeply Undervalued Stocks You Can Buy for Less Than $100 Right Now",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 91.11,
-            "ci_low": 47.92,
-            "ci_high": 154.06,
+            "expected_value": 90.6,
+            "ci_low": 46.52,
+            "ci_high": 161.36,
             "sentiment_score": -0.103,
             "headline": "Stock market today: Dow, S&P 500, Nasdaq slide as rising bond yields maintain pressure, tech stocks retreat",
             "volatility_alert": false
