@@ -1,45 +1,45 @@
 {
-    "last_updated": "2026-05-19 05:00:52",
-    "execution_id": 1779181252.761978,
+    "last_updated": "2026-05-19 05:02:57",
+    "execution_id": 1779181377.2081492,
     "projections": {
         "TSLA": {
-            "expected_value": 195.08,
-            "ci_low": 106.02,
-            "ci_high": 327.9,
+            "expected_value": 195.54,
+            "ci_low": 105.59,
+            "ci_high": 353.68,
             "sentiment_score": 0.0,
             "headline": "SpaceX eyes 5-for-1 stock split as IPO takes shape",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.71,
-            "ci_low": 7.24,
-            "ci_high": 23.14,
+            "expected_value": 13.72,
+            "ci_low": 7.27,
+            "ci_high": 22.63,
             "sentiment_score": 0.273,
             "headline": "Ford Energy and EDF Sign Major Battery Storage Supply Deal",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 135.84,
-            "ci_low": 73.89,
-            "ci_high": 236.64,
+            "expected_value": 134.42,
+            "ci_low": 68.71,
+            "ci_high": 237.85,
             "sentiment_score": 0.599,
             "headline": "Exxon Mobil (XOM) Valuation Check As Legal Win And Strong Q1 Meet Rising Crude Prices",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.78,
-            "ci_low": 16.86,
-            "ci_high": 55.54,
+            "expected_value": 31.74,
+            "ci_low": 16.87,
+            "ci_high": 55.31,
             "sentiment_score": 0.0,
             "headline": "3 Deeply Undervalued Stocks You Can Buy for Less Than $100 Right Now",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 90.99,
-            "ci_low": 47.88,
-            "ci_high": 161.99,
+            "expected_value": 92.06,
+            "ci_low": 49.07,
+            "ci_high": 159.0,
             "sentiment_score": 0.0,
-            "headline": "Stock market today: Dow, S&P 500, Nasdaq futures hit pause in wait for Hormuz update",
+            "headline": "US\u2013Iran stalemate: A look at year-end oil price predictions",
             "volatility_alert": false
         }
     }
