@@ -1,45 +1,45 @@
 {
-    "last_updated": "2026-05-19 16:19:53",
-    "execution_id": 1779221993.1404042,
+    "last_updated": "2026-05-19 16:21:57",
+    "execution_id": 1779222117.1398652,
     "projections": {
         "TSLA": {
-            "expected_value": 194.41,
-            "ci_low": 104.67,
-            "ci_high": 344.47,
+            "expected_value": 193.98,
+            "ci_low": 103.09,
+            "ci_high": 334.24,
             "sentiment_score": 0.0,
             "headline": "Tech stocks today: OpenAI co-founder Andrej Karpathy joins Anthropic",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.33,
-            "ci_low": 7.37,
-            "ci_high": 23.13,
+            "expected_value": 13.36,
+            "ci_low": 7.1,
+            "ci_high": 23.41,
             "sentiment_score": -0.421,
             "headline": "How the Iran war is driving a renewable energy pivot",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 129.97,
-            "ci_low": 69.9,
-            "ci_high": 223.11,
+            "expected_value": 130.31,
+            "ci_low": 66.26,
+            "ci_high": 219.18,
             "sentiment_score": 0.0,
             "headline": "Most Retirees Skip Over Vanguard\u2019s $100 Billion VYM Despite Its 2.9 Percent Yield and Almost Zero Maintenance",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.33,
-            "ci_low": 17.09,
-            "ci_high": 53.43,
-            "sentiment_score": 0.0,
-            "headline": "",
+            "expected_value": 33.12,
+            "ci_low": 17.12,
+            "ci_high": 55.88,
+            "sentiment_score": 0.521,
+            "headline": "The SoFi CEO Just Bought 70,000 Shares With His Own Money. Here Are Four More Under $30 Worth a Closer Look",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 90.37,
-            "ci_low": 47.83,
-            "ci_high": 155.96,
-            "sentiment_score": 0.128,
-            "headline": "Trump threatened Iran with 'another big hit' amid peace talks",
+            "expected_value": 89.88,
+            "ci_low": 47.76,
+            "ci_high": 151.61,
+            "sentiment_score": 0.202,
+            "headline": "Treasury yields climb as bond market weighs inflation concerns",
             "volatility_alert": false
         }
     }
