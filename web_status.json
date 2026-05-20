@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-20 09:55:47",
-    "execution_id": 1779285347.0844116,
+    "last_updated": "2026-05-20 10:02:53",
+    "execution_id": 1779285773.8783991,
     "projections": {
         "TSLA": {
-            "expected_value": 190.99,
-            "ci_low": 104.98,
-            "ci_high": 327.45,
+            "expected_value": 193.17,
+            "ci_low": 101.9,
+            "ci_high": 332.63,
             "sentiment_score": -0.128,
             "headline": "Tech stocks today: Samsung strike talks break down, tech stocks bounce ahead of Nvidia earnings",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.17,
-            "ci_low": 7.21,
-            "ci_high": 21.67,
-            "sentiment_score": -0.421,
-            "headline": "How the Iran war is driving a renewable energy pivot",
+            "expected_value": 13.55,
+            "ci_low": 7.12,
+            "ci_high": 22.71,
+            "sentiment_score": 0.0,
+            "headline": "Henry Ford Upped Wages So Workers Became Consumers. The Rest Is History.",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 132.82,
-            "ci_low": 72.32,
-            "ci_high": 233.44,
+            "expected_value": 133.48,
+            "ci_low": 71.91,
+            "ci_high": 229.02,
             "sentiment_score": 0.421,
             "headline": "US Equity Futures Edge Higher Pre-Bell Amid Chip Sector Gains as Traders Await Nvidia Earnings",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 32.07,
-            "ci_low": 17.59,
-            "ci_high": 57.91,
-            "sentiment_score": 0.681,
-            "headline": "Value Stocks With Earnings Strength Post 3,500% Run Since 2000",
+            "expected_value": 31.54,
+            "ci_low": 16.36,
+            "ci_high": 54.57,
+            "sentiment_score": 0.0,
+            "headline": "How S&P Drug Titan Pfizer Plans To Outdo Its Own $6 Billion Franchise",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 92.1,
-            "ci_low": 47.15,
-            "ci_high": 152.38,
+            "expected_value": 91.15,
+            "ci_low": 45.33,
+            "ci_high": 160.75,
             "sentiment_score": 0.202,
             "headline": "Treasury yields climb as bond market weighs inflation concerns",
             "volatility_alert": false
