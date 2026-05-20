@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-20 11:46:03",
-    "execution_id": 1779291963.5520236,
+    "last_updated": "2026-05-20 11:53:17",
+    "execution_id": 1779292397.7431636,
     "projections": {
         "TSLA": {
-            "expected_value": 188.58,
-            "ci_low": 101.1,
-            "ci_high": 326.61,
+            "expected_value": 185.82,
+            "ci_low": 101.14,
+            "ci_high": 313.23,
             "sentiment_score": -0.66,
             "headline": "Tech stocks today: Samsung workers reportedly postpone strike that threatened to disrupt global chip supplies",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.46,
+            "expected_value": 13.58,
             "ci_low": 7.21,
-            "ci_high": 23.26,
+            "ci_high": 23.63,
             "sentiment_score": 0.0,
             "headline": "Henry Ford Upped Wages So Workers Became Consumers. The Rest Is History.",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 134.63,
-            "ci_low": 69.18,
-            "ci_high": 231.79,
+            "expected_value": 132.4,
+            "ci_low": 70.58,
+            "ci_high": 226.45,
             "sentiment_score": 0.421,
             "headline": "US Equity Futures Edge Higher Pre-Bell Amid Chip Sector Gains as Traders Await Nvidia Earnings",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.67,
-            "ci_low": 16.44,
-            "ci_high": 54.58,
+            "expected_value": 31.4,
+            "ci_low": 16.43,
+            "ci_high": 55.56,
             "sentiment_score": 0.0,
             "headline": "How S&P Drug Titan Pfizer Plans To Outdo Its Own $6 Billion Franchise",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 94.93,
-            "ci_low": 49.48,
-            "ci_high": 162.35,
+            "expected_value": 94.11,
+            "ci_low": 50.44,
+            "ci_high": 161.5,
             "sentiment_score": 0.691,
             "headline": "Stock market today: Dow, S&P 500, Nasdaq gain as oil prices fall, bond sell-off eases",
             "volatility_alert": false
