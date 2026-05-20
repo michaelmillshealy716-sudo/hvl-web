@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-20 10:37:52",
-    "execution_id": 1779287872.9706929,
+    "last_updated": "2026-05-20 10:45:06",
+    "execution_id": 1779288306.0270145,
     "projections": {
         "TSLA": {
-            "expected_value": 185.97,
-            "ci_low": 100.07,
-            "ci_high": 316.56,
+            "expected_value": 185.77,
+            "ci_low": 97.07,
+            "ci_high": 316.91,
             "sentiment_score": -0.66,
             "headline": "Tech stocks today: Samsung workers reportedly postpone strike that threatened to disrupt global chip supplies",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.85,
-            "ci_low": 7.63,
-            "ci_high": 22.9,
+            "expected_value": 13.72,
+            "ci_low": 7.12,
+            "ci_high": 23.49,
             "sentiment_score": 0.0,
             "headline": "Henry Ford Upped Wages So Workers Became Consumers. The Rest Is History.",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 136.87,
-            "ci_low": 71.16,
-            "ci_high": 228.98,
+            "expected_value": 133.77,
+            "ci_low": 70.91,
+            "ci_high": 227.89,
             "sentiment_score": 0.421,
             "headline": "US Equity Futures Edge Higher Pre-Bell Amid Chip Sector Gains as Traders Await Nvidia Earnings",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.25,
-            "ci_low": 16.16,
-            "ci_high": 54.7,
+            "expected_value": 31.47,
+            "ci_low": 17.23,
+            "ci_high": 53.93,
             "sentiment_score": 0.0,
             "headline": "How S&P Drug Titan Pfizer Plans To Outdo Its Own $6 Billion Franchise",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 91.69,
-            "ci_low": 49.57,
-            "ci_high": 158.97,
+            "expected_value": 91.22,
+            "ci_low": 49.11,
+            "ci_high": 160.99,
             "sentiment_score": 0.202,
             "headline": "Treasury yields climb as bond market weighs inflation concerns",
             "volatility_alert": false
