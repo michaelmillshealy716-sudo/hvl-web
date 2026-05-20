@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-20 08:09:40",
-    "execution_id": 1779278980.7670803,
+    "last_updated": "2026-05-20 08:11:45",
+    "execution_id": 1779279105.4280658,
     "projections": {
         "TSLA": {
-            "expected_value": 194.83,
-            "ci_low": 103.01,
-            "ci_high": 333.97,
+            "expected_value": 193.15,
+            "ci_low": 105.24,
+            "ci_high": 324.84,
             "sentiment_score": -0.128,
             "headline": "Tech stocks today: Samsung strike talks break down, tech stocks bounce ahead of Nvidia earnings",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.37,
-            "ci_low": 7.0,
-            "ci_high": 23.84,
+            "expected_value": 13.34,
+            "ci_low": 6.83,
+            "ci_high": 22.69,
             "sentiment_score": -0.421,
             "headline": "How the Iran war is driving a renewable energy pivot",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 134.29,
-            "ci_low": 75.44,
-            "ci_high": 223.85,
+            "expected_value": 134.99,
+            "ci_low": 71.44,
+            "ci_high": 245.79,
             "sentiment_score": 0.612,
             "headline": "ExxonMobil vs. Chevron: Better Energy Stock to Buy Now?",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 32.43,
-            "ci_low": 18.29,
-            "ci_high": 53.94,
+            "expected_value": 32.71,
+            "ci_low": 16.74,
+            "ci_high": 55.75,
             "sentiment_score": 0.681,
             "headline": "Value Stocks With Earnings Strength Post 3,500% Run Since 2000",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 91.11,
-            "ci_low": 48.45,
-            "ci_high": 160.34,
+            "expected_value": 91.43,
+            "ci_low": 46.69,
+            "ci_high": 156.28,
             "sentiment_score": 0.202,
             "headline": "Treasury yields climb as bond market weighs inflation concerns",
             "volatility_alert": false
