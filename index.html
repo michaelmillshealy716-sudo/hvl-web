@@ -3,104 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healy Vector Labs - FASE Telemetry</title>
+    <title>Healy Vector Labs | Quant Portfolio</title>
     <style>
-        body {
-            background-color: #0a0a0a;
-            color: #00ff00;
-            font-family: 'Courier New', Courier, monospace;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .container {
-            width: 100%;
-            max-width: 800px;
-        }
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 1px solid #00ff00;
-            padding-bottom: 10px;
-        }
-        .terminal {
-            background-color: #000;
-            border: 1px solid #333;
-            padding: 15px;
-            height: 400px;
-            overflow-y: auto;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
-        }
-        .line {
-            margin-bottom: 5px;
-            line-height: 1.4;
-        }
-        .glitch {
-            text-shadow: 2px 2px #ff003c, -2px -2px #00eaff;
-            animation: glitch 1s linear infinite;
-        }
-        @keyframes glitch {
-            2%, 64% { transform: translate(2px,0) skew(0deg); }
-            4%, 60% { transform: translate(-2px,0) skew(0deg); }
-            62% { transform: translate(0,0) skew(5deg); }
-        }
+        :root { --bg: #0d1117; --surface: #161b22; --border: #30363d; --text-main: #c9d1d9; --text-muted: #8b949e; }
+        body { background-color: var(--bg); color: var(--text-main); font-family: -apple-system, sans-serif; margin: 0; padding: 40px 20px; display: flex; flex-direction: column; align-items: center; }
+        .container { width: 100%; max-width: 1000px; }
+        .header { border-bottom: 1px solid var(--border); padding-bottom: 20px; margin-bottom: 30px; }
+        .header h1 { margin: 0; font-size: 28px; color: #ffffff; }
+        .header h3 { margin: 8px 0 0 0; font-size: 14px; color: var(--text-muted); text-transform: uppercase; }
+        .panel { background-color: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 24px; }
+        .terminal { height: 60vh; overflow-y: auto; font-family: 'SFMono-Regular', monospace; font-size: 13px; line-height: 1.6; }
+        .line { margin-bottom: 6px; }
+        .timestamp { color: var(--text-muted); margin-right: 12px; }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1 class="glitch">HEALY VECTOR LABS</h1>
-            <h3>FASE ENGINE TELEMETRY STREAM</h3>
+            <h1>Michael Healy</h1>
+            <h3>Lead Architect | Healy Vector Labs</h3>
         </div>
-        <div class="terminal" id="output">
-            </div>
+        <div class="panel">
+            <div class="terminal" id="output">Initializing stream...</div>
+        </div>
     </div>
-
     <script>
-        const terminalOutput = document.getElementById('output');
-        const FIREBASE_URL = "https://vector-labs-default-rtdb.firebaseio.com/fase_telemetry.json";
-        let lastData = null;
-
-        function updateTerminal(data) {
-            if (!data) return;
-
-            // Only update if the incoming data is different from the last pull
-            if (JSON.stringify(data) !== JSON.stringify(lastData)) {
-                lastData = data;
-                
-                const timestamp = new Date().toLocaleTimeString();
-                const logEntry = `[${timestamp}] ${data.message || JSON.stringify(data)}`;
-                
-                const line = document.createElement('div');
-                line.className = 'line';
-                line.textContent = logEntry;
-                
-                terminalOutput.appendChild(line);
-                
-                // Auto-scroll to the bottom of the terminal
-                terminalOutput.scrollTop = terminalOutput.scrollHeight;
-            }
-        }
-
-        async function fetchData() {
+        const output = document.getElementById('output');
+        const URL = "https://healy-vector-labs-default-rtdb.firebaseio.com/fase_telemetry.json";
+        async function update() {
             try {
-                const response = await fetch(FIREBASE_URL);
-                const data = await response.json();
-                updateTerminal(data);
-            } catch (error) {
-                console.error("Firebase Read Error:", error);
-            }
+                const res = await fetch(URL);
+                const data = await res.json();
+                if (data) {
+                    const time = new Date().toLocaleTimeString('en-US', { hour12: false });
+                    const entry = typeof data === 'object' ? JSON.stringify(data, null, 2) : data;
+                    output.innerHTML = `<div class="line"><span class="timestamp">[${time}]</span><pre style="display:inline;">${entry}</pre></div>`;
+                }
+            } catch (e) { output.textContent = "Error: " + e; }
         }
-
-        // Ping Firebase every 1000ms (1 second)
-        setInterval(fetchData, 1000);
-        
-        // Initial call to populate data immediately on load
-        fetchData();
+        setInterval(update, 2000);
+        update();
     </script>
 </body>
 </html>
-
