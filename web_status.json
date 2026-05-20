@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-20 05:55:32",
-    "execution_id": 1779270932.8005247,
+    "last_updated": "2026-05-20 05:57:35",
+    "execution_id": 1779271055.5875483,
     "projections": {
         "TSLA": {
-            "expected_value": 195.68,
-            "ci_low": 103.12,
-            "ci_high": 336.2,
+            "expected_value": 194.98,
+            "ci_low": 99.71,
+            "ci_high": 328.57,
             "sentiment_score": 0.0,
             "headline": "Tech stocks today: OpenAI co-founder Andrej Karpathy joins Anthropic",
             "volatility_alert": false
         },
         "F": {
             "expected_value": 13.27,
-            "ci_low": 7.04,
-            "ci_high": 22.72,
+            "ci_low": 7.06,
+            "ci_high": 23.15,
             "sentiment_score": -0.421,
             "headline": "How the Iran war is driving a renewable energy pivot",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 136.07,
-            "ci_low": 70.79,
-            "ci_high": 235.8,
+            "expected_value": 134.01,
+            "ci_low": 73.49,
+            "ci_high": 232.95,
             "sentiment_score": 0.612,
             "headline": "ExxonMobil vs. Chevron: Better Energy Stock to Buy Now?",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.99,
-            "ci_low": 17.68,
-            "ci_high": 53.34,
+            "expected_value": 31.24,
+            "ci_low": 16.9,
+            "ci_high": 52.64,
             "sentiment_score": 0.0,
             "headline": "How S&P Drug Titan Pfizer Plans To Outdo Its Own $6 Billion Franchise",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 90.76,
-            "ci_low": 49.12,
-            "ci_high": 158.91,
+            "expected_value": 91.54,
+            "ci_low": 48.78,
+            "ci_high": 165.42,
             "sentiment_score": 0.202,
             "headline": "Treasury yields climb as bond market weighs inflation concerns",
             "volatility_alert": false
