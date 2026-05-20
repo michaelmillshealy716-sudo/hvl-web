@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-20 04:39:27",
-    "execution_id": 1779266367.7096577,
+    "last_updated": "2026-05-20 04:41:30",
+    "execution_id": 1779266490.5087922,
     "projections": {
         "TSLA": {
-            "expected_value": 195.74,
-            "ci_low": 107.1,
-            "ci_high": 331.19,
+            "expected_value": 192.72,
+            "ci_low": 98.4,
+            "ci_high": 320.04,
             "sentiment_score": 0.0,
             "headline": "Tech stocks today: OpenAI co-founder Andrej Karpathy joins Anthropic",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.27,
-            "ci_low": 7.09,
-            "ci_high": 22.98,
+            "expected_value": 13.29,
+            "ci_low": 7.05,
+            "ci_high": 22.84,
             "sentiment_score": -0.421,
             "headline": "How the Iran war is driving a renewable energy pivot",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 135.35,
-            "ci_low": 69.15,
-            "ci_high": 232.44,
+            "expected_value": 135.02,
+            "ci_low": 70.17,
+            "ci_high": 229.54,
             "sentiment_score": 0.612,
             "headline": "ExxonMobil vs. Chevron: Better Energy Stock to Buy Now?",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.83,
-            "ci_low": 16.82,
-            "ci_high": 54.86,
+            "expected_value": 32.08,
+            "ci_low": 17.18,
+            "ci_high": 53.8,
             "sentiment_score": 0.521,
             "headline": "The SoFi CEO Just Bought 70,000 Shares With His Own Money. Here Are Four More Under $30 Worth a Closer Look",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 92.89,
-            "ci_low": 50.25,
-            "ci_high": 156.14,
+            "expected_value": 91.12,
+            "ci_low": 50.07,
+            "ci_high": 159.57,
             "sentiment_score": 0.202,
             "headline": "Treasury yields climb as bond market weighs inflation concerns",
             "volatility_alert": false
