@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-20 07:39:47",
-    "execution_id": 1779277187.4606228,
+    "last_updated": "2026-05-20 07:47:00",
+    "execution_id": 1779277620.9598987,
     "projections": {
         "TSLA": {
-            "expected_value": 192.01,
-            "ci_low": 101.79,
-            "ci_high": 335.25,
+            "expected_value": 190.78,
+            "ci_low": 98.7,
+            "ci_high": 320.74,
             "sentiment_score": -0.128,
             "headline": "Tech stocks today: Samsung strike talks break down, tech stocks bounce ahead of Nvidia earnings",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.33,
-            "ci_low": 7.22,
-            "ci_high": 22.69,
+            "expected_value": 13.3,
+            "ci_low": 6.78,
+            "ci_high": 22.42,
             "sentiment_score": -0.421,
             "headline": "How the Iran war is driving a renewable energy pivot",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 135.24,
-            "ci_low": 70.4,
-            "ci_high": 229.39,
+            "expected_value": 135.31,
+            "ci_low": 71.68,
+            "ci_high": 249.74,
             "sentiment_score": 0.612,
             "headline": "ExxonMobil vs. Chevron: Better Energy Stock to Buy Now?",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.03,
-            "ci_low": 16.36,
-            "ci_high": 51.72,
+            "expected_value": 31.38,
+            "ci_low": 16.88,
+            "ci_high": 54.47,
             "sentiment_score": 0.0,
             "headline": "How S&P Drug Titan Pfizer Plans To Outdo Its Own $6 Billion Franchise",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 91.61,
-            "ci_low": 50.71,
-            "ci_high": 156.51,
+            "expected_value": 90.47,
+            "ci_low": 49.17,
+            "ci_high": 148.51,
             "sentiment_score": 0.202,
             "headline": "Treasury yields climb as bond market weighs inflation concerns",
             "volatility_alert": false
