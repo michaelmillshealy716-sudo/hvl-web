@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-20 07:15:01",
-    "execution_id": 1779275701.6345923,
+    "last_updated": "2026-05-20 07:17:05",
+    "execution_id": 1779275825.99176,
     "projections": {
         "TSLA": {
-            "expected_value": 195.15,
-            "ci_low": 103.4,
-            "ci_high": 333.51,
+            "expected_value": 191.94,
+            "ci_low": 99.87,
+            "ci_high": 335.34,
             "sentiment_score": 0.0,
             "headline": "Tech stocks today: OpenAI co-founder Andrej Karpathy joins Anthropic",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.03,
-            "ci_low": 7.05,
-            "ci_high": 21.59,
+            "expected_value": 13.44,
+            "ci_low": 7.12,
+            "ci_high": 23.6,
             "sentiment_score": -0.421,
             "headline": "How the Iran war is driving a renewable energy pivot",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 134.83,
-            "ci_low": 73.47,
-            "ci_high": 234.47,
+            "expected_value": 133.14,
+            "ci_low": 70.39,
+            "ci_high": 221.16,
             "sentiment_score": 0.612,
             "headline": "ExxonMobil vs. Chevron: Better Energy Stock to Buy Now?",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.54,
-            "ci_low": 16.99,
-            "ci_high": 54.44,
+            "expected_value": 31.44,
+            "ci_low": 16.03,
+            "ci_high": 55.93,
             "sentiment_score": 0.0,
             "headline": "How S&P Drug Titan Pfizer Plans To Outdo Its Own $6 Billion Franchise",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 91.76,
-            "ci_low": 47.93,
-            "ci_high": 163.09,
+            "expected_value": 92.48,
+            "ci_low": 50.8,
+            "ci_high": 162.27,
             "sentiment_score": 0.202,
             "headline": "Treasury yields climb as bond market weighs inflation concerns",
             "volatility_alert": false
