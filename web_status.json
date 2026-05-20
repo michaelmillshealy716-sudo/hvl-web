@@ -1,45 +1,45 @@
 {
-    "last_updated": "2026-05-20 05:26:44",
-    "execution_id": 1779269204.7309337,
+    "last_updated": "2026-05-20 05:28:48",
+    "execution_id": 1779269328.715939,
     "projections": {
         "TSLA": {
-            "expected_value": 193.13,
-            "ci_low": 104.61,
-            "ci_high": 359.44,
+            "expected_value": 192.81,
+            "ci_low": 97.94,
+            "ci_high": 327.29,
             "sentiment_score": 0.0,
             "headline": "Tech stocks today: OpenAI co-founder Andrej Karpathy joins Anthropic",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.44,
-            "ci_low": 7.18,
-            "ci_high": 23.65,
+            "expected_value": 13.32,
+            "ci_low": 6.91,
+            "ci_high": 23.61,
             "sentiment_score": -0.421,
             "headline": "How the Iran war is driving a renewable energy pivot",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 135.56,
-            "ci_low": 73.42,
-            "ci_high": 227.49,
+            "expected_value": 134.76,
+            "ci_low": 70.22,
+            "ci_high": 227.3,
             "sentiment_score": 0.612,
             "headline": "ExxonMobil vs. Chevron: Better Energy Stock to Buy Now?",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 30.82,
-            "ci_low": 16.72,
-            "ci_high": 52.46,
+            "expected_value": 31.5,
+            "ci_low": 16.66,
+            "ci_high": 54.26,
             "sentiment_score": 0.0,
             "headline": "How S&P Drug Titan Pfizer Plans To Outdo Its Own $6 Billion Franchise",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 90.67,
-            "ci_low": 48.94,
-            "ci_high": 155.7,
-            "sentiment_score": 0.202,
-            "headline": "Treasury yields climb as bond market weighs inflation concerns",
+            "expected_value": 90.86,
+            "ci_low": 48.52,
+            "ci_high": 152.85,
+            "sentiment_score": 0.0,
+            "headline": "",
             "volatility_alert": false
         }
     }
