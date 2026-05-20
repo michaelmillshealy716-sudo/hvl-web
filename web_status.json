@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-20 12:06:46",
-    "execution_id": 1779293206.7962403,
+    "last_updated": "2026-05-20 12:08:51",
+    "execution_id": 1779293331.2218323,
     "projections": {
         "TSLA": {
-            "expected_value": 187.48,
-            "ci_low": 97.45,
-            "ci_high": 322.14,
+            "expected_value": 187.42,
+            "ci_low": 94.6,
+            "ci_high": 324.85,
             "sentiment_score": -0.66,
             "headline": "Tech stocks today: Samsung workers reportedly postpone strike that threatened to disrupt global chip supplies",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.9,
-            "ci_low": 7.24,
-            "ci_high": 24.3,
+            "expected_value": 13.89,
+            "ci_low": 7.46,
+            "ci_high": 23.41,
             "sentiment_score": 0.153,
             "headline": "How Toyota's Challenging U.S. Business Could Result in a New Ford Maverick Rival",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 132.82,
-            "ci_low": 71.37,
-            "ci_high": 229.76,
+            "expected_value": 131.43,
+            "ci_low": 69.31,
+            "ci_high": 227.2,
             "sentiment_score": 0.178,
             "headline": "Is Cenovus Poised to Gain From the Current Elevation in Crude Prices?",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.94,
-            "ci_low": 17.22,
-            "ci_high": 54.31,
+            "expected_value": 31.9,
+            "ci_low": 16.89,
+            "ci_high": 55.22,
             "sentiment_score": 0.382,
             "headline": "Pfizer Builds Oncology Growth Around Padcev and Pipeline Expansion",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 92.98,
-            "ci_low": 51.83,
-            "ci_high": 162.28,
+            "expected_value": 94.51,
+            "ci_low": 49.19,
+            "ci_high": 164.13,
             "sentiment_score": 0.691,
             "headline": "Stock market today: Dow, S&P 500, Nasdaq gain as oil prices fall, bond sell-off eases",
             "volatility_alert": false
