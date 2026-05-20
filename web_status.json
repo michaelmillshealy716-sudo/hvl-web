@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-20 05:11:16",
-    "execution_id": 1779268276.040043,
+    "last_updated": "2026-05-20 05:13:19",
+    "execution_id": 1779268399.7483442,
     "projections": {
         "TSLA": {
-            "expected_value": 195.69,
-            "ci_low": 102.48,
-            "ci_high": 355.68,
+            "expected_value": 193.72,
+            "ci_low": 102.08,
+            "ci_high": 323.59,
             "sentiment_score": 0.0,
             "headline": "Tech stocks today: OpenAI co-founder Andrej Karpathy joins Anthropic",
             "volatility_alert": false
         },
         "F": {
-            "expected_value": 13.33,
-            "ci_low": 7.06,
-            "ci_high": 22.61,
+            "expected_value": 13.21,
+            "ci_low": 7.2,
+            "ci_high": 22.05,
             "sentiment_score": -0.421,
             "headline": "How the Iran war is driving a renewable energy pivot",
             "volatility_alert": false
         },
         "XOM": {
-            "expected_value": 135.56,
-            "ci_low": 72.67,
-            "ci_high": 231.43,
+            "expected_value": 134.81,
+            "ci_low": 72.05,
+            "ci_high": 234.08,
             "sentiment_score": 0.612,
             "headline": "ExxonMobil vs. Chevron: Better Energy Stock to Buy Now?",
             "volatility_alert": false
         },
         "PFE": {
-            "expected_value": 31.99,
-            "ci_low": 17.03,
-            "ci_high": 55.57,
-            "sentiment_score": 0.521,
-            "headline": "The SoFi CEO Just Bought 70,000 Shares With His Own Money. Here Are Four More Under $30 Worth a Closer Look",
+            "expected_value": 31.2,
+            "ci_low": 16.83,
+            "ci_high": 54.34,
+            "sentiment_score": 0.0,
+            "headline": "How S&P Drug Titan Pfizer Plans To Outdo Its Own $6 Billion Franchise",
             "volatility_alert": false
         },
         "CL=F": {
-            "expected_value": 91.78,
-            "ci_low": 51.03,
-            "ci_high": 160.8,
+            "expected_value": 91.51,
+            "ci_low": 49.28,
+            "ci_high": 155.46,
             "sentiment_score": 0.202,
             "headline": "Treasury yields climb as bond market weighs inflation concerns",
             "volatility_alert": false
