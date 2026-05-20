@@ -3,220 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healy Vector Labs | Quantitative Telemetry Engineering</title>
+    <title>Healy Vector Labs - FASE Telemetry</title>
     <style>
-        :root {
-            --bg-body: #f4f7f9;
-            --bg-card: #ffffff;
-            --text-primary: #2c3e50;
-            --text-secondary: #6c757d;
-            --border-light: #e2e8f0;
-            --hvl-blue: #0f4c81;
-            --data-green: #198754;
-            --data-red: #dc3545;
-            --hvl-orange: #d97706;
-            --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        }
-
         body {
-            background-color: var(--bg-body);
-            color: var(--text-primary);
-            font-family: var(--font-main);
+            background-color: #0a0a0a;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
             margin: 0;
-            padding: 40px 20px;
+            padding: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            line-height: 1.6;
         }
-
-        .dashboard-container { width: 100%; max-width: 1200px; }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            border-bottom: 2px solid var(--hvl-blue);
-            padding-bottom: 20px;
-            margin-bottom: 25px;
+        .container {
+            width: 100%;
+            max-width: 800px;
         }
-
-        .header-title h1 { margin: 0; font-size: 2rem; font-weight: 700; letter-spacing: -0.5px; }
-        .header-title p { margin: 5px 0 0 0; color: var(--text-secondary); font-size: 0.95rem; }
-
-        .sync-status { text-align: right; font-size: 0.85rem; color: var(--text-secondary); }
-        .status-dot {
-            display: inline-block;
-            width: 8px;
-            height: 8px;
-            background-color: var(--hvl-orange);
-            border-radius: 50%;
-            margin-right: 6px;
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #00ff00;
+            padding-bottom: 10px;
         }
-
-        .upgrade-banner {
-            background-color: #fffbeb;
-            border: 1px solid #fef3c7;
-            border-left: 4px solid var(--hvl-orange);
-            border-radius: 6px;
-            padding: 20px;
-            margin-bottom: 35px;
+        .terminal {
+            background-color: #000;
+            border: 1px solid #333;
+            padding: 15px;
+            height: 400px;
+            overflow-y: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
         }
-        .upgrade-banner h2 { margin: 0 0 8px 0; font-size: 1.15rem; color: #92400e; font-weight: 700; letter-spacing: 0.5px; }
-        .upgrade-banner p { margin: 0; font-size: 0.95rem; color: #78350f; }
-
-        .grid { display: grid; grid-template-columns: 1fr; gap: 30px; }
-        @media (min-width: 950px) {
-            .grid { grid-template-columns: 1fr 1fr; }
+        .line {
+            margin-bottom: 5px;
+            line-height: 1.4;
         }
-
-        .card { background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 8px; padding: 30px; display: flex; flex-direction: column; justify-content: space-between; }
-        .card-header { font-size: 1.2rem; font-weight: 700; color: var(--hvl-blue); margin-bottom: 15px; padding-bottom: 10px; border-bottom: 1px solid var(--border-light); text-transform: uppercase; letter-spacing: 0.5px; }
-        
-        .tech-section { margin-bottom: 18px; font-size: 0.92rem; }
-        .section-title { font-weight: 700; color: var(--text-primary); text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.5px; margin-bottom: 6px; display: flex; align-items: center; }
-        .section-title::before { content: "▪ "; color: var(--hvl-blue); margin-right: 6px; font-size: 1rem; }
-        .section-text { color: var(--text-secondary); text-align: justify; margin: 0 0 10px 0; }
-
-        .feature-tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 15px 0; }
-        .tag { background: #f1f5f9; color: #475569; font-size: 0.72rem; font-weight: 600; padding: 4px 8px; border-radius: 4px; font-family: monospace; }
-
-        .data-display { background: #f8fafc; border: 1px solid var(--border-light); border-radius: 6px; padding: 15px; margin-top: auto; }
-        .data-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid #e2e8f0; font-size: 0.9rem; }
-        .data-row:last-child { border-bottom: none; }
-        .data-label { color: var(--text-secondary); font-weight: 500; }
-        .data-value { font-weight: 600; font-family: monospace; }
-        
-        .val-positive { color: var(--data-green); }
-        .val-neutral { color: var(--text-primary); }
-
-        .comparison-table { width: 100%; margin-top: 12px; border-collapse: collapse; font-size: 0.88rem; }
-        .comparison-table th { text-align: right; padding: 6px; color: var(--text-secondary); border-bottom: 2px solid var(--border-light); }
-        .comparison-table th:first-child { text-align: left; }
-        .comparison-table td { text-align: right; padding: 8px 6px; border-bottom: 1px solid #e2e8f0; font-family: monospace; font-weight: 600; }
-        .comparison-table td:first-child { text-align: left; font-family: var(--font-main); color: var(--text-secondary); }
+        .glitch {
+            text-shadow: 2px 2px #ff003c, -2px -2px #00eaff;
+            animation: glitch 1s linear infinite;
+        }
+        @keyframes glitch {
+            2%, 64% { transform: translate(2px,0) skew(0deg); }
+            4%, 60% { transform: translate(-2px,0) skew(0deg); }
+            62% { transform: translate(0,0) skew(5deg); }
+        }
     </style>
 </head>
 <body>
-
-    <div class="dashboard-container">
-        <header>
-            <div class="header-title">
-                <h1>HEALY VECTOR LABS</h1>
-                <p>Quantitative Telemetry Engineering & Predictive Modeling</p>
-            </div>
-            <div class="sync-status">
-                <div><span class="status-dot"></span><span>Infrastructure Migration Active</span></div>
-                <div style="margin-top: 4px; font-size: 0.8rem; font-weight: 600; color: var(--hvl-orange);">API V2.5 Cloud Decoupling</div>
-            </div>
-        </header>
-
-        <div class="upgrade-banner">
-            <h2>DEVELOPER NOTE: SYSTEMIC INFRASTRUCTURE UPGRADE</h2>
-            <p>HVL engine nodes are currently transitioning from edge-device file system caching to an institutional, high-throughput REST architecture integrated directly with **Google AI Studio SDK endpoints**. Local daemons are offline during deployment. Core analytical frameworks, strategic market implications, and systemic scalability parameters are detailed below.</p>
+    <div class="container">
+        <div class="header">
+            <h1 class="glitch">HEALY VECTOR LABS</h1>
+            <h3>FASE ENGINE TELEMETRY STREAM</h3>
         </div>
-
-        <div class="grid">
-            <div class="card">
-                <div>
-                    <div class="card-header">Veritas Core: Stochastic Variance Auditor</div>
-                    
-                    <div class="tech-section">
-                        <div class="section-title">Functional Overview</div>
-                        <p class="section-text">
-                            Maps real-time boxscore micro-metrics into an isolated, quantum-inspired Hamiltonian energy matrix. By monitoring structural performance velocity and state-vector entropy over a continuous domain, Veritas computes an active, predictive Sigmoid Strike Probability Index to capture severe inefficiencies before institutional books adjust.
-                        </p>
-                    </div>
-
-                    <div class="tech-section">
-                        <div class="section-title">Market Implications</div>
-                        <p class="section-text">
-                            <b>Alpha Generation via High-Variance Inefficiencies:</b> Traditional sports betting syndicates price markets using static historical distributions or trailing game data. Veritas isolates real-time behavioral and momentum shifts mid-flight. By capturing deviations where field velocity forces an asymmetric wave-function collapse, the engine uncovers heavily mispriced live derivatives, optimizing execution entry edges during highly volatile gameplay windows.
-                        </p>
-                    </div>
-
-                    <div class="tech-section">
-                        <div class="section-title">Scalability Vector</div>
-                        <p class="section-text">
-                            <b>Asynchronous Multi-Feed Event Auditing:</b> The current architecture operates at an $O(1)$ calculation complexity per state update. Scalability involves decoupling the ingestion loops via an enterprise message broker (Apache Kafka or RabbitMQ). This design allows a singular cloud worker thread to process parallel live streaming data feeds simultaneously for all active league fixtures without compromising latency bounds (&lt; 350ms).
-                        </p>
-                    </div>
-
-                    <div class="feature-tags">
-                        <span class="tag">Hamiltonian Energy Models</span>
-                        <span class="tag">Sigmoid Activation Matrix</span>
-                        <span class="tag">Message Broker Scaling</span>
-                        <span class="tag">Asymmetric Alpha Capture</span>
-                    </div>
-                </div>
-                
-                <div class="data-display">
-                    <div style="font-size: 0.8rem; font-weight: 700; color: var(--hvl-blue); margin-bottom: 8px; text-transform: uppercase;">Verified Ledger Execution (Game 6 Archive)</div>
-                    <div class="data-row"><span class="data-label">System Ingestion Latency</span><span class="data-value val-positive">312ms</span></div>
-                    <div class="data-row"><span class="data-label">Calculated Entropy State</span><span class="data-value">0.412 S</span></div>
-                    <table class="comparison-table">
-                        <thead><tr><th>Vector Field</th><th>MTL (Home)</th><th>BUF (Away)</th></tr></thead>
-                        <tbody>
-                            <tr><td>Hamiltonian (H)</td><td>1.3410</td><td>2.1094</td></tr>
-                            <tr><td>Collapse Matrix (&Psi;&sup2;)</td><td>61.42%</td><td>88.15%</td></tr>
-                            <tr><td style="font-weight:600;color:var(--text-primary)">Sigmoid Strike Index</td><td class="val-neutral">64.50%</td><td class="val-positive">94.20%</td></tr>
-                        </tbody>
-                    </table>
-                </div>
+        <div class="terminal" id="output">
             </div>
-
-            <div class="card">
-                <div>
-                    <div class="card-header">FASE Core: Geopolitical Stochastic Engine</div>
-                    
-                    <div class="tech-section">
-                        <div class="section-title">Functional Overview</div>
-                        <p class="section-text">
-                            Scrapes streaming unstructured news headlines from core financial tickers, processing linguistic vectors into a VADER natural language sentiment scalar array. These weights are programmatically injected into a Geometric Brownian Motion (GBM) simulation loop, running 500-path Monte Carlo evaluations to map out rigorous 95% confidence intervals.
-                        </p>
-                    </div>
-
-                    <div class="tech-section">
-                        <div class="section-title">Market Implications</div>
-                        <p class="section-text">
-                            <b>Parametric Pricing Under Macro Asymmetry:</b> Geopolitical and institutional news events trigger violent, non-linear velocity spikes in underlying spot prices. FASE directly translates unstructured breaking text metadata into immediate mathematical parameters. This bypasses structural algorithmic lagging indicators, allowing instant recalculation of fair-value options pricing models and directional futures trends before market sentiment reaches structural equilibrium.
-                        </p>
-                    </div>
-
-                    <div class="tech-section">
-                        <div class="section-title">Scalability Vector</div>
-                        <p class="section-text">
-                            <b>SDK-Driven Multi-Asset Parallelization:</b> Migrating edge scripts to the native Google AI Studio SDK enables high-throughput token processing via serverless concurrent API calls. System horizontal scalability supports expanding the active asset pooling grid from 5 baseline equities/commodities to over 100+ highly liquid vectors, dynamically feeding a live risk-management circuit breaker matrix.
-                        </p>
-                    </div>
-
-                    <div class="feature-tags">
-                        <span class="tag">NLP Token Processing</span>
-                        <span class="tag">Geometric Brownian Motion</span>
-                        <span class="tag">Monte Carlo Pathing</span>
-                        <span class="tag">Google AI Studio Pipeline</span>
-                    </div>
-                </div>
-
-                <div class="data-display">
-                    <div style="font-size: 0.8rem; font-weight: 700; color: var(--hvl-blue); margin-bottom: 12px; text-transform: uppercase;">Stochastic Modeling Matrices (Static Snapshot)</div>
-                    
-                    <div style="margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px dashed #e2e8f0;">
-                        <div style="display: flex; justify-content: space-between; font-weight: 700; font-size: 0.9rem;"><span>$TSLA (Spot Baseline)</span><span class="val-positive">Polar Scalar: +0.412</span></div>
-                        <div class="data-row"><span class="data-label">1-Yr Expected Value</span><span class="data-value">$182.40</span></div>
-                        <div class="data-row"><span class="data-label">95% Confidence Bounds</span><span class="data-value" style="font-weight: 400; color: var(--text-secondary);">$161.20 — $204.50</span></div>
-                    </div>
-
-                    <div>
-                        <div style="display: flex; justify-content: space-between; font-weight: 700; font-size: 0.9rem;"><span>$CL=F (Crude Oil Futures)</span><span style="color: var(--text-primary);">Polar Scalar: 0.000</span></div>
-                        <div class="data-row"><span class="data-label">1-Yr Expected Value</span><span class="data-value">$84.15</span></div>
-                        <div class="data-row"><span class="data-label">95% Confidence Bounds</span><span class="data-value" style="font-weight: 400; color: var(--text-secondary);">$78.40 — $91.35</span></div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
+    <script>
+        const terminalOutput = document.getElementById('output');
+        const FIREBASE_URL = "https://vector-labs-default-rtdb.firebaseio.com/fase_telemetry.json";
+        let lastData = null;
+
+        function updateTerminal(data) {
+            if (!data) return;
+
+            // Only update if the incoming data is different from the last pull
+            if (JSON.stringify(data) !== JSON.stringify(lastData)) {
+                lastData = data;
+                
+                const timestamp = new Date().toLocaleTimeString();
+                const logEntry = `[${timestamp}] ${data.message || JSON.stringify(data)}`;
+                
+                const line = document.createElement('div');
+                line.className = 'line';
+                line.textContent = logEntry;
+                
+                terminalOutput.appendChild(line);
+                
+                // Auto-scroll to the bottom of the terminal
+                terminalOutput.scrollTop = terminalOutput.scrollHeight;
+            }
+        }
+
+        async function fetchData() {
+            try {
+                const response = await fetch(FIREBASE_URL);
+                const data = await response.json();
+                updateTerminal(data);
+            } catch (error) {
+                console.error("Firebase Read Error:", error);
+            }
+        }
+
+        // Ping Firebase every 1000ms (1 second)
+        setInterval(fetchData, 1000);
+        
+        // Initial call to populate data immediately on load
+        fetchData();
+    </script>
 </body>
 </html>
 
