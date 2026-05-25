@@ -9,7 +9,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap');
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #0a0a0a; /* Deep OLED Black */
+            background-color: #0a0a0a;
             color: #e5e5e5;
         }
         .font-mono { font-family: 'JetBrains Mono', monospace; }
@@ -18,10 +18,10 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
         }
-        /* Neon accents for the quantitative edge */
         .text-neon-blue { color: #3b82f6; }
         .text-neon-red { color: #ef4444; }
         .text-neon-yellow { color: #eab308; }
+        .text-neon-green { color: #22c55e; }
     </style>
 </head>
 <body class="antialiased selection:bg-blue-500 selection:text-white">
@@ -32,39 +32,56 @@
         <div class="h-1 w-16 bg-blue-600 mt-6 mb-8"></div>
     </header>
 
-    <section class="max-w-5xl mx-auto px-6 mb-16">
-        <h3 class="text-sm font-mono text-gray-500 mb-4 tracking-widest uppercase">// LIVE: FASE V4.3 Arbitrage Engine</h3>
+    <section class="max-w-5xl mx-auto px-6 mb-16 space-y-8">
         
-        <div class="glass-panel rounded-lg p-6 shadow-2xl">
-            <div class="flex justify-between items-center border-b border-gray-800 pb-4 mb-4">
-                <div class="font-mono text-lg">
-                    <span>MACRO GAP: </span>
-                    <span class="text-neon-blue font-bold">USO</span> vs <span class="text-neon-red font-bold">XOM</span>
+        <div>
+            <h3 class="text-sm font-mono text-gray-500 mb-4 tracking-widest uppercase">// LIVE: FASE V4.3 Arbitrage Engine</h3>
+            <div class="glass-panel rounded-lg p-6 shadow-2xl">
+                <div class="flex justify-between items-center border-b border-gray-800 pb-4 mb-4">
+                    <div class="font-mono text-lg">
+                        <span>MACRO GAP: </span>
+                        <span class="text-neon-blue font-bold">USO</span> vs <span class="text-neon-red font-bold">XOM</span>
+                    </div>
+                    <div class="font-mono text-right">
+                        <span class="text-gray-500 text-sm">ARBITRAGE DELTA</span><br>
+                        <span id="arb-delta" class="text-2xl font-bold text-white">Loading...</span>
+                    </div>
                 </div>
-                <div class="font-mono text-right">
-                    <span class="text-gray-500 text-sm">ARBITRAGE DELTA</span><br>
-                    <span id="arb-delta" class="text-2xl font-bold text-white">Loading...</span>
-                </div>
-            </div>
 
-            <div class="overflow-x-auto">
-                <table class="w-full text-left font-mono text-sm">
-                    <thead>
-                        <tr class="text-gray-500 border-b border-gray-800">
-                            <th class="pb-2">TICKER</th>
-                            <th class="pb-2">PRICE</th>
-                            <th class="pb-2">Z-SCORE</th>
-                            <th class="pb-2">VOL(%)</th>
-                            <th class="pb-2 text-right">REGIME</th>
-                        </tr>
-                    </thead>
-                    <tbody id="fleet-hud-body">
-                        <tr><td colspan="5" class="py-4 text-center text-gray-600">Establishing uplink to FASE API...</td></tr>
-                    </tbody>
-                </table>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left font-mono text-sm">
+                        <thead>
+                            <tr class="text-gray-500 border-b border-gray-800">
+                                <th class="pb-2">TICKER</th>
+                                <th class="pb-2">PRICE</th>
+                                <th class="pb-2">Z-SCORE</th>
+                                <th class="pb-2">VOL(%)</th>
+                                <th class="pb-2 text-right">REGIME</th>
+                            </tr>
+                        </thead>
+                        <tbody id="fleet-hud-body">
+                            <tr><td colspan="5" class="py-4 text-center text-gray-600">Establishing uplink to FASE API (Check CORS/Localhost)...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-4 text-xs text-gray-600 text-right font-mono" id="last-update">Standing By.</div>
             </div>
-            <div class="mt-4 text-xs text-gray-600 text-right font-mono" id="last-update">Standing By.</div>
         </div>
+
+        <div>
+            <h3 class="text-sm font-mono text-gray-500 mb-4 tracking-widest uppercase">// LIVE: FASE Euler Intrinsic Filter</h3>
+            <div class="glass-panel rounded-lg p-6 shadow-2xl bg-black/50 border border-gray-800">
+                <div class="font-mono text-sm text-gray-400 mb-2 border-b border-gray-800 pb-2">
+                    > EULER_INTRINSIC.PY [FFT NOISE REDUCTION ACTIVE]
+                </div>
+                <div id="euler-output" class="font-mono text-sm text-neon-green whitespace-pre-wrap h-32 overflow-y-auto">
+> Awaiting data stream from Euler engine...
+> ...
+> ...
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <section class="max-w-5xl mx-auto px-6 mb-20">
@@ -93,7 +110,7 @@
                     </p>
                 </div>
 
-                <div>
+                 <div>
                     <h4 class="text-xl font-bold text-white">Financial Markets Operations</h4>
                     <div class="flex justify-between items-center text-gray-500 text-sm font-mono mt-1 mb-3">
                         <span>Quant Strategist</span>
@@ -114,18 +131,17 @@
     <script>
         async function fetchFaseData() {
             try {
-                // IMPORTANT: Replace this URL with your deployed backend URL if not running locally
+                // NOTE: If testing locally on your phone, this works. 
+                // If deployed to Firebase, you must replace this with a live HTTPS backend URL.
                 const response = await fetch('http://127.0.0.1:8000/api/v1/fase-data');
                 const data = await response.json();
 
                 if (data.error) return;
 
-                // Update Delta
                 document.getElementById('arb-delta').innerText = `${data.macro_gap.arbitrage_delta.toFixed(4)} σ`;
 
-                // Update Table
                 const tbody = document.getElementById('fleet-hud-body');
-                tbody.innerHTML = ''; // Clear loading text
+                tbody.innerHTML = '';
                 
                 data.fleet_hud.forEach(item => {
                     const zColor = item.z_score > 0 ? 'text-green-400' : (item.z_score < 0 ? 'text-red-400' : 'text-gray-400');
@@ -144,11 +160,10 @@
                 document.getElementById('last-update').innerText = `Last Uplink: ${data.timestamp}`;
 
             } catch (error) {
-                console.error("FASE API Offline or Unreachable.", error);
+                console.error("API Fetch Error:", error);
             }
         }
 
-        // Fetch immediately, then refresh every 60 seconds
         fetchFaseData();
         setInterval(fetchFaseData, 60000);
     </script>
