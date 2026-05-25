@@ -119,7 +119,8 @@
         async function fetchFaseData() {
             try {
                 // --- CRITICAL: REPLACE THIS URL AFTER BACKEND DEPLOYMENT ---
-                const response = await fetch('YOUR_PRODUCTION_API_URL/api/v1/fase-data');
+                const response = await fetch(const API_BASE_URL = "https://twice-proposal-activists-trucks.trycloudflare.com";
+
                 const data = await response.json();
 
                 if (data.error) return;
