@@ -116,11 +116,13 @@
     </footer>
 
     <script>
+        // --- LIVE CLOUDFLARE UPLINK ---
+        const API_BASE_URL = "https://twice-proposal-activists-trucks.trycloudflare.com"; 
+
         async function fetchFaseData() {
             try {
-                // --- CRITICAL: REPLACE THIS URL AFTER BACKEND DEPLOYMENT ---
-                const response = await fetch(const API_BASE_URL = "https://twice-proposal-activists-trucks.trycloudflare.com";
-
+                // FIXED: The fetch command now dynamically pulls the API_BASE_URL variable using backticks
+                const response = await fetch(`${API_BASE_URL}/api/v1/fase-data`);
                 const data = await response.json();
 
                 if (data.error) return;
@@ -135,4 +137,20 @@
                             <td class="py-3 text-white font-bold">${item.ticker}</td>
                             <td class="py-3">$${item.price.toFixed(2)}</td>
                             <td class="py-3 ${zColor}">${item.z_score.toFixed(2)}</td>
+                            <td class="py-3 text-neon-yellow">${item.vol_pct.toFixed(2)}%</td>
+                            <td class="py-3 text-right">${item.regime}</td>
+                        </tr>`;
+                    tbody.insertAdjacentHTML('beforeend', row);
+                });
+                document.getElementById('last-update').innerText = `Last Uplink: ${data.timestamp}`;
+            } catch (error) {
+                console.error("API UPLINK FAILED: Check Cloudflare Tunnel.");
+            }
+        }
+        
+        fetchFaseData();
+        setInterval(fetchFaseData, 60000);
+    </script>
+</body>
+</html>
 
