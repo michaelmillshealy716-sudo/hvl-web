@@ -149,7 +149,34 @@
         }
         
         fetchFaseData();
+async function fetchEulerData() {
+    try {
+        const response = await fetch("https://healy-vector-labs-default-rtdb.firebaseio.com/fase_telemetry.json");
+        const data = await response.json();
+        
+        const eulerBox = document.getElementById('euler-output');
+        if (!eulerBox) return; // Stop if the div isn't there
+
+        eulerBox.innerHTML = `<h3 class="text-xs font-mono text-gray-500 mb-2 underline">EULER INTRINSIC FEED</h3>`;
+        
+        // Loop through the projections object in the JSON
+        for (const [ticker, proj] of Object.entries(data.projections)) {
+            const color = proj.sentiment_score > 0 ? 'text-green-400' : 'text-red-400';
+            eulerBox.innerHTML += `
+                <div class="flex justify-between text-xs font-mono mb-1">
+                    <span>${ticker}</span>
+                    <span class="${color}">$${proj.expected_value}</span>
+                </div>`;
+        }
+    } catch (error) {
+        console.error("Euler Bridge Failed", error);
+    }
+}
         setInterval(fetchFaseData, 60000);
+// Add these to actually trigger the function
+fetchEulerData(); 
+setInterval(fetchEulerData, 10000); // Refreshes every 10 seconds
+
     </script>
 </body>
 </html>
