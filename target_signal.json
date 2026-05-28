@@ -1,8 +1,8 @@
 {
-    "timestamp": "2026-05-27 18:46:07",
-    "current_spot": 74544.75997554,
-    "projected_settlement": 74717.23702705782,
-    "seconds_to_settlement": 832.945717,
+    "timestamp": "2026-05-28 05:14:08",
+    "current_spot": 73184.423639215,
+    "projected_settlement": 73743.72369566739,
+    "seconds_to_settlement": 2751.241457,
     "status": "VALID",
-    "galois_lock": true
+    "galois_lock": false
 }
