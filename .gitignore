@@ -4,6 +4,7 @@
 __pycache__/
 .DS_Store
 *.csv
+*.pem
 series_history.json
 
 # Only allow web framework files to be pushed
