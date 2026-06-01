@@ -2,19 +2,24 @@
 *.py
 *.pyc
 __pycache__/
+.pycache_compile/
 .DS_Store
 *.csv
 *.pem
-series_history.json
+*.jsonl
+.env
+secrets/
+data/private/
+hvl_bundle.md
+.firebase/
 
-# Only allow web framework files to be pushed
+# Only allow safe web/config files to be pushed
 !.gitignore
-!index.html
-!web_status.json
-!score_status.json
-
-
-# HVL Telemetry Exemptions
-!live_score.json
-!web_status.json
-!index.html
+!.env.example
+!firebase.json
+!.firebaserc
+!.gitattributes
+!web/
+!web/**
+!web/data/
+!web/data/public_feed.json

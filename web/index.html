@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healy Vector Labs | Quantitative Systems Showcase</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #070707; color: #e5e5e5; }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+        .glass-panel { background: rgba(255, 255, 255, 0.035); border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); }
+        .accent { color: #38bdf8; }
+    </style>
+</head>
+<body class="antialiased selection:bg-sky-500 selection:text-white">
+    <header class="max-w-6xl mx-auto pt-14 px-6">
+        <p class="font-mono text-xs uppercase tracking-[0.35em] text-gray-500">AI Architecture / Quant Systems / Sanitized Telemetry</p>
+        <h1 class="mt-4 text-4xl md:text-6xl font-extrabold tracking-tight text-white">Healy Vector Labs</h1>
+        <p class="mt-4 max-w-3xl text-gray-400 leading-relaxed">
+            Healy Vector Labs designs production-minded AI and quantitative decision systems. This public site shows working research engines, explainable risk controls, and sanitized telemetry as proof-of-work without exposing source code, private journals, keys, bridge files, or live broker payloads.
+        </p>
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-3 max-w-4xl">
+            <div class="glass-panel rounded-lg p-4">
+                <p class="font-mono text-xs text-sky-300 uppercase">Architecture</p>
+                <p class="mt-2 text-sm text-gray-400">Systems that separate signal generation, runtime safety, and public reporting.</p>
+            </div>
+            <div class="glass-panel rounded-lg p-4">
+                <p class="font-mono text-xs text-sky-300 uppercase">Quant Research</p>
+                <p class="mt-2 text-sm text-gray-400">Paper engines for regime detection, simulation, and market-structure review.</p>
+            </div>
+            <div class="glass-panel rounded-lg p-4">
+                <p class="font-mono text-xs text-sky-300 uppercase">Explainability</p>
+                <p class="mt-2 text-sm text-gray-400">Plain-English labels that make complex telemetry legible to non-quants.</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-12 space-y-8">
+        <section class="grid grid-cols-1 md:grid-cols-4 gap-4" id="status-cards">
+            <article class="glass-panel rounded-xl p-5">
+                <p class="font-mono text-xs text-gray-500 uppercase">Feed</p>
+                <h2 id="feed-status" class="mt-2 text-xl font-bold text-white">Loading snapshot</h2>
+                <p id="last-updated" class="mt-2 text-sm text-gray-500">Awaiting sanitized static feed.</p>
+            </article>
+            <article class="glass-panel rounded-xl p-5">
+                <p class="font-mono text-xs text-gray-500 uppercase">BTC Router</p>
+                <h2 id="btc-trades" class="mt-2 text-xl font-bold text-white">0 trades</h2>
+                <p id="btc-pnl" class="mt-2 text-sm text-gray-500">Paper PnL unavailable.</p>
+            </article>
+            <article class="glass-panel rounded-xl p-5">
+                <p class="font-mono text-xs text-gray-500 uppercase">Kalshi</p>
+                <h2 id="kalshi-events" class="mt-2 text-xl font-bold text-white">0 events</h2>
+                <p id="kalshi-modes" class="mt-2 text-sm text-gray-500">Paper engines.</p>
+            </article>
+            <article class="glass-panel rounded-xl p-5">
+                <p class="font-mono text-xs text-gray-500 uppercase">Entropy</p>
+                <h2 id="entropy" class="mt-2 text-xl font-bold text-white">n/a</h2>
+                <p class="mt-2 text-sm text-gray-500">FASE / Veritas signal health.</p>
+            </article>
+        </section>
+
+        <section class="glass-panel rounded-xl p-6" id="kalshi-btc-radar">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 border-b border-white/10 pb-4 mb-5">
+                <div>
+                    <p class="font-mono text-xs text-gray-500 uppercase">Kalshi BTC Regime Alpha Radar</p>
+                    <h2 class="mt-2 text-2xl font-bold text-white">Regime Engine Paper Snapshot</h2>
+                <p class="mt-2 text-sm text-gray-500">A sanitized, delayed snapshot from the Kalshi regime engine showing macro gates, impulse context, Laplace/Fourier diagnostics, paper PnL, and API health. No live order payloads exposed.</p>
+                </div>
+                <span id="btc-regime-badge" class="font-mono text-xs px-3 py-1 rounded-full bg-gray-500/10 text-gray-300 border border-gray-500/20">Loading</span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-3 mb-5 text-sm">
+                <div class="rounded-lg border border-white/10 bg-black/20 p-3">
+                    <p class="font-mono text-xs text-gray-500 uppercase">Macro Gate</p>
+                    <p class="mt-1 text-gray-400">Regime state, allowed side, and confirmation count before paper entries.</p>
+                </div>
+                <div class="rounded-lg border border-white/10 bg-black/20 p-3">
+                    <p class="font-mono text-xs text-gray-500 uppercase">Impulse</p>
+                    <p class="mt-1 text-gray-400">5m, 10m, and 20m spot deltas used to qualify movement.</p>
+                </div>
+                <div class="rounded-lg border border-white/10 bg-black/20 p-3">
+                    <p class="font-mono text-xs text-gray-500 uppercase">Laplace / Fourier</p>
+                    <p class="mt-1 text-gray-400">Compact drift and slope diagnostics from the newest engine.</p>
+                </div>
+                <div class="rounded-lg border border-white/10 bg-black/20 p-3">
+                    <p class="font-mono text-xs text-gray-500 uppercase">Reversion</p>
+                    <p class="mt-1 text-gray-400">Strike distance and reversal readiness without exposing raw internals.</p>
+                </div>
+                <div class="rounded-lg border border-white/10 bg-black/20 p-3">
+                    <p class="font-mono text-xs text-gray-500 uppercase">API Health</p>
+                    <p class="mt-1 text-gray-400">Request, retry, cache, and orderbook status for the sanitized feed.</p>
+                </div>
+            </div>
+            <div id="kalshi-btc-content" class="grid grid-cols-1 lg:grid-cols-3 gap-5"></div>
+        </section>
+
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <article class="glass-panel rounded-xl p-6 lg:col-span-2">
+                <div class="flex items-center justify-between gap-4 border-b border-white/10 pb-4 mb-5">
+                    <div>
+                        <p class="font-mono text-xs text-gray-500 uppercase">FASE / Euler Intrinsic Filter</p>
+                        <h2 class="text-2xl font-bold text-white">Sentiment-Adjusted Simulation</h2>
+                        <p class="mt-2 text-sm text-gray-500">A research layer that combines projection cards, confidence intervals, volatility flags, and Euler/FFT-style smoothing ideas to separate signal from noise.</p>
+                    </div>
+                    <span class="font-mono text-xs px-3 py-1 rounded-full bg-sky-500/10 text-sky-300 border border-sky-500/20">Research support</span>
+                </div>
+                <div id="fase-euler-summary" class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-5"></div>
+                <div id="projection-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+            </article>
+
+            <article class="glass-panel rounded-xl p-6">
+                <p class="font-mono text-xs text-gray-500 uppercase">Recent Series</p>
+                <h2 class="mt-2 text-2xl font-bold text-white">Strike / Entropy Trace</h2>
+                <p class="mt-2 text-sm text-gray-500">Compact time-series evidence for signal health, shown without raw engine internals.</p>
+                <div id="series-list" class="mt-5 space-y-3 max-h-96 overflow-y-auto"></div>
+            </article>
+        </section>
+
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <article class="glass-panel rounded-xl p-6 lg:col-span-2">
+                <div class="border-b border-white/10 pb-4 mb-5">
+                    <p class="font-mono text-xs text-gray-500 uppercase">Arbitrage / Inverse Arb</p>
+                    <h2 class="text-2xl font-bold text-white">Macro Gap And Reversal Review</h2>
+                    <p class="mt-2 text-sm text-gray-500">A companion capability for monitoring pair dislocations, inverse-arbitrage setups, and fleet-level opportunity summaries. Dedicated public feed fields arrive in the next stage; the panel stays visible so this engine is not treated as legacy debris.</p>
+                </div>
+                <div id="arbitrage-summary" class="grid grid-cols-1 md:grid-cols-3 gap-4"></div>
+            </article>
+            <article class="glass-panel rounded-xl p-6">
+                <div>
+                    <p class="font-mono text-xs text-gray-500 uppercase">Showcase Boundaries</p>
+                    <h2 class="mt-2 text-2xl font-bold text-white">What This Site Claims</h2>
+                    <p class="mt-3 text-sm text-gray-400 leading-relaxed">This is a public proof surface for architecture, telemetry design, and quantitative reasoning. It does not advertise live execution, financial advice, or guaranteed predictive performance.</p>
+                </div>
+                <div id="engine-grid" class="mt-5 grid grid-cols-1 gap-4"></div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="border-t border-gray-900 py-8 text-center text-gray-600 font-mono text-xs">
+        &copy; 2026 HEALY VECTOR LABS. Public feed is a delayed/simulated sanitized snapshot.
+    </footer>
+
+    <script>
+        const FEED_URL = './data/public_feed.json';
+
+        const fmt = (value, suffix = '') => value === null || value === undefined ? 'n/a' : `${value}${suffix}`;
+        const money = value => value === null || value === undefined ? 'n/a' : `$${Number(value).toFixed(2)}`;
+        const dollars = value => value === null || value === undefined ? 'n/a' : `$${Number(value).toLocaleString(undefined, { maximumFractionDigits: 2 })}`;
+        const number = (value, digits = 2) => value === null || value === undefined ? 'n/a' : Number(value).toLocaleString(undefined, { maximumFractionDigits: digits });
+        const boolText = value => value === null || value === undefined ? 'n/a' : value ? 'yes' : 'no';
+
+        function metricCard(title, value, detail) {
+            return `<div class="rounded-lg border border-white/10 bg-black/20 p-4">
+                <p class="font-mono text-xs text-gray-500 uppercase">${title}</p>
+                <p class="mt-2 text-2xl font-bold text-white">${value}</p>
+                <p class="mt-2 text-sm text-gray-500">${detail}</p>
+            </div>`;
+        }
+
+        function regimeTone(regime) {
+            if (regime === 'TREND_DOWN') return 'bg-rose-500/10 text-rose-300 border-rose-500/20';
+            if (regime === 'TREND_UP') return 'bg-emerald-500/10 text-emerald-300 border-emerald-500/20';
+            if (regime === 'WARMING_UP') return 'bg-amber-500/10 text-amber-300 border-amber-500/20';
+            return 'bg-gray-500/10 text-gray-300 border-gray-500/20';
+        }
+
+        function renderSparkline(points = []) {
+            const usable = points.filter(point => point.spot !== null && point.spot !== undefined).slice(-48);
+            if (usable.length < 2) return '<div class="h-32 flex items-center justify-center text-sm text-gray-500">Awaiting BTC spot trace.</div>';
+            const values = usable.map(point => Number(point.spot));
+            const min = Math.min(...values);
+            const max = Math.max(...values);
+            const range = max - min || 1;
+            const coords = usable.map((point, index) => {
+                const x = (index / (usable.length - 1)) * 100;
+                const y = 38 - ((Number(point.spot) - min) / range) * 32;
+                return `${x.toFixed(2)},${y.toFixed(2)}`;
+            }).join(' ');
+            return `<svg viewBox="0 0 100 40" class="w-full h-32 overflow-visible">
+                <polyline fill="none" stroke="rgb(56 189 248)" stroke-width="1.6" points="${coords}" vector-effect="non-scaling-stroke"></polyline>
+            </svg>`;
+        }
+
+        function renderKalshiBtc(kalshiBtc = {}) {
+            const regime = kalshiBtc.regime || {};
+            const decision = kalshiBtc.decision || {};
+            const impulse = kalshiBtc.impulse || {};
+            const alpha = kalshiBtc.alpha_stack || {};
+            const api = kalshiBtc.api_health || {};
+            const performance = kalshiBtc.performance || {};
+            const spot = kalshiBtc.spot || {};
+            const market = kalshiBtc.market || {};
+            const book = kalshiBtc.book || {};
+            const position = kalshiBtc.position || {};
+            const badge = document.getElementById('btc-regime-badge');
+            badge.className = `font-mono text-xs px-3 py-1 rounded-full border ${regimeTone(regime.state)}`;
+            badge.textContent = `${kalshiBtc.engine_mode || 'regime'} | ${regime.state || 'No regime'} | ${regime.allowed_side || 'No side'}`;
+
+            document.getElementById('kalshi-btc-content').innerHTML = `
+                <div class="lg:col-span-2 rounded-lg border border-white/10 bg-black/20 p-4">
+                    <div class="flex items-start justify-between gap-4">
+                        <div>
+                            <p class="font-mono text-xs text-gray-500 uppercase">${kalshiBtc.engine_name || 'kalshi_gamma_regime_engine'} / ${kalshiBtc.journal_name || 'journal pending'}</p>
+                            <p class="mt-1 text-3xl font-bold text-white">$${number(spot.price)}</p>
+                            <p class="mt-2 text-sm text-gray-500">${market.ticker || 'No market selected'} | source ${spot.source || 'n/a'} | age ${fmt(spot.age_seconds, 's')} | strike $${number(market.strike)}</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="font-mono text-xs text-gray-500 uppercase">Paper PnL / Action</p>
+                            <p class="mt-1 text-xl font-bold ${decision.side_intent === 'NO' ? 'text-rose-300' : 'text-emerald-300'}">${decision.action || 'OBSERVE'} ${decision.side_intent || ''}</p>
+                            <p class="mt-2 text-sm text-gray-500">rPnL ${fmt(performance.total_realized_pnl)} | uPnL ${fmt(performance.unrealized_pnl)} | ${decision.setup_mode || 'setup pending'}</p>
+                        </div>
+                    </div>
+                    <div class="mt-5">${renderSparkline(kalshiBtc.chart_points || [])}</div>
+                    <div class="mt-4 grid grid-cols-2 md:grid-cols-4 gap-3 text-sm">
+                        <div><p class="font-mono text-xs text-gray-500 uppercase">Macro Gate</p><p class="mt-1 text-white">${boolText(regime.gate_open)} / ${fmt(regime.confirm_count)}</p></div>
+                        <div><p class="font-mono text-xs text-gray-500 uppercase">10m Impulse</p><p class="mt-1 text-white">${dollars(impulse.spot_10m_delta)} ${impulse.spot_10m_direction || ''}</p></div>
+                        <div><p class="font-mono text-xs text-gray-500 uppercase">Risk Blocked</p><p class="mt-1 text-white">${boolText(decision.risk_entry_blocked)}</p></div>
+                        <div><p class="font-mono text-xs text-gray-500 uppercase">API</p><p class="mt-1 text-white">${api.kalshi_api_status || 'n/a'} / ${fmt(api.kalshi_request_elapsed_ms, 'ms')}</p></div>
+                    </div>
+                    <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-3 text-sm">
+                        ${metricCard('Laplace / Fourier', `${alpha.laplace_drift || 'n/a'} / ${alpha.fourier_pred || 'n/a'}`, `score ${fmt(alpha.laplace_score)} | slope ${fmt(alpha.fourier_slope)}`)}
+                        ${metricCard('Strike / Reversion', `${dollars(alpha.strike_distance)} / ${boolText(alpha.strike_reversion_ready)}`, `side ${alpha.strike_reversion_side || 'n/a'} | reversal ${boolText(alpha.reversal_ready)}`)}
+                        ${metricCard('Spot Deltas', `5m ${dollars(impulse.spot_5m_delta)}`, `20m ${dollars(impulse.spot_20m_delta)} | impulse ok ${boolText(impulse.spot_10m_impulse_ok)}`)}
+                    </div>
+                </div>
+                <div class="rounded-lg border border-white/10 bg-black/20 p-4 space-y-4">
+                    <div>
+                        <p class="font-mono text-xs text-gray-500 uppercase">Book / Liquidity</p>
+                        <p class="mt-2 text-sm text-gray-300">YES ${fmt(book.yes?.bid_price)} / ${fmt(book.yes?.ask_price)} spread ${fmt(book.yes?.spread)}</p>
+                        <p class="mt-1 text-sm text-gray-300">NO ${fmt(book.no?.bid_price)} / ${fmt(book.no?.ask_price)} spread ${fmt(book.no?.spread)}</p>
+                        <p class="mt-1 text-sm text-gray-500">Depth ${fmt(book.liquidity)} | decay ${fmt(book.liquidity_decay)}</p>
+                    </div>
+                    <div>
+                        <p class="font-mono text-xs text-gray-500 uppercase">Paper Position</p>
+                        <p class="mt-2 text-sm text-gray-300">${position.open ? `${position.side} ${position.ticker}` : 'No open paper position'}</p>
+                        <p class="mt-1 text-sm text-gray-500">${position.open ? `Entry ${fmt(position.entry_price)} x ${fmt(position.quantity)} | uPnL ${fmt(position.unrealized_pnl)}` : 'Waiting for a macro-aligned setup.'}</p>
+                    </div>
+                    <div>
+                        <p class="font-mono text-xs text-gray-500 uppercase">Recent Paper Marks</p>
+                        <p class="mt-2 text-sm text-gray-300">Entry: ${kalshiBtc.last_paper_entry ? `${kalshiBtc.last_paper_entry.side} @ ${fmt(kalshiBtc.last_paper_entry.price)}` : 'none'}</p>
+                        <p class="mt-1 text-sm text-gray-300">Exit: ${kalshiBtc.last_paper_exit ? `${kalshiBtc.last_paper_exit.side} @ ${fmt(kalshiBtc.last_paper_exit.price)} (${fmt(kalshiBtc.last_paper_exit.realized_pnl)})` : 'none'}</p>
+                    </div>
+                    <div>
+                        <p class="font-mono text-xs text-gray-500 uppercase">API Health</p>
+                        <p class="mt-2 text-sm text-gray-300">State ${api.kalshi_api_state || 'n/a'} | HTTP ${fmt(api.kalshi_request_status_code)} | retries ${fmt(api.kalshi_request_retry_count)}</p>
+                        <p class="mt-1 text-sm text-gray-500">Cache ${fmt(api.kalshi_market_cache_age_seconds, 's')} | scans ${fmt(api.kalshi_orderbook_scan_count)}</p>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderFaseEulerSummary(fv = {}, projectionRows = []) {
+            const volatilityFlags = projectionRows.filter(([, proj]) => proj.volatility_alert).length;
+            const sentimentScores = projectionRows
+                .map(([, proj]) => Number(proj.sentiment_score))
+                .filter(value => Number.isFinite(value));
+            const avgSentiment = sentimentScores.length
+                ? sentimentScores.reduce((total, value) => total + value, 0) / sentimentScores.length
+                : null;
+
+            document.getElementById('fase-euler-summary').innerHTML = [
+                metricCard('Entropy Health', fmt(fv.entropy), 'Compact signal-health reading from the sanitized FASE / Veritas runtime.'),
+                metricCard('Projection Cards', projectionRows.length, 'Public summaries with EV, confidence band, headline, and sentiment score.'),
+                metricCard('Avg Sentiment / Vol Alerts', `${fmt(avgSentiment?.toFixed(3))} / ${volatilityFlags}`, 'Sentiment-adjusted review with volatility warnings surfaced when present.')
+            ].join('');
+        }
+
+        function renderArbitrageSummary(feed = {}) {
+            const arbitrage = feed.arbitrage || {};
+            const inverse = feed.inverse_arb || {};
+            const hasArbitrageFeed = Object.keys(arbitrage).length > 0;
+            const hasInverseFeed = Object.keys(inverse).length > 0;
+
+            document.getElementById('arbitrage-summary').innerHTML = [
+                metricCard('Macro Pair Gap', hasArbitrageFeed ? fmt(arbitrage.latest_delta) : 'Awaiting feed', hasArbitrageFeed ? `Z-score ${fmt(arbitrage.z_score)} | pair ${arbitrage.pair || 'n/a'}` : 'Stage 2 will publish sanitized pair-gap data such as USO vs XOM.'),
+                metricCard('Inverse Arb State', hasInverseFeed ? (inverse.state || 'Available') : 'Awaiting feed', hasInverseFeed ? (inverse.summary || 'Runtime data present.') : 'Placeholder-safe until inverse-arb runtime artifacts are wired into the public feed.'),
+                metricCard('Fleet HUD', hasArbitrageFeed ? fmt(arbitrage.fleet_summary || arbitrage.status) : 'Visible capability', 'Kept on the homepage as a separate capability beside BTC/Kalshi and FASE/Euler.')
+            ].join('');
+        }
+
+        function render(feed) {
+            const btc = feed.btc?.performance || {};
+            const kalshi = feed.kalshi || {};
+            const kalshiBtc = feed.kalshi_btc || {};
+            const fv = feed.fase_veritas || {};
+            const projections = fv.projections || {};
+            const series = fv.series || [];
+
+            document.getElementById('feed-status').textContent = 'Snapshot loaded';
+            document.getElementById('last-updated').textContent = feed.generated_at || feed.system?.last_updated || 'No timestamp';
+            document.getElementById('btc-trades').textContent = `${btc.completed_trades || 0} trades`;
+            document.getElementById('btc-pnl').textContent = `Paper PnL ${money(btc.total_pnl)} | Win ${fmt(btc.win_rate, '%')}`;
+            document.getElementById('kalshi-events').textContent = `${kalshi.events || 0} events`;
+            document.getElementById('kalshi-modes').textContent = (kalshi.journals || []).map(row => row.mode || row.name).slice(0, 3).join(', ') || 'Paper engines';
+            document.getElementById('entropy').textContent = fmt(fv.entropy);
+
+            renderKalshiBtc(kalshiBtc);
+            const projectionRows = Object.entries(projections);
+            renderFaseEulerSummary(fv, projectionRows);
+            renderArbitrageSummary(feed);
+
+            document.getElementById('engine-grid').innerHTML = [
+                metricCard('Execution Label', feed.labels?.execution || 'paper/simulation', feed.labels?.disclaimer || 'No live execution exposed.'),
+                metricCard('Sanitized Journals', `${(btc.events || 0) + (kalshi.events || 0)} events`, `BTC open position: ${btc.open_position ? 'yes' : 'no'} | Kalshi journals: ${kalshi.journals?.length || 0}`),
+                metricCard('Public Surface', feed.system?.source || 'sanitized artifacts', 'Static snapshot designed to demonstrate systems thinking without publishing private implementation details.')
+            ].join('');
+
+            document.getElementById('series-list').innerHTML = series.length ? series.slice(-12).reverse().map(point => `
+                <div class="rounded-lg border border-white/10 bg-black/20 p-3 font-mono text-xs">
+                    <div class="flex justify-between text-gray-400"><span>${point.time || 'n/a'}</span><span>Entropy ${fmt(point.entropy)}</span></div>
+                    <div class="mt-2 flex justify-between"><span>MTL ${fmt(point.mtl_strike, '%')}</span><span>BUF ${fmt(point.buf_strike, '%')}</span></div>
+                </div>`).join('') : '<p class="text-gray-500 text-sm">No series points available.</p>';
+
+            document.getElementById('projection-grid').innerHTML = projectionRows.length ? projectionRows.map(([ticker, proj]) => `
+                <div class="rounded-lg border border-white/10 bg-black/20 p-4">
+                    <div class="flex justify-between items-start gap-3">
+                        <h3 class="text-xl font-bold text-white">${ticker}</h3>
+                        <span class="font-mono text-xs ${Number(proj.sentiment_score) >= 0 ? 'text-emerald-300' : 'text-rose-300'}">${fmt(proj.sentiment_score)}</span>
+                    </div>
+                    <p class="mt-2 font-mono text-sm accent">EV ${fmt(proj.expected_value)}</p>
+                    <p class="mt-1 font-mono text-xs text-gray-500">CI ${fmt(proj.ci_low)} - ${fmt(proj.ci_high)} | volatility ${proj.volatility_alert ? 'flagged' : 'normal'}</p>
+                    <p class="mt-3 text-sm text-gray-500 line-clamp-3">${proj.headline || 'Sanitized projection summary.'}</p>
+                </div>`).join('') : '<p class="text-gray-500 text-sm">No projection feed available.</p>';
+        }
+
+        async function loadFeed() {
+            try {
+                const response = await fetch(`${FEED_URL}?t=${Date.now()}`, { cache: 'no-store' });
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                render(await response.json());
+            } catch (error) {
+                document.getElementById('feed-status').textContent = 'Offline';
+                document.getElementById('last-updated').textContent = 'Run scripts/generate_public_feed.py to publish a local sanitized snapshot.';
+                console.error('Public feed unavailable', error);
+            }
+        }
+
+        loadFeed();
+    </script>
+</body>
+</html>

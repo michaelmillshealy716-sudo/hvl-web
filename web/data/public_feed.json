@@ -1,0 +1,844 @@
+{
+  "btc": {
+    "mode": "paper",
+    "performance": {
+      "avg_pnl": -3.15,
+      "completed_trades": 4,
+      "events": 123,
+      "journal_present": true,
+      "open_position": false,
+      "replaced_buys": 115,
+      "total_pnl": -12.61,
+      "unmatched_sells": 0,
+      "warnings": 0,
+      "win_rate": 0.0
+    },
+    "signal": "guarded prediction-contract paper router"
+  },
+  "fase_veritas": {
+    "entropy": 0.679,
+    "projections": {
+      "CL=F": {
+        "ci_high": 157.07,
+        "ci_low": 49.77,
+        "expected_value": 93.2,
+        "headline": "Stock market today: Dow, S&P 500, Nasdaq gain as oil prices fall, bond sell-off eases",
+        "sentiment_score": 0.691,
+        "volatility_alert": false
+      },
+      "F": {
+        "ci_high": 23.88,
+        "ci_low": 7.19,
+        "expected_value": 13.81,
+        "headline": "How Toyota's Challenging U.S. Business Could Result in a New Ford Maverick Rival",
+        "sentiment_score": 0.153,
+        "volatility_alert": false
+      },
+      "PFE": {
+        "ci_high": 53.85,
+        "ci_low": 17.1,
+        "expected_value": 31.9,
+        "headline": "Pfizer Builds Oncology Growth Around Padcev and Pipeline Expansion",
+        "sentiment_score": 0.382,
+        "volatility_alert": false
+      },
+      "TSLA": {
+        "ci_high": 315.54,
+        "ci_low": 101.43,
+        "expected_value": 189.4,
+        "headline": "Tech stocks today: Samsung workers reportedly postpone strike that threatened to disrupt global chip supplies",
+        "sentiment_score": -0.66,
+        "volatility_alert": false
+      },
+      "XOM": {
+        "ci_high": 217.08,
+        "ci_low": 70.06,
+        "expected_value": 131.71,
+        "headline": "Is Cenovus Poised to Gain From the Current Elevation in Crude Prices?",
+        "sentiment_score": 0.178,
+        "volatility_alert": false
+      }
+    },
+    "series": [
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "22:51:52"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "22:52:26"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "22:53:00"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "22:53:32"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "22:54:05"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "22:54:37"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "22:55:09"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "22:55:41"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "22:56:14"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "22:56:46"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "22:57:18"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "22:57:50"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "22:58:24"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "22:58:56"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "22:59:28"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "23:00:00"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "23:00:33"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "23:01:05"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "23:01:37"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "23:02:10"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "23:02:42"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "23:03:14"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "23:03:46"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "23:04:18"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "23:04:50"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "23:05:22"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "23:05:54"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "23:06:27"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "23:06:59"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "23:07:31"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "23:08:04"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "23:08:36"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "23:09:08"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "23:09:41"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "23:10:13"
+      },
+      {
+        "buf_strike": 73.77,
+        "entropy": 0.679,
+        "mtl_strike": 82.96,
+        "time": "23:10:45"
+      }
+    ],
+    "teams": {
+      "BUF": {
+        "hamiltonian": 1.1619,
+        "psi_squared": 62.78,
+        "strike_chance": 73.77
+      },
+      "MTL": {
+        "hamiltonian": 1.4248,
+        "psi_squared": 65.5,
+        "strike_chance": 82.96
+      }
+    }
+  },
+  "generated_at": "2026-06-01T17:07:54.237844+00:00",
+  "kalshi": {
+    "events": 18130,
+    "journals": [
+      {
+        "events": 142,
+        "last_error": null,
+        "mode": "kalshi_sandbox_paper",
+        "name": "kalshi_gamma_compare_inverse_journal",
+        "paper_pnl": null
+      },
+      {
+        "events": 2048,
+        "last_error": null,
+        "mode": "kalshi_sandbox_paper",
+        "name": "kalshi_gamma_compare_inverse_prod_journal",
+        "paper_pnl": -0.8
+      },
+      {
+        "events": 1780,
+        "last_error": "503 Server Error: Service Temporarily Unavailable for url: https://external-api.demo.kalshi.co/trade-api/v2/markets?status=open&limit=1000&series_ticker=KXBTCD",
+        "mode": "kalshi_sandbox_paper",
+        "name": "kalshi_gamma_compare_journal",
+        "paper_pnl": -0.2
+      },
+      {
+        "events": 5515,
+        "last_error": null,
+        "mode": "kalshi_sandbox_paper",
+        "name": "kalshi_gamma_compare_prod_journal",
+        "paper_pnl": -1.02
+      },
+      {
+        "events": 3858,
+        "last_error": "HTTPSConnectionPool(host='external-api.demo.kalshi.co', port=443): Max retries exceeded with url: /trade-api/v2/markets?status=open&limit=1000&series_ticker=KXBTCD (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+        "mode": "kalshi_sandbox_paper",
+        "name": "kalshi_gamma_demo_journal",
+        "paper_pnl": -1.42
+      },
+      {
+        "events": 59,
+        "last_error": null,
+        "mode": "kalshi_sandbox_paper",
+        "name": "kalshi_gamma_hybrid_prod_journal",
+        "paper_pnl": null
+      },
+      {
+        "events": 662,
+        "last_error": null,
+        "mode": "kalshi_sandbox_paper",
+        "name": "kalshi_gamma_inverse_compare_journal",
+        "paper_pnl": null
+      },
+      {
+        "events": 1170,
+        "last_error": null,
+        "mode": "kalshi_regime_paper",
+        "name": "kalshi_gamma_regime_journal",
+        "paper_pnl": -0.44
+      },
+      {
+        "events": 2896,
+        "last_error": null,
+        "mode": "kalshi_regime_paper",
+        "name": "kalshi_gamma_regime_journal",
+        "paper_pnl": 1.6
+      }
+    ]
+  },
+  "kalshi_btc": {
+    "alpha_stack": {
+      "fast_reversal_side": null,
+      "fourier_pred": "rising",
+      "fourier_slope": 1.3379,
+      "laplace_drift": "breakout_up",
+      "laplace_score": 2.6297,
+      "reversal_confirm_ticks": 0,
+      "reversal_ready": false,
+      "strike_distance": -17.89,
+      "strike_reversion_confidence": 0.0,
+      "strike_reversion_ready": false,
+      "strike_reversion_side": "YES"
+    },
+    "api_health": {
+      "kalshi_api_error": null,
+      "kalshi_api_state": "ok",
+      "kalshi_api_status": "ok",
+      "kalshi_market_cache_age_seconds": 5.0,
+      "kalshi_orderbook_scan_count": 1,
+      "kalshi_request_elapsed_ms": 243,
+      "kalshi_request_retry_count": 0,
+      "kalshi_request_status_code": 200
+    },
+    "book": {
+      "liquidity": 2289,
+      "liquidity_decay": -1208.2778,
+      "no": {
+        "ask_price": 0.49,
+        "bid_price": 0.48,
+        "bid_quantity": 1387,
+        "spread": 0.01
+      },
+      "yes": {
+        "ask_price": 0.52,
+        "bid_price": 0.51,
+        "bid_quantity": 902,
+        "spread": 0.01
+      }
+    },
+    "chart_points": [
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71453.55,
+        "time": "2026-06-01T17:05:47.483397+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71495.43,
+        "time": "2026-06-01T17:05:50.122403+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71495.43,
+        "time": "2026-06-01T17:05:52.715510+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71495.43,
+        "time": "2026-06-01T17:05:55.702307+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71499.85,
+        "time": "2026-06-01T17:05:58.315069+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71499.85,
+        "time": "2026-06-01T17:06:00.910706+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71499.85,
+        "time": "2026-06-01T17:06:03.627235+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71499.85,
+        "time": "2026-06-01T17:06:06.288087+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71489.96,
+        "time": "2026-06-01T17:06:08.909257+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71499.85,
+        "time": "2026-06-01T17:06:11.515147+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71489.96,
+        "time": "2026-06-01T17:06:14.154144+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71489.96,
+        "time": "2026-06-01T17:06:16.767089+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71489.26,
+        "time": "2026-06-01T17:06:19.421817+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71489.26,
+        "time": "2026-06-01T17:06:22.058594+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71489.26,
+        "time": "2026-06-01T17:06:24.709086+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71489.26,
+        "time": "2026-06-01T17:06:27.356866+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71489.26,
+        "time": "2026-06-01T17:06:30.011892+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71489.26,
+        "time": "2026-06-01T17:06:32.669174+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71489.26,
+        "time": "2026-06-01T17:06:35.277550+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71495.27,
+        "time": "2026-06-01T17:06:37.873882+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71495.27,
+        "time": "2026-06-01T17:06:40.459682+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71495.27,
+        "time": "2026-06-01T17:06:43.119565+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71497.75,
+        "time": "2026-06-01T17:06:45.660969+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71497.75,
+        "time": "2026-06-01T17:06:48.829715+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71497.75,
+        "time": "2026-06-01T17:06:51.427956+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71497.75,
+        "time": "2026-06-01T17:06:54.054866+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71504.76,
+        "time": "2026-06-01T17:06:56.698876+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71504.76,
+        "time": "2026-06-01T17:06:59.275876+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71504.76,
+        "time": "2026-06-01T17:07:01.937405+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71495.01,
+        "time": "2026-06-01T17:07:04.559512+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71495.01,
+        "time": "2026-06-01T17:07:07.185427+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71495.01,
+        "time": "2026-06-01T17:07:09.806062+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71476.51,
+        "time": "2026-06-01T17:07:12.419884+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71495.01,
+        "time": "2026-06-01T17:07:15.051616+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71476.51,
+        "time": "2026-06-01T17:07:17.703895+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71476.51,
+        "time": "2026-06-01T17:07:20.320024+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71476.51,
+        "time": "2026-06-01T17:07:22.849367+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71474.23,
+        "time": "2026-06-01T17:07:25.492621+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71474.23,
+        "time": "2026-06-01T17:07:28.205003+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71474.23,
+        "time": "2026-06-01T17:07:30.839967+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71467.84,
+        "time": "2026-06-01T17:07:33.452521+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71467.84,
+        "time": "2026-06-01T17:07:36.079336+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71467.84,
+        "time": "2026-06-01T17:07:38.703814+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71474.45,
+        "time": "2026-06-01T17:07:41.320803+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71474.45,
+        "time": "2026-06-01T17:07:44.148677+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71474.45,
+        "time": "2026-06-01T17:07:46.728096+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71475.82,
+        "time": "2026-06-01T17:07:49.868227+00:00"
+      },
+      {
+        "action": "HOLD",
+        "regime": "TREND_UP",
+        "side": null,
+        "spot": 71482.1,
+        "time": "2026-06-01T17:07:52.257149+00:00"
+      }
+    ],
+    "decision": {
+      "action": "HOLD",
+      "can_trade": null,
+      "depth_ok": null,
+      "engine_mode": "trend",
+      "falling_knife_risk": false,
+      "macro_entry_ready": null,
+      "risk_entry_blocked": false,
+      "setup_mode": "breakout_or_observe",
+      "side_intent": "YES",
+      "spread_ok": null,
+      "trades_this_hour": null
+    },
+    "engine_mode": "trend",
+    "engine_name": "kalshi_gamma_regime_engine",
+    "events": 2896,
+    "impulse": {
+      "spot_10m_delta": 58.52,
+      "spot_10m_direction": "up",
+      "spot_10m_impulse_ok": true,
+      "spot_10m_window_seconds": 599,
+      "spot_20m_delta": 58.52,
+      "spot_20m_window_seconds": 599,
+      "spot_5m_delta": 49.54,
+      "spot_5m_window_seconds": 301
+    },
+    "journal_name": "kalshi_gamma_regime_journal.jsonl",
+    "journal_present": true,
+    "last_paper_entry": {
+      "action": "BUY",
+      "price": 0.48,
+      "quantity": 20,
+      "setup_mode": "trend_impulse",
+      "side": "YES",
+      "ticker": "KXBTCD-26JUN0117-T71499.99",
+      "timestamp": "2026-06-01T17:04:06.223600+00:00"
+    },
+    "last_paper_exit": {
+      "action": "SELL",
+      "exit_reason": "target",
+      "price": 0.56,
+      "quantity": 20,
+      "realized_pnl": 1.6,
+      "setup_mode": "breakout_or_observe",
+      "side": "YES",
+      "ticker": "KXBTCD-26JUN0114-T71399.99",
+      "timestamp": "2026-06-01T17:02:10.904776+00:00"
+    },
+    "last_update": "2026-06-01T17:07:52.257149+00:00",
+    "market": {
+      "seconds_to_close": 13927.74,
+      "strike": 71499.99,
+      "ticker": "KXBTCD-26JUN0117-T71499.99",
+      "title": "Bitcoin price on Jun 1, 2026?"
+    },
+    "mode": "kalshi_regime_paper",
+    "performance": {
+      "total_realized_pnl": 5.8,
+      "unrealized_pnl": 0.6
+    },
+    "position": {
+      "entry_price": 0.48,
+      "entry_timestamp": "2026-06-01T17:04:06.223600+00:00",
+      "held_seconds": 225.02,
+      "open": true,
+      "quantity": 20,
+      "setup_mode": "trend_impulse",
+      "side": "YES",
+      "spot_10m_delta": 139.29,
+      "ticker": "KXBTCD-26JUN0117-T71499.99",
+      "unrealized_pnl": 0.6
+    },
+    "regime": {
+      "allowed_side": "YES",
+      "confirm_count": 809,
+      "delta_1h": 669.9,
+      "delta_4h": 669.9,
+      "gate_open": true,
+      "state": "TREND_UP",
+      "window_1h_seconds": 2922,
+      "window_4h_seconds": 2922
+    },
+    "source": {
+      "engine_mode": "trend",
+      "engine_name": "kalshi_gamma_regime_engine",
+      "journal_name": "kalshi_gamma_regime_journal.jsonl",
+      "last_update": "2026-06-01T17:07:52.257149+00:00",
+      "mode": "kalshi_regime_paper"
+    },
+    "spot": {
+      "age_seconds": 0.0,
+      "price": 71482.1,
+      "source": "coinbase",
+      "stale": false
+    }
+  },
+  "labels": {
+    "disclaimer": "Showcase telemetry only. No live broker execution is exposed.",
+    "execution": "paper/simulation/delayed"
+  },
+  "system": {
+    "last_updated": "2026-05-20 12:20:17",
+    "source": "sanitized local runtime artifacts"
+  }
+}
